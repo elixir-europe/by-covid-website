@@ -1,9 +1,14 @@
+const path = require('path')
+
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    title: `BY-COVID`,
+    description:
+      'The BY_COVID project aims to make SARS-CoV-2 and other infectious disease data easier to find and access for life scientists and researchers across Europe.',
+    author: `Katharina Lauer, Xenia Sitja Perez, Erin Haskell, Martin Cook (ELIXIR Hub)`,
+    siteUrl: `https://by-covid.eu/`,
+    image: "/images/gatsby-astronaut.png",
+    twitterUsername: "@by-covid",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -29,6 +34,19 @@ module.exports = {
         // theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pages`,
+        path: `${__dirname}/src/pages/`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        defaultLayouts: { default: path.resolve('./src/components/layout.js') },
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
