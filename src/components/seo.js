@@ -103,5 +103,14 @@ const detailsQuery = graphql`
         image
       }
     }
+    allMdx {
+      edges {
+        node {
+          frontmatter {
+            title
+          }
+        }
+      }
+    }
   }
 `

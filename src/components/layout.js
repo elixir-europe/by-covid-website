@@ -4,9 +4,11 @@ import { StaticQuery, graphql } from 'gatsby'
 
 import Footer from './footer'
 import Header from './header'
+import Seo from './seo'
 import './layout.css'
 
-const Layout = ({ children }) => (
+
+const Layout = ({ children, pageContext, ...props }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -15,11 +17,23 @@ const Layout = ({ children }) => (
             title
           }
         }
+        allMdx {
+          edges {
+            node {
+              frontmatter {
+                title
+                description
+              }
+            }
+          }
+        }
       }
     `}
     render={data => (
       <>
         <Header siteTitle={data.site.siteMetadata.title} />
+        <Seo title={pageContext.frontmatter.title}
+        description={pageContext.frontmatter.description} />
         <div
           style={{
             margin: '0 auto',
@@ -28,6 +42,7 @@ const Layout = ({ children }) => (
             paddingTop: 0,
           }}
         >
+        <h1>{pageContext.frontmatter.title}</h1>
           {children}
         </div>
         <Footer />
