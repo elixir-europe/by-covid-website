@@ -2,11 +2,13 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
 
+import '../styles.scss'
 import Footer from './footer'
-import Header from './header'
+//import Header from './header'
 import Seo from './seo'
-import './layout.css'
+import Menu from './menu'
 
+//import { Button } from 'react-bootstrap';
 
 const Layout = ({ children, pageContext, ...props }) => (
   <StaticQuery
@@ -31,9 +33,9 @@ const Layout = ({ children, pageContext, ...props }) => (
     `}
     render={data => (
       <>
-        <Header siteTitle={data.site.siteMetadata.title} />
         <Seo title={pageContext.frontmatter.title}
         description={pageContext.frontmatter.description} />
+        <Menu />
         <div
           style={{
             margin: '0 auto',
@@ -43,6 +45,7 @@ const Layout = ({ children, pageContext, ...props }) => (
           }}
         >
         <h1>{pageContext.frontmatter.title}</h1>
+
           {children}
         </div>
         <Footer />

@@ -1,14 +1,20 @@
+---
+title: About page
+description: About the BY-COVID project aims to make data easier to share.
+---
 import { Link } from 'gatsby'
-import Layout from '../components/layout'
-import Seo from '../components/seo'
+import Astro from '../components/image'
+import { Badge } from 'react-bootstrap'
 
-<Seo
-title = "About test"
-description = "About the BY-COVID project."
-/>
+<h1>
+    Example heading <Badge bg="secondary">New</Badge>
+</h1>
 
-<!-- *** CONTENT STARTS HERE *** -->
+Welcome to your new Gatsby site.
 
-# About us
+Now go build something great.
 
-<Link to="/">Go back to the homepage</Link>
+<div style={{ maxWidth: '300px', marginBottom: '1.45rem' }}>
+  <Astro />
+</div>
+<Link to="/about/">Go to About</Link>
