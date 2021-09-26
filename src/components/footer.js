@@ -3,19 +3,8 @@ import * as React from "react"
 // import { Link } from "gatsby"
 
 const Footer = () => (
-  <footer
-    style={{
-      background: `rebeccapurple`,
-      marginTop: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
+  <footer>
+  <div>
     <p>Some footer text</p>
     </div>
   </footer>

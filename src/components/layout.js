@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
+import { Container} from 'react-bootstrap'
 
 import '../styles.scss'
 import Footer from './footer'
@@ -10,7 +11,7 @@ import Menu from './menu'
 
 //import { Button } from 'react-bootstrap';
 
-const Layout = ({ children, pageContext, ...props }) => (
+const Layout = ({ location,children, pageContext, ...props }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -25,6 +26,7 @@ const Layout = ({ children, pageContext, ...props }) => (
               frontmatter {
                 title
                 description
+                class
               }
             }
           }
@@ -33,22 +35,17 @@ const Layout = ({ children, pageContext, ...props }) => (
     `}
     render={data => (
       <>
+
+      <Container className={pageContext.frontmatter.class}>
         <Seo title={pageContext.frontmatter.title}
         description={pageContext.frontmatter.description} />
         <Menu />
-        <div
-          style={{
-            margin: '0 auto',
-            maxWidth: 960,
-            padding: '0px 1.0875rem 1.45rem',
-            paddingTop: 0,
-          }}
-        >
+        <main>
         <h1>{pageContext.frontmatter.title}</h1>
-
           {children}
-        </div>
+        </main>
         <Footer />
+        </Container>
       </>
     )}
   />

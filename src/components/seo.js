@@ -61,14 +61,6 @@ function Seo({ description, lang, meta, image, keywords, title }) {
                 content: metaDescription,
               },
             ]
-              .concat(
-                keywords.length > 0
-                  ? {
-                      name: 'keywords',
-                      content: keywords.join(', '),
-                    }
-                  : []
-              )
               .concat(meta)}
           />
         )
@@ -80,14 +72,12 @@ function Seo({ description, lang, meta, image, keywords, title }) {
 Seo.defaultProps = {
   lang: 'en',
   meta: [],
-  keywords: [],
 }
 
 Seo.propTypes = {
   description: PropTypes.string,
   lang: PropTypes.string,
   meta: PropTypes.array,
-  keywords: PropTypes.arrayOf(PropTypes.string),
   title: PropTypes.string.isRequired,
 }
 
