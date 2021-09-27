@@ -2,23 +2,29 @@ import React from 'react'
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap'
 
 const Menu = () => {
-  
+
   return (
     <>
-      <Navbar bg="light" fixed="top" expand="lg">
+      <Navbar fixed="top" expand="lg" className="bs-body-color">
       <Container>
-        <Navbar.Brand href="#home">BY-COVID</Navbar.Brand>
+        <div>BY-COVID</div>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/about">About</Nav.Link>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+          <Nav className="ms-auto">
+            <Nav.Link href="/" className="home">Home</Nav.Link>
+            <NavDropdown title="About" id="basic-nav-dropdown" className="about">
+              <NavDropdown.Item href="/about">About</NavDropdown.Item>
+              <NavDropdown.Item href="/about/objectives">Objectives</NavDropdown.Item>
+              <NavDropdown.Item href="/about/structure">Structure</NavDropdown.Item>
+              <NavDropdown.Item href="/about/partners">Partners</NavDropdown.Item>
             </NavDropdown>
+            <NavDropdown title="Outcomes" id="basic-nav-dropdown" className="outcomes">
+              <NavDropdown.Item href="/outcomes">Outcomes</NavDropdown.Item>
+              <NavDropdown.Item href="/outcomes/deliverables-milestones">Deliverables & milestones</NavDropdown.Item>
+              <NavDropdown.Item href="/outcomes/publications">Publications</NavDropdown.Item>
+            </NavDropdown>
+            <Nav.Link href="/news-events" className="news-events">News & events</Nav.Link>
+            <Nav.Link href="/outreach" className="outreach">Outreach & media</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

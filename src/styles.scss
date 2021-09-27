@@ -3,6 +3,9 @@
 
 // 2. Include any default variable overrides here
 $secondary: pink;
+$h1-font-size: 4rem;
+$h2-font-size: 2.75rem;
+$font-family-sans-serif: "IBM Plex Sans",Helvetica,Arial,sans-serif;
 
 // 3. Include remainder of required Bootstrap stylesheets
 @import "../node_modules/bootstrap/scss/variables";
@@ -16,10 +19,46 @@ $secondary: pink;
 @import "../node_modules/bootstrap/scss/containers";
 @import "../node_modules/bootstrap/scss/grid";
 
-.about [href^="/about"] {
-    background: $primary;
+
+nav.navbar {
+  box-shadow: 0 0 10px rgba(0,0,0,0.50);
+  text-transform: uppercase;
+  padding: .75em 0;
+  .row {
+    width: 100%;
+  }
+  .dropdown-menu a {
+    text-transform: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+      padding-right: 1.25rem;
+      padding-left: 1.25rem;
+  }
+}
+
+.home .home, .about .about a.dropdown-toggle,
+.outcomes .outcomes  a.dropdown-toggle,   {
+    color: $primary !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: $dark;
 }
 
 main {
   margin-top: 5rem;
+}
+
+h1 {
+  font-weight: 600;
+  color: $gray-700;
+}
+
+h2 {
+  font-weight: 600;
+  color: $gray-700;
+  margin-bottom: $spacer * 1.5;
 }

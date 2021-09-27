@@ -3,15 +3,17 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
-function Seo({ description, lang, meta, image, keywords, title }) {
+function Seo({ description, lang, meta, imageTwitter, imageOg, imageAlt, title }) {
   return (
     <StaticQuery
       query={detailsQuery}
       render={data => {
         const metaDescription =
           description || data.site.siteMetadata.description
-        const metaImage =
-            image || data.site.siteMetadata.image
+        const metaImageTwitter =
+            data.site.siteMetadata.siteUrl+imageTwitter || data.site.siteMetadata.image
+        const metaImageOg =
+            data.site.siteMetadata.siteUrl+imageOg || data.site.siteMetadata.image
         return (
           <Helmet
             htmlAttributes={{
@@ -37,20 +39,20 @@ function Seo({ description, lang, meta, image, keywords, title }) {
                 content: 'website',
               },
               {
-                property: 'og:type',
-                content: 'website',
+                property: 'og:image',
+                content: metaImageOg,
               },
               {
-                property: "og:image",
-                content: metaImage,
+                property: 'og:image:width',
+                content: "1200",
+              },
+              {
+                property: 'og:image:height',
+                content: "630",
               },
               {
                 name: 'twitter:card',
-                content: 'summary',
-              },
-              {
-                name: 'twitter:creator',
-                content: data.site.siteMetadata.author,
+                content: 'summary_large_image',
               },
               {
                 name: 'twitter:title',
@@ -59,6 +61,18 @@ function Seo({ description, lang, meta, image, keywords, title }) {
               {
                 name: 'twitter:description',
                 content: metaDescription,
+              },
+              {
+                name: 'twitter:site',
+                content: data.site.siteMetadata.twitterUsername,
+              },
+              {
+                property: 'twitter:image',
+                content: metaImageTwitter,
+              },
+              {
+                property: 'twitter:image:alt',
+                content: imageAlt,
               },
             ]
               .concat(meta)}
@@ -91,6 +105,8 @@ const detailsQuery = graphql`
         description
         author
         image
+        twitterUsername
+        siteUrl
       }
     }
     allMdx {
