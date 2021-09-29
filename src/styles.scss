@@ -88,7 +88,7 @@ nav.navbar {
 footer {
   background: $dark;
   color: $light;
-  //padding-top: 3rem;
+
   a:link, h2 a:link {
     text-decoration: none;
     color: $light;
@@ -97,9 +97,19 @@ footer {
     color: $light;
     text-decoration: underline;
   }
+  a:visited {
+    color: $light;
+  }
   input {
     padding: 6px 10px;
   }
+  li {
+    padding-bottom: .75rem;
+  }
+}
+
+.social:hover {
+  background: $primary;
 }
 
 .btn-primary {
