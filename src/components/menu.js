@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'gatsby'
+import logo from "../images/by-covid-logo.svg"
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap'
 
 const Menu = () => {
@@ -7,7 +9,7 @@ const Menu = () => {
     <>
       <Navbar fixed="top" expand="lg" className="bs-body-color">
       <Container>
-        <div>BY-COVID</div>
+        <Link to="/"><img src={logo} alt="BY-COVID logo" width ="150" /></Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">

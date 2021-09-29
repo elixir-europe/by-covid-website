@@ -1,14 +1,28 @@
 // Required
 @import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
 
 // 2. Include any default variable overrides here
-$secondary: pink;
+// Note: unable to alter SASS maps as described here:
+// https://getbootstrap.com/docs/5.0/customize/sass/#add-to-map and in many
+// forum posts. Perhaps React Bootstrap is different?
+$primary: #DB316C; // red
+$secondary: #4B9BD9; // blue
+
+$dark: #1D1D1D;
+$gray-700: #4A4A4A;
+$body-bg: #F3F3F3;
+$body-color: #4A4A4A;
+
+$link-color: $secondary;
+$link-hover-color: $primary;
+
 $h1-font-size: 4rem;
 $h2-font-size: 2.75rem;
 $font-family-sans-serif: "IBM Plex Sans",Helvetica,Arial,sans-serif;
 
+
 // 3. Include remainder of required Bootstrap stylesheets
-@import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
 
 // 4. Include any optional Bootstrap components as you like
@@ -19,23 +33,95 @@ $font-family-sans-serif: "IBM Plex Sans",Helvetica,Arial,sans-serif;
 @import "../node_modules/bootstrap/scss/containers";
 @import "../node_modules/bootstrap/scss/grid";
 
-
 nav.navbar {
   box-shadow: 0 0 10px rgba(0,0,0,0.50);
+  background: $body-bg;
   text-transform: uppercase;
   padding: .75em 0;
+  font-size: 0.9rem;
   .row {
     width: 100%;
   }
   .dropdown-menu a {
     text-transform: none;
   }
+  .navbar-nav .nav-link, .dropdown-item {
+      color: $body-color;
+  }
+  .navbar-nav .nav-link:hover {
+    color: $primary;
+  }
+  .dropdown-item:hover {
+    transition: color 0.3s, background-color 0.3s;
+  }
+  .dropdown-item:focus, .dropdown-item:hover {
+    color: $primary;
+    background-color: $body-bg;
+  }
+}
+
+// Extending Bootstrap classes
+.py-6 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.fs-7 {
+  font-size: .85rem;
+}
+
+.lh-xlg {
+  line-height: 2.25;
+}
+
+// Default Bootstrap spacers are too small, but want to keep them.
+// Note: couldn't extend the SASS spacer map.
+.big-top-space {
+  margin-top: 5rem;
+}
+
+.h-center {
+  position: relative;
+  left: 50%;
+}
+
+footer {
+  background: $dark;
+  color: $light;
+  //padding-top: 3rem;
+  a:link, h2 a:link {
+    text-decoration: none;
+    color: $light;
+  }
+  a:hover, h2 a:hover {
+    color: $light;
+    text-decoration: underline;
+  }
+  input {
+    padding: 6px 10px;
+  }
+}
+
+.btn-primary {
+    color: $light;
+    background-color: $primary;
+    border-color: $primary;
+    &:hover {
+      background-color: $secondary;
+      border-color: $secondary;
+    }
+}
+
+ .inline-button {
+   position: relative;
+   left: 5px;
+   top: -2px;
 }
 
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-nav .nav-link {
-      padding-right: 1.25rem;
-      padding-left: 1.25rem;
+      padding-right: 1.2rem;
+      padding-left: 1.2rem;
   }
 }
 
@@ -49,16 +135,40 @@ nav.navbar {
 }
 
 main {
-  margin-top: 5rem;
+  margin-top: 6rem;
 }
 
 h1 {
   font-weight: 600;
-  color: $gray-700;
 }
 
-h2 {
+main h2 {
   font-weight: 600;
-  color: $gray-700;
-  margin-bottom: $spacer * 1.5;
+  margin-bottom: $spacer * 2;
+  background: url("./images/by-covid-arrow.svg") no-repeat left 75%;
+  background-size: 55px auto;
+  padding-left: 75px;
+  &:after {
+    content: url("./images/by-covid-bar.svg");
+    display: inline-block;
+    margin: 0 0 0 25px;
+  }
+}
+
+@media (max-width: 992px) {
+  main h2 {
+    background-size: 35px auto;
+    padding-left: 45px;
+    &:after {
+      transform: scale(0.8);
+      position: relative;
+      top: 5px;
+      margin: 0 0 0 15px;
+    }
+  }
+
+}
+
+h1 + h2 {
+  margin-top: .5em;
 }

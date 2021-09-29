@@ -67,13 +67,9 @@ const Layout = ({ location,children, pageContext, ...props }) => (
             </Col>
           </Row>
         </Container>
-        <Container >
-          <Row>
-            <Col>
+
               <Footer />
-            </Col>
-          </Row>
-        </Container>
+        
       </>
     )}
   />
