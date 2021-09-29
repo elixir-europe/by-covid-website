@@ -54,14 +54,16 @@ const Layout = ({ location,children, pageContext, ...props }) => (
            </Col>
           </Row>
         </Container>
-        <Container fluid="sm">
+        <Container>
           <Row>
             <Col>
             <div class="visually-hidden-focusable"><a href="#content">Skip to main content</a></div>
             <main>
               <article id="content">
-                <h1 class="py-4">{pageContext.frontmatter.title}</h1>
-                {children}
+                <div class="w-60">
+                  <h1 class="py-4">{pageContext.frontmatter.title}</h1>
+                </div>
+                  {children}
               </article>
             </main>
             </Col>
@@ -69,7 +71,7 @@ const Layout = ({ location,children, pageContext, ...props }) => (
         </Container>
 
               <Footer />
-        
+
       </>
     )}
   />

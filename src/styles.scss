@@ -66,6 +66,11 @@ nav.navbar {
   padding-bottom: 4rem;
 }
 
+.py-7 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
 .fs-7 {
   font-size: .85rem;
 }
@@ -73,6 +78,16 @@ nav.navbar {
 .lh-xlg {
   line-height: 2.25;
 }
+
+.w-60 {width: 100%;}
+@media (min-width: 1024px) {
+  .w-60 {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+
+
 
 // Default Bootstrap spacers are too small, but want to keep them.
 // Note: couldn't extend the SASS spacer map.
@@ -104,7 +119,7 @@ footer {
     padding: 6px 10px;
   }
   li {
-    padding-bottom: .75rem;
+    padding-bottom: .70rem;
   }
 }
 
@@ -155,6 +170,7 @@ h1 {
 main h2 {
   font-weight: 600;
   margin-bottom: $spacer * 2;
+  margin-top: $spacer * 5;
   background: url("./images/by-covid-arrow.svg") no-repeat left 75%;
   background-size: 55px auto;
   padding-left: 75px;
@@ -176,9 +192,41 @@ main h2 {
       margin: 0 0 0 15px;
     }
   }
-
 }
 
-h1 + h2 {
-  margin-top: .5em;
+@media (max-width: 576px) {
+  main h2 {
+    background-size: 0;
+    padding-left: 0;
+    &:after {
+      content: '';
+    }
+  }
+}
+
+.circle {
+  width: 100%;
+  border-radius: 50%;
+  border: 6px solid $body-color;
+  line-height: 0;
+  position: relative;
+  &::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+  .circle-txt {
+    position: absolute;
+    bottom: 40%;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+// To remove native horizontal padding on Bootstrap containers
+.container.full-width {
+  width:100%;
+  max-width:none;
+  padding-left:0;
+  padding-right:0
 }

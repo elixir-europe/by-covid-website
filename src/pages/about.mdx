@@ -8,9 +8,11 @@ imageAlt: A description of the image.
 ---
 import { Link } from 'gatsby'
 import Astro from '../components/image'
+import Circles from '../components/circles'
 
+<div class="w-60">
 
-## Project summary
+<h2 class="mt-1">Project summary</h2>
 
 BeYond-COVID (BY-COVID) aims to provide comprehensive open data on SARS-CoV-2 and other infectious diseases across scientific, medical, public health and policy domains. It will strongly emphasise mobilising raw viral sequences, helping to identify and monitor the spread of SARS-CoV-2 variants. The project will further accelerate access to SARS-CoV-2 and COVID-19 and linking patient and research data.
 
@@ -25,7 +27,15 @@ Ultimately, it will improve European readiness for future pandemics, enhance gen
 
 [Pdf to download](https://docs.google.com/document/d/1ZdYWb6HXc849RTER2p5IAzjFXSAojjab_tku9q1GX6M/edit#)  (complete project summary)
 
+## BY-COVID in numbers
+
+<Circles />
+
+
+
 <div style={{ maxWidth: '300px', marginBottom: '1.45rem' }}>
   <Astro />
 </div>
 <Link to="/">Go to home</Link>
+
+</div>
