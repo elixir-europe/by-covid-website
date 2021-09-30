@@ -21,6 +21,7 @@ $h1-font-size: 4rem;
 $h2-font-size: 2.75rem;
 $font-family-sans-serif: "IBM Plex Sans",Helvetica,Arial,sans-serif;
 
+
 // 3. Include remainder of required Bootstrap stylesheets
 @import "../node_modules/bootstrap/scss/mixins";
 
@@ -84,7 +85,7 @@ main {
 .w-60 {width: 100%;}
 @media (min-width: 1024px) {
   .w-60 {
-    width: 50%;
+    width: 45%;
     margin: 0 auto;
   }
 }
@@ -262,7 +263,7 @@ footer {
   }
   .circle-txt {
     position: absolute;
-    bottom: 40%;
+    bottom: 35%;
     width: 100%;
     text-align: center;
   }
@@ -281,6 +282,7 @@ footer {
   }
 }
 
+// Objectives panel
 .number {
   position: relative;
   padding-top: 5rem;
@@ -293,4 +295,46 @@ footer {
     left: 30%;
     z-index: 0;
   }
+}
+
+// Accordion of Work Packages. Can't seem to pass the right classes in via
+// React-Bootstrap
+.accordion {
+  .accordion-button {
+    background: $body-color;
+    color: $light;
+    line-height: 1.5;
+    &:focus {
+      border-color: $primary;
+      box-shadow: 0 0 0 0.25rem lighten($secondary, 20%);
+    }
+    &:after {
+      background-image: url(./images/plus.svg);
+      background-size: 25px;
+      background-position: 0 50%;
+    }
+    &:not(.collapsed)::after {
+      background-image: url(./images/minus.svg);
+    }
+  }
+  .text-end {
+    color: $primary;
+    margin: -1.25rem 0 1rem;
+    &:before {
+      content: url("./images/by-covid-arrow.svg");
+      transform: scale(0.25);
+      position: relative;
+      top: 1.1rem;
+      left: 1rem;
+      margin: 0;
+      display: inline-block;
+    }
+  }
+}
+
+.anchor{
+  display: block;
+  height: 80px; /*same height as header*/
+  margin-top: -80px; /*same height as header*/
+  visibility: hidden;
 }

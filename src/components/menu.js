@@ -16,9 +16,9 @@ const Menu = () => {
             <Nav.Link href="/" className="home">Home</Nav.Link>
             <NavDropdown title="About" id="basic-nav-dropdown" className="about">
               <NavDropdown.Item href="/about">About</NavDropdown.Item>
-              <NavDropdown.Item href="/about/objectives">Objectives</NavDropdown.Item>
-              <NavDropdown.Item href="/about/structure">Structure</NavDropdown.Item>
-              <NavDropdown.Item href="/about/partners">Partners</NavDropdown.Item>
+              <NavDropdown.Item href="/about#objectives">Objectives</NavDropdown.Item>
+              <NavDropdown.Item href="/about#structure">Structure</NavDropdown.Item>
+              <NavDropdown.Item href="/about#partners">Partners</NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="Outcomes" id="basic-nav-dropdown" className="outcomes">
               <NavDropdown.Item href="/outcomes">Outcomes</NavDropdown.Item>

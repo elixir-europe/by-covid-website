@@ -4,6 +4,7 @@ import { Container, Row, Col} from 'react-bootstrap'
 const Numbers = (props) => {
   return (
     <div class="bg-dark text-light py-5 big-top-space">
+      <span class="anchor" id="objectives"></span>
       <div class="w-60">
         <h2 class="mt-0">{props.numbersTitle}</h2>
         <Container fluid>

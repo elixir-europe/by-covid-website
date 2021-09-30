@@ -10,6 +10,7 @@ import { Link } from 'gatsby'
 import Astro from '../components/image'
 import Circles from '../components/circles'
 import Numbers from '../components/numbers'
+import BoxGrid from '../components/box-grid'
 
 <div class="w-60">
 
@@ -26,8 +27,9 @@ The project will integrate established national and European infrastructures wit
 In an unprecedented and unique interdisciplinary effort, BY-COVID will bring together 55 partners from 19 countries and stakeholders from the biomedical field, hospitals, public health, social sciences and humanities.
 Ultimately, it will improve European readiness for future pandemics, enhance genomic surveillance and rapid-response capabilities. In addition, BY-COVID serves as a demonstrator of interdisciplinary work across country borders. The project's outputs will allow scientists across multiple domains, including SMEs and industry, to access varied data with the potential to generate new knowledge on infectious diseases.
 
-[Pdf to download](https://docs.google.com/document/d/1ZdYWb6HXc849RTER2p5IAzjFXSAojjab_tku9q1GX6M/edit#)  (complete project summary)
+[Complete project summary](https://docs.google.com/document/d/1ZdYWb6HXc849RTER2p5IAzjFXSAojjab_tku9q1GX6M/edit#)  (PDF)
 
+<!-- BY-COVID IN NUMBERS -->
 <Circles
   circlesTitle = "BY-COVID in numbers"
   circle1      = "Euros"
@@ -41,6 +43,7 @@ Ultimately, it will improve European readiness for future pandemics, enhance gen
 />
 </div>
 
+<!-- OBJECTIVES -->
 <Numbers
   numbersTitle = "Objectives"
   one          = "Enable storage, sharing, access, analysis and processing of research data and other digital research objects from outbreak research."
@@ -49,3 +52,74 @@ Ultimately, it will improve European readiness for future pandemics, enhance gen
   four         = "Develop digital tools and data analytics for pandemic and outbreak preparedness, including tracking genomic variations of SARS-CoV-2 and identifying new variants of concern."
   five         = "Contribute to the Horizon Europe European Open Science Cloud (EOSC) Partnership & European Health Data Space (EHDS)."
 />
+
+
+<!-- PROJECT STRUCTURE -->
+
+<BoxGrid
+   /*
+   * WP1
+   */
+   boxGridTitle="Project structure"
+   box1Title  = "WP1: Support for virological analyses in emerging disease outbreaks"
+   box1Description  = "Work Package 1 will establish and improve SARS-CoV-2 Data Hubs that, with a globally comprehensive viral sequence and normative variation data sets, provide the foundation for linking genomic surveillance with heterogeneous data across domains. An open call will allow additional Data Hubs to be established and packaging of a rapid deployment &quot;preparedness&quot; Data Hub addresses future pathogen outbreaks."
+   box1Names= "Guy Cochrane (EMBL-EBI), Clara Amid (Erasmus MC)"
+   box1Subtext = "Objectives 2, 4"
+   /*
+   * WP2
+   */
+   box2Title        = "WP2: Accessing heterogeneous data across domains and jurisdictions for enabling the downstream processing of COVID-19 and future pandemic episodes data"
+   box2Description  = "Work Package 2 brings together data resources and catalogues across domains, captures data governance and access procedures. It will align metadata descriptions and other relevant semantic information first within domains (e.g., biomolecular and imaging, clinical and health, survey, etc) and in a second stage (in alignment with WP3 developments) expose a reference catalogue with harmonised metadata descriptions across domains."
+   box2Names        = "Alfonso Valencia/Salvador Capella-Gutierrez (BSC), Antje Keppler (EuroBioImaging)"
+   box2Subtext      = "Objectives 1, 2, 4, 5"
+   /*
+   * WP3
+   */
+   box3Title  = "WP3: COVID-19 integration platform"
+   box3Description  = "Work Package 3 is focussed on services for the discovery, integration and citation of COVID-19 data by delivering a flexible, tiered metadata discovery system across different domains, metadata standards, and maturity/robustness levels of data sources. This will enable the linking of FAIR data and metadata on SARS-CoV-2 and COVID-19, other infectious diseases and related data, and ultimately increase the potential for collaboration and exploitation of data."
+   box3Names= "Henning Hermjakob (EMBL-EBI), Mari Kleemola (CESSDA/TAU-FSD)"
+   box3Subtext = "Objectives 2, 3, 5"
+   /*
+   * WP4
+   */
+   box4Title        = "WP4: Connecting the COVID-19 data platform to analysis tools and local portals "
+   box4Description  = "Work Package 4 will develop, aggregate and integrate tools for analysis and visualisation of data in the COVID-19 Data Platform. It will provide a provenance framework for tracking of derived data and the transparency and trustworthiness of results which will ultimately improve trust in science. Researchers will be enabled to exploit the large volumes of data for tasks such as identification of variants of concern."
+   box4Names        = "Frederik Coppens (VIB), Petr Holub (BBMRI-ERIC)"
+   box4Subtext      = "Objectives 3, 4, 5"
+   /*
+   * WP5
+   */
+   box5Title  = "WP5: A continuously evolving demonstrator project feeding the changing research questions that surface during an on-going pandemic to solutions"
+   box5Description  = "Work Package 5 will demonstrate usability of BY-COVID services across disciplines and national borders through continuously evolving demonstrator projects. It will assess viral variants and disease outcomes using real world data, as well as the effectiveness of vaccines against new variants using retrospective clinical trial data and improve the understanding of the mechanistic determinants of variant responses."
+   box5Names= " Nina Van Goethem (Sciensano), Enrique Bernal Delgado (IACS)"
+   box5Subtext = "Objectives 3, 4"
+   /*
+   * WP6
+   */
+   box6Title        = "WP6: Engage, train and build capacity with national and international stakeholders"
+   box6Description  = "Work Package 6 will focus on stakeholder engagement, bottom-up by facilitating knowledge exchange in relation to setting up surveillance systems for pathogens, but also top-down to shape the policy landscape (EOSC, EHDS, and more broadly intergovernmental organisations and funders). Importantly, WP6 coordinates the training and capacity-building that takes place across WPs ensuring alignment and visibility with stakeholders."
+   box6Names        = "Patricia Palagi (SIB), Corinne S. Martin (ELIXIR Hub)"
+   box6Subtext      = "Objectives 1, 3, 4, 5"
+   /*
+   * WP7
+   */
+   box7Title  = "WP7: Outreach, Communication, industry and public engagement"
+   box7Description  = "Work Package 7 will develop and implement the project-wide communications and outreach strategy, ensuring key stakeholders including scientists, industry and SMEs, policy makers and the public have awareness of the project and opportunities to engage, use project outputs and provide feedback to partners."
+   box7Names= "Andy Smith (ELIXIR Hub), Katharina Lauer (ELIXIR Hub)"
+   box7Subtext = "Objectives ?"
+   /*
+   * WP8
+   */
+   box8Title        = "WP8: Coordination, project management and Ethical, Legal and Social Implications (ELSI)"
+   box8Description  = "Work Package 8 text."
+   box8Names        = "Juan Arenas Marquez (ELIXIR Hub)"
+   box8Subtext      = "Objectives ?"
+/>
+
+<div class="w-60">
+
+## Partners
+
+
+## Alignment with other projects and initiatives
+</div>
