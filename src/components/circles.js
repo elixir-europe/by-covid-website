@@ -8,7 +8,7 @@ const Circles = (props) => {
         <Col xs={6} sm={3} lg={3}>
           <div class="circle mb-4">
             <div class="circle-txt">
-              <span class="fs-3 fw-bold d-block mb-4">{props.circle1Value}</span>
+              <span class="fw-bold d-block">{props.circle1Value}</span>
                {props.circle1}
             </div>
           </div>
@@ -16,7 +16,7 @@ const Circles = (props) => {
         <Col xs={6} sm={3} lg={3}>
           <div class="circle mb-4">
             <div class="circle-txt">
-              <span class="fs-3 fw-bold d-block mb-4">{props.circle2Value}</span>
+              <span class="fw-bold d-block">{props.circle2Value}</span>
               {props.circle2}
             </div>
           </div>
@@ -24,7 +24,7 @@ const Circles = (props) => {
         <Col xs={6} sm={3} lg={3}>
           <div class="circle mb-4">
             <div class="circle-txt">
-              <span class="fs-3 fw-bold d-block mb-4">{props.circle3Value}</span>
+              <span class="fw-bold d-block">{props.circle3Value}</span>
               {props.circle3}
             </div>
           </div>
@@ -32,7 +32,7 @@ const Circles = (props) => {
         <Col xs={6} sm={3} lg={3}>
           <div class="circle mb-4">
             <div class="circle-txt">
-              <span class="fs-3 fw-bold d-block mb-4">{props.circle4Value}</span>
+              <span class="fw-bold d-block">{props.circle4Value}</span>
               {props.circle4}
             </div>
           </div>

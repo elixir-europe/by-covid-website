@@ -3,7 +3,7 @@
 @import "../node_modules/bootstrap/scss/variables";
 
 // 2. Include any default variable overrides here
-// Note: unable to alter SASS maps as described here:
+// Note: I was unable to alter SASS maps as described here:
 // https://getbootstrap.com/docs/5.0/customize/sass/#add-to-map and in many
 // forum posts. Perhaps React Bootstrap is different?
 $primary: #DB316C; // red
@@ -21,7 +21,6 @@ $h1-font-size: 4rem;
 $h2-font-size: 2.75rem;
 $font-family-sans-serif: "IBM Plex Sans",Helvetica,Arial,sans-serif;
 
-
 // 3. Include remainder of required Bootstrap stylesheets
 @import "../node_modules/bootstrap/scss/mixins";
 
@@ -33,34 +32,11 @@ $font-family-sans-serif: "IBM Plex Sans",Helvetica,Arial,sans-serif;
 @import "../node_modules/bootstrap/scss/containers";
 @import "../node_modules/bootstrap/scss/grid";
 
-nav.navbar {
-  box-shadow: 0 0 10px rgba(0,0,0,0.50);
-  background: $body-bg;
-  text-transform: uppercase;
-  padding: .75em 0;
-  font-size: 0.9rem;
-  .row {
-    width: 100%;
-  }
-  .dropdown-menu a {
-    text-transform: none;
-  }
-  .navbar-nav .nav-link, .dropdown-item {
-      color: $body-color;
-  }
-  .navbar-nav .nav-link:hover {
-    color: $primary;
-  }
-  .dropdown-item:hover {
-    transition: color 0.3s, background-color 0.3s;
-  }
-  .dropdown-item:focus, .dropdown-item:hover {
-    color: $primary;
-    background-color: $body-bg;
-  }
-}
 
-// Extending Bootstrap classes
+/*
+* Extending Bootstrap classes. They're not extreme enough, but we want to keep
+* the defaults.
+*/
 .py-6 {
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -79,18 +55,23 @@ nav.navbar {
   line-height: 2.25;
 }
 
-.w-60 {width: 100%;}
-@media (min-width: 1024px) {
-  .w-60 {
-    width: 60%;
-    margin: 0 auto;
-  }
+
+/*
+* Space and position rules
+*/
+.container.full-width {
+  width:100%;
+  max-width:none;
+  padding-left:0;
+  padding-right:0
 }
 
-
+main {
+  margin-top: 6rem;
+}
 
 // Default Bootstrap spacers are too small, but want to keep them.
-// Note: couldn't extend the SASS spacer map.
+// This class adds the space between the main components of the page.
 .big-top-space {
   margin-top: 5rem;
 }
@@ -100,6 +81,134 @@ nav.navbar {
   left: 50%;
 }
 
+.w-60 {width: 100%;}
+@media (min-width: 1024px) {
+  .w-60 {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+
+// To keep a button inline with an input field
+.inline-button {
+   position: relative;
+   left: 5px;
+   top: -2px;
+}
+
+
+/*
+* Typography
+*/
+h1 {
+  font-weight: 600;
+}
+
+// Heading 2 style in the <main> section. This has an arrow in front of it and
+// a slash after it. These element resize on smaller screen and disappear on
+// the smallest screen (because they wrap on long headings).
+main h2 {
+  font-weight: 600;
+  margin-bottom: $spacer * 2;
+  margin-top: $spacer * 5;
+}
+
+// Only show the arrow and forward slash from this point.
+@media (min-width: 768px) {
+  main h2 {
+    background: url("./images/by-covid-arrow.svg") no-repeat left 75%;
+    background-size: 35px auto;
+    padding-left: 45px;
+    &:after {
+      content: url("./images/by-covid-bar.svg");
+      transform: scale(0.8);
+      position: relative;
+      top: 5px;
+      margin: 0 0 0 15px;
+      display: inline-block;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  main h2 {
+    background-size: 55px auto;
+    padding-left: 75px;
+    &:after {
+      margin: 0 0 0 25px;
+    }
+  }
+}
+
+
+/*
+* Component rules
+*/
+
+// For the social icons
+.social:hover {
+  background: $primary;
+}
+
+// Submit button
+.btn-primary {
+    color: $light;
+    background-color: $primary;
+    border-color: $primary;
+    &:hover {
+      background-color: $secondary;
+      border-color: $secondary;
+    }
+}
+
+// Main navigation
+nav.navbar {
+  box-shadow: 0 0 10px rgba(0,0,0,0.50);
+  background: $body-bg;
+  text-transform: uppercase;
+  padding: .75em 0;
+  font-size: 0.9rem;
+  .row {
+    width: 100%;
+  }
+  .dropdown-menu a {
+    text-transform: none;
+  }
+  .navbar-nav .nav-link, .dropdown-item {
+      color: $dark;
+  }
+  .navbar-nav .nav-link:hover {
+    color: $primary;
+  }
+  .dropdown-item:hover {
+    transition: color 0.3s, background-color 0.3s;
+  }
+  .dropdown-item:focus, .dropdown-item:hover {
+    color: $primary;
+    background-color: $body-bg;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+      padding-right: 1.2rem;
+      padding-left: 1.2rem;
+  }
+}
+
+// Adds the active colour. The nav container has a class indicating the page
+// e.g. 'home' for the home page. This is added from the frontmatter.
+.home .home, .about .about a.dropdown-toggle,
+.outcomes .outcomes  a.dropdown-toggle {
+    color: $primary !important;
+}
+
+// Can be removed?
+// .navbar-light .navbar-nav .nav-link {
+//     color: $dark;
+// }
+
+// Main footer
 footer {
   background: $dark;
   color: $light;
@@ -123,87 +232,7 @@ footer {
   }
 }
 
-.social:hover {
-  background: $primary;
-}
-
-.btn-primary {
-    color: $light;
-    background-color: $primary;
-    border-color: $primary;
-    &:hover {
-      background-color: $secondary;
-      border-color: $secondary;
-    }
-}
-
- .inline-button {
-   position: relative;
-   left: 5px;
-   top: -2px;
-}
-
-@media (min-width: 992px) {
-  .navbar-expand-lg .navbar-nav .nav-link {
-      padding-right: 1.2rem;
-      padding-left: 1.2rem;
-  }
-}
-
-.home .home, .about .about a.dropdown-toggle,
-.outcomes .outcomes  a.dropdown-toggle,   {
-    color: $primary !important;
-}
-
-.navbar-light .navbar-nav .nav-link {
-    color: $dark;
-}
-
-main {
-  margin-top: 6rem;
-}
-
-h1 {
-  font-weight: 600;
-}
-
-main h2 {
-  font-weight: 600;
-  margin-bottom: $spacer * 2;
-  margin-top: $spacer * 5;
-  background: url("./images/by-covid-arrow.svg") no-repeat left 75%;
-  background-size: 55px auto;
-  padding-left: 75px;
-  &:after {
-    content: url("./images/by-covid-bar.svg");
-    display: inline-block;
-    margin: 0 0 0 25px;
-  }
-}
-
-@media (max-width: 992px) {
-  main h2 {
-    background-size: 35px auto;
-    padding-left: 45px;
-    &:after {
-      transform: scale(0.8);
-      position: relative;
-      top: 5px;
-      margin: 0 0 0 15px;
-    }
-  }
-}
-
-@media (max-width: 576px) {
-  main h2 {
-    background-size: 0;
-    padding-left: 0;
-    &:after {
-      content: '';
-    }
-  }
-}
-
+// For the key stats circles
 .circle {
   width: 100%;
   border-radius: 50%;
@@ -215,6 +244,10 @@ main h2 {
     display: block;
     padding-bottom: 100%;
   }
+  span {
+    font-size: $h2-font-size;
+    margin-bottom: 2rem; // mb-
+  }
   .circle-txt {
     position: absolute;
     bottom: 40%;
@@ -223,10 +256,15 @@ main h2 {
   }
 }
 
-// To remove native horizontal padding on Bootstrap containers
-.container.full-width {
-  width:100%;
-  max-width:none;
-  padding-left:0;
-  padding-right:0
+@media (min-width: 768px) {
+  .circle {
+    span {
+      font-size: $h3-font-size;
+      margin-bottom: 1.5rem;
+    }
+    .circle-txt {
+      position: absolute;
+      bottom: 43%;
+    }
+  }
 }
