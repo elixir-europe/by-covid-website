@@ -9,6 +9,7 @@ imageAlt: A description of the image.
 import { Link } from 'gatsby'
 import Astro from '../components/image'
 import Circles from '../components/circles'
+import Numbers from '../components/numbers'
 
 <div class="w-60">
 
@@ -27,9 +28,8 @@ Ultimately, it will improve European readiness for future pandemics, enhance gen
 
 [Pdf to download](https://docs.google.com/document/d/1ZdYWb6HXc849RTER2p5IAzjFXSAojjab_tku9q1GX6M/edit#)  (complete project summary)
 
-## BY-COVID in numbers
-
 <Circles
+  circlesTitle = "BY-COVID in numbers"
   circle1      = "Euros"
   circle1Value = "12M"
   circle2      = "Partners"
@@ -39,5 +39,13 @@ Ultimately, it will improve European readiness for future pandemics, enhance gen
   circle4      = "Months"
   circle4Value = "36"
 />
-
 </div>
+
+<Numbers
+  numbersTitle = "Objectives"
+  one          = "Enable storage, sharing, access, analysis and processing of research data and other digital research objects from outbreak research."
+  two          = "Mobilise and expose viral and human infectious disease data from national centres."
+  three        = "Link FAIR data and metadata on SARS-CoV-2 and COVID-19."
+  four         = "Develop digital tools and data analytics for pandemic and outbreak preparedness, including tracking genomic variations of SARS-CoV-2 and identifying new variants of concern."
+  five         = "Contribute to the Horizon Europe European Open Science Cloud (EOSC) Partnership & European Health Data Space (EHDS)."
+/>

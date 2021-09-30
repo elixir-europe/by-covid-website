@@ -84,7 +84,7 @@ main {
 .w-60 {width: 100%;}
 @media (min-width: 1024px) {
   .w-60 {
-    width: 60%;
+    width: 50%;
     margin: 0 auto;
   }
 }
@@ -107,35 +107,47 @@ h1 {
 // Heading 2 style in the <main> section. This has an arrow in front of it and
 // a slash after it. These element resize on smaller screen and disappear on
 // the smallest screen (because they wrap on long headings).
-main h2 {
-  font-weight: 600;
-  margin-bottom: $spacer * 2;
-  margin-top: $spacer * 5;
+main {
+  h2 {
+    font-weight: 600;
+    margin-bottom: $spacer * 2;
+    margin-top: $spacer * 5;
+  }
+  .bg-dark h2 {
+    padding-left: 20px;
+  }
 }
 
 // Only show the arrow and forward slash from this point.
 @media (min-width: 768px) {
-  main h2 {
-    background: url("./images/by-covid-arrow.svg") no-repeat left 75%;
-    background-size: 35px auto;
-    padding-left: 45px;
-    &:after {
-      content: url("./images/by-covid-bar.svg");
-      transform: scale(0.8);
-      position: relative;
-      top: 5px;
-      margin: 0 0 0 15px;
-      display: inline-block;
+  main {
+    h2 {
+      background: url("./images/by-covid-arrow.svg") no-repeat left 75%;
+      background-size: 35px auto;
+      padding-left: 45px;
+      &:after {
+        content: url("./images/by-covid-bar.svg");
+        transform: scale(0.8);
+        position: relative;
+        top: 5px;
+        margin: 0 0 0 15px;
+        display: inline-block;
+      }
     }
   }
 }
 
 @media (min-width: 992px) {
-  main h2 {
-    background-size: 55px auto;
-    padding-left: 75px;
-    &:after {
-      margin: 0 0 0 25px;
+  main {
+    h2 {
+      background-size: 55px auto;
+      padding-left: 75px;
+      &:after {
+        margin: 0 0 0 25px;
+      }
+    }
+    .bg-dark h2 {
+      padding-left: 75px;
     }
   }
 }
@@ -259,12 +271,26 @@ footer {
 @media (min-width: 768px) {
   .circle {
     span {
-      font-size: $h3-font-size;
-      margin-bottom: 1.5rem;
+      font-size: 2rem;
+      margin-bottom: 1.75rem;
     }
     .circle-txt {
       position: absolute;
-      bottom: 43%;
+      bottom: 40%;
     }
+  }
+}
+
+.number {
+  position: relative;
+  padding-top: 5rem;
+  margin-top: 2rem;
+  span {
+    position: absolute;
+    color: $gray-700;
+    font-size: 8rem;
+    top: -4.5rem;
+    left: 30%;
+    z-index: 0;
   }
 }
