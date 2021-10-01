@@ -56,7 +56,7 @@ const Layout = ({ location,children, pageContext, ...props }) => (
         </Container>
         <Container fluid>
           <Row>
-            <Col className="g-md-0">
+            <Col>
             <div class="visually-hidden-focusable"><a href="#content">Skip to main content</a></div>
             <main>
               <article id="content">

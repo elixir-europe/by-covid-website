@@ -97,6 +97,12 @@ main {
    top: -2px;
 }
 
+.bottom-link {
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+}
+
 
 /*
 * Typography
@@ -123,6 +129,7 @@ main {
 @media (min-width: 768px) {
   main {
     h2 {
+      margin-left: 1rem;
       background: url("./images/by-covid-arrow.svg") no-repeat left 75%;
       background-size: 35px auto;
       padding-left: 45px;
@@ -135,12 +142,16 @@ main {
         display: inline-block;
       }
     }
+    .bg-dark h2 {
+      padding-left: 45px;
+    }
   }
 }
 
 @media (min-width: 992px) {
   main {
     h2 {
+      margin-left: 0;
       background-size: 55px auto;
       padding-left: 75px;
       &:after {
@@ -339,9 +350,11 @@ footer {
   visibility: hidden;
 }
 
-// `Progress bar`
+// Progress bar
 .bar-progress {
   position: relative;
+  // Compensate for absolutely positioned labels.
+  margin-bottom: 9rem;
   .progress {
     background-color: $white;
     .progress-bar {

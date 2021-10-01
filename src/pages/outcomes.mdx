@@ -7,6 +7,7 @@ imageOg: /images/og-image.jpg
 imageAlt: A description of the image.
 ---
 
+import { Card, Container, Row, Col} from 'react-bootstrap'
 import Progress from '../components/progress-bar'
 
 <div class="w-60">
@@ -15,11 +16,48 @@ import Progress from '../components/progress-bar'
 <!-- Every month is 2.77% of progress! Round this up. -->
 <Progress
   progressTitle = "Progress"
-  progress="20"
+  progress      = "20" /* Update the number (integer) */
 />
 
 
+<!-- Publications -->
 
+## Publications
+
+<Container>
+  <Row>
+    <Col className="d-flex align-items-stretch"  xs={12} sm={12} lg={6}>
+      <Card className="mb-4">
+        <Card.Body className="position-relative">
+          <Card.Subtitle className="text-black-50">22 Oct 2021 | on Zenodo</Card.Subtitle>
+          <Card.Title as="h3" className="mt-3 fw-bold fs-4 lh-sm">Impact Of Extrinsic Motivation On Intrinsic Motivation</Card.Title>
+          <Card.Text className="mb-5 mt-3">
+           Some quick example text to build on the card title and make up the bulk of
+           the card's content.
+          </Card.Text>
+          <div class="bottom-link"><a href="https://mysite.com"  aria-label="Read the paper on the Zenodo website">
+           Read more
+          </a></div>
+        </Card.Body>
+      </Card>
+    </Col>
+    <Col className="d-flex align-items-stretch" xs={12} sm={12} lg={6}>
+    <Card className="mb-4">
+      <Card.Body className="position-relative">
+        <Card.Subtitle className="text-black-50">22 Oct 2021 | on Zenodo</Card.Subtitle>
+        <Card.Title as="h3" className="mt-3 fw-bold fs-4 lh-sm">Impact Of Extrinsic Motivation On Intrinsic Motivation</Card.Title>
+        <Card.Text className="mb-5 mt-3">
+         Some quick example text to build on the card title and make up the bulk of
+         the card's content.
+        </Card.Text>
+        <div class="bottom-link"><a href="https://mysite.com" aria-label="Read the paper on the Zenodo website">
+          Read more
+        </a></div>
+      </Card.Body>
+    </Card>
+    </Col>
+  </Row>
+</Container>
 
 
 
