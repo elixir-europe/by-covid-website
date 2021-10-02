@@ -1,16 +1,24 @@
-// Required
+
+// 1. Custom values for the Bootstrap SASS maps
+$theme-colors: (
+  "primary":    #DB316C, // Red
+  "secondary":  #4B9BD9, // Blue
+  "dark":       #1D1D1D  // Near black (for header text)
+);
+
+$grays: (
+  "700": #4A4A4A,
+);
+
+// 2. Import variables
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
 
-// 2. Include any default variable overrides here
-// Note: I was unable to alter SASS maps as described here:
-// https://getbootstrap.com/docs/5.0/customize/sass/#add-to-map and in many
-// forum posts. Perhaps React Bootstrap is different?
-$primary: #DB316C; // red
-$secondary: #4B9BD9; // blue
-
+// 3. Override variables
+$primary: #DB316C;
+$secondary: #4B9BD9;
 $dark: #1D1D1D;
-$gray-700: #4A4A4A;
+
 $body-bg: #F3F3F3;
 $body-color: #4A4A4A;
 
@@ -20,7 +28,6 @@ $link-hover-color: $primary;
 $h1-font-size: 4rem;
 $h2-font-size: 2.75rem;
 $font-family-sans-serif: "IBM Plex Sans",Helvetica,Arial,sans-serif;
-
 
 // 3. Include remainder of required Bootstrap stylesheets
 @import "../node_modules/bootstrap/scss/mixins";
@@ -32,7 +39,6 @@ $font-family-sans-serif: "IBM Plex Sans",Helvetica,Arial,sans-serif;
 @import "../node_modules/bootstrap/scss/images";
 @import "../node_modules/bootstrap/scss/containers";
 @import "../node_modules/bootstrap/scss/grid";
-
 
 /*
 * Extending Bootstrap classes. They're not extreme enough, but we want to keep
@@ -109,6 +115,7 @@ main {
 */
 h1 {
   font-weight: 600;
+  padding: 1.5rem 0;
 }
 
 // Heading 2 style in the <main> section. This has an arrow in front of it and
@@ -148,6 +155,7 @@ main {
   }
 }
 
+// Tweak the arrow and slash size and spacing for larger screens.
 @media (min-width: 992px) {
   main {
     h2 {
@@ -372,4 +380,42 @@ footer {
     right: 0;
     text-align: right;
   }
+}
+
+// Tables
+table th {
+  color: $body-color;
+}
+
+.home .container-fluid main {
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 0;
+    position: relative;
+    padding-top: 45px;
+    margin-top: 8rem;
+    color: white;
+    // &:before {
+    //   content: url("./images/by-covid-icon.svg");
+    //   transform: scale(0.75);
+    //   position: absolute;
+    //   top: -2.5rem;;
+    //   left: 45%;
+    //   margin: 0;
+    //   display: inline-block;
+    // }
+    background: url("./images/by-covid-icon.svg") no-repeat 50% 0;
+    background-size: 45px auto;
+
+  }
+}
+
+
+body.home {
+
+  background: rgb(218,54,110);
+background: linear-gradient(90deg, rgba(218,54,110,1) 18%, rgba(86,150,208,1) 100%);
+  background-size: cover;
+
 }

@@ -13,7 +13,7 @@ const Footer = () => {
       <footer class="big-top-space py-7 bg-dark text-white">
       <Container>
        <Row>
-        <Col lg={4} xs={12}>
+        <Col lg={5} xs={12}>
           <img src={bycovidIcon} alt="BY-COVID icon" width="60" />
           <p class="mt-2 fs-7">Sign up to receive our quarterly newsletter for news, updates and
           outcomes.</p>

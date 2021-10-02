@@ -10,6 +10,8 @@ import Footer from './footer'
 //import Header from './header'
 import Seo from './seo'
 import Menu from './menu'
+import Helmet from 'react-helmet'
+
 
 //import { Button } from 'react-bootstrap';
 
@@ -38,8 +40,12 @@ const Layout = ({ location,children, pageContext, ...props }) => (
         }
       }
     `}
+
     render={data => (
       <>
+        <Helmet>
+          <body className={pageContext.frontmatter.class} />
+        </Helmet>
         <Seo
           title={pageContext.frontmatter.title}
           description={pageContext.frontmatter.description}
@@ -47,7 +53,7 @@ const Layout = ({ location,children, pageContext, ...props }) => (
           imageOg={pageContext.frontmatter.imageOg}
           imageAlt={pageContext.frontmatter.imageAlt}
         />
-        <Container className={pageContext.frontmatter.class}>
+        <Container>
           <Row>
            <Col>
             <Menu />
@@ -61,7 +67,7 @@ const Layout = ({ location,children, pageContext, ...props }) => (
             <main>
               <article id="content">
                 <div class="w-60">
-                  <h1 class="py-4">{pageContext.frontmatter.title}</h1>
+                  <h1>{pageContext.frontmatter.title}</h1>
                 </div>
                   {children}
               </article>
@@ -69,8 +75,7 @@ const Layout = ({ location,children, pageContext, ...props }) => (
             </Col>
           </Row>
         </Container>
-              <Footer />
-
+        <Footer />
       </>
     )}
   />
