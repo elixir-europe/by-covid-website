@@ -44,6 +44,10 @@ $font-family-sans-serif: "IBM Plex Sans",Helvetica,Arial,sans-serif;
 * Extending Bootstrap classes. They're not extreme enough, but we want to keep
 * the defaults.
 */
+.mt-10 {
+  margin-top: 15rem !important;
+}
+
 .py-6 {
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -426,6 +430,9 @@ table th {
     font-size: 2.5rem;
     margin-top: 6rem;
   }
+  input[type="submit"] {
+    background: $secondary;
+  }
 }
 
 .bg-semi-opaque {
@@ -463,6 +470,7 @@ body.home {
   }
   footer {
     margin-top: 0;
+
   }
 }
 
@@ -490,10 +498,11 @@ body.home {
 // }
 
 .halo-container {
-  background: url("./images/halo.svg") no-repeat 55% 0rem;
-  background-size: 75%;
+  background: url("./images/halo.svg") no-repeat 55% -1rem;
+  background-size: 65%;
   padding: 5.5rem 0 5.5rem;
   text-align: center;
+  margin-top: 8rem;
 }
 .covid-portal {
   margin: 0 auto;
@@ -509,6 +518,7 @@ body.home {
 .bg-challenge {
   // background: url("./images/home-lines.svg") no-repeat 50% 50px;
   // background-size: 60% auto;
+  margin-top: 5rem;
 }
 
 .home-intro {

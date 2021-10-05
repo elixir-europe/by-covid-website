@@ -37,7 +37,7 @@
   "license": "0BSD",
   "scripts": {
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
-    "build": "gatsby build",
+    "build": "gatsby build --prefix-paths",
     "develop": "rm -rf .cache/caches/gatsby-plugin-mdx && gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "gatsby develop",
