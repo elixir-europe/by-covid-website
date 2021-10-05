@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-pages-about-mdx",
+    "path": "/about/",
+    "result": {"pageContext":{"frontmatter":{"title":"About","description":"About the BY-COVID project, which aims to make data easier to share.","class":"about","imageTwitter":"/images/twitter-image.jpg","imageOg":"/images/og-image.jpg","imageAlt":"A description of the image."}}},
+    "staticQueryHashes": ["2516051163","881388122"]}
