@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkBY_COVID_website=self.webpackChunkBY_COVID_website||[]).push([[883],{9616:function(e,t,n){n.r(t);var l=n(7294);t.default=function(){return l.createElement("div",{class:"w-60"},l.createElement("h1",null,"Page not found"),l.createElement("p",null,"Sorry, we couldn't find that page. "))}}}]);
+//# sourceMappingURL=component---src-pages-404-js-ae5bb5294c9b783c2b4c.js.map
