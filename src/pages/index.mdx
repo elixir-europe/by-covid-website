@@ -7,13 +7,155 @@ imageOg: /images/og-image.jpg
 imageAlt: A description of the image.
 ---
 
-import { Container, Row, Col} from 'react-bootstrap'
+import { StaticImage } from 'gatsby-plugin-image'
+import { Container, Row, Col, Card} from 'react-bootstrap'
 import { Link } from 'gatsby'
 
-<div class="w-60 text-center bg-gradient">
+<div class="w-60 text-center home-intro">
 
+<div class="intro-container">
 The BeYond-COVID project aims to make COVID-19 data accessible to scientists in laboratories but also to anyone who can use it, such as medical staff in hospitals or government officials.
+
 Pursuing to go beyond SARS-CoV-2 data, the project will serve as the groundwork to make data from other infectious diseases open and accessible to everyone.
+</div>
+
+
+## The challenge
+
+The world has generated vast amounts of data in response to the COVID-19 pandemic, and still is generating more. However, identifying, connecting and integrating these for effective analysis remains a challenge.
+
+</div>
+<div class="bg-challenge big-top-space">
+<Container className="lh-sm data-sources">
+  <Row>
+    <Col className="data-source hospitals">
+      <div>
+        Hospitals
+      </div>
+    </Col>
+    <Col className="data-source medical">
+      Medical Centres
+    </Col>
+    <Col className="data-source public">
+      Public Health Laboratories
+    </Col>
+    <Col className="data-source research-infrastructures">
+      Research Infrastructures
+    </Col>
+    <Col className="data-source universities">
+      Universities
+    </Col>
+  </Row>
+  <Row>
+    <Col className="data-source consortia">
+      Consortia
+    </Col>
+    <Col className="data-source research-centres">
+      Research Centres
+    </Col>
+  </Row>
+</Container>
+
+
+
+
+<div class="bg-semi-opaque container full-width big-top-space text-body text-center">
+  <div class="w-60 text-center">
+
+  ## What we are doing
+
+<div class="what-doing-boxes">
+  <div class="box box1 bg-white text-body">
+    <h3 class="fs-6 fw-bold mb-1 text-primary">Mobilising data</h3>
+    <p>Making data easier to find and share</p>
+  </div>
+  <div class="box box2 bg-white text-body">
+    <h3 class="fs-6 fw-bold mb-1 text-primary">Using and analysing data</h3>
+    <p>Providing standardised data management and analysis  methods and protocols.</p>
+  </div>
+  <div class="box box3 bg-white text-body">
+    <h3 class="fs-6 fw-bold mb-1 bg-white text-primary">Connecting and exposing data</h3>
+    <p>Linking data across Europe. For instance, clinical data with viral data.</p>
+  </div>
+</div>
+
+<div class="halo-container mt-5">
+
+<div class="covid-portal bg-white">
+<h2 class="visually-hidden-focusable">COVID-19 Portal</h2>
+
+<p class="mb-0">Supporting the existing European COVID-19 Data Portal, which will connect existing virus data resources.</p>
+<p class="mb-0">The Portal offers access to open research data and access-controlled patient data.</p>
+<p class="mb-0 mt-2"><a href="https://covid-19.com">Read more</a></p>
+
+</div>
+</div>
+</div>
+
+</div>
+
+
+</div>
+
+  <div class="w-60 text-center">
+<h2>The outcomes</h2>
+
+The project will make data about SARS-CoV-2 and other viruses easier to access, aggregate and analyse. This will enable scientists to respond faster to new strains of SARS-CoV-2 or to new viruses. It will also help policy-makers assess the impact of the disease and take the most appropraites measures to protect people against new viral diseases.
+
+</div>
+
+<div class="bg-semi-opaque container full-width big-top-space text-body">
+
+<Container fluid>
+  <Row>
+    <Col className="text-start">
+     <h2 class="fs-3 lh-2 mb-2 ps-0">Want to learn more?</h2>
+     <p class="ps-0">Subscribe to our newsletter:</p>
+     <form action="" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate mb-5 mb-lg-0" target="_blank" novalidate>
+       <label htmlFor="mce-EMAIL" class="visually-hidden-focusable">Subscribe</label>
+       <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required />
+       <div class="visually-hidden" aria-hidden="true"><input type="text" name="b_751beffce2e491f94d6f66918_358aeb763b" tabindex="-1" value="" /></div>
+       <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-sm rounded-0 inline-button py-2"/>
+     </form>
+    </Col>
+    <Col>
+    <Card className="mb-4 d-flex align-items-stretch">
+      <Card.Body className="position-relative">
+        <Card.Title as="h3" className="mt-3 fw-bold fs-4 lh-sm">About</Card.Title>
+        <Card.Text className="mb-5 mt-3 px-0">
+         Discover the objectives, the structure of the project and the project partners.
+        </Card.Text>
+        <div class="bottom-link-right"><Link to="/about">About</Link></div>
+      </Card.Body>
+    </Card>
+    </Col>
+    <Col className="d-flex align-items-stretch">
+      <Card className="mb-4">
+        <Card.Body className="position-relative">
+          <Card.Title as="h3" className="mt-3 fw-bold fs-4 lh-sm">News & events</Card.Title>
+          <Card.Text className="mb-5 mt-3 px-0">
+           See the latest news, events and announcements.
+          </Card.Text>
+          <div class="bottom-link-right"><Link to="/news/events">News & events</Link></div>
+        </Card.Body>
+      </Card>
+    </Col>
+    <Col className="d-flex align-items-stretch">
+      <Card className="mb-4">
+        <Card.Body className="position-relative">
+          <Card.Title as="h3" className="mt-3 fw-bold fs-4 lh-sm">Outreach & media</Card.Title>
+          <Card.Text className="mb-5 mt-3 px-0">
+           The project logos, graphics and outreach activities.
+          </Card.Text>
+          <div class="bottom-link-right"><Link to="/outreach">Outreach & media</Link></div>
+        </Card.Body>
+      </Card>
+    </Col>
+  </Row>
+</Container>
+
+
+
 
 
 </div>

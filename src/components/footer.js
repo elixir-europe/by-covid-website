@@ -10,7 +10,7 @@ import youTubeIcon from "../images/youtube-icon.svg"
 const Footer = () => {
   return (
     <>
-      <footer class="big-top-space py-7 bg-dark text-white">
+      <footer class="py-7 bg-dark text-white">
       <Container>
        <Row>
         <Col lg={5} xs={12}>

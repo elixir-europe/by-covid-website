@@ -26,7 +26,7 @@ const Menu = () => {
               <NavDropdown.Item href="/outcomes/publications">Publications</NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href="/news-events" className="news-events">News & events</Nav.Link>
-            <Nav.Link href="/outreach" className="outreach">Outreach & media</Nav.Link>
+            <Nav.Link href="/outreach-media" className="outreach">Outreach & media</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

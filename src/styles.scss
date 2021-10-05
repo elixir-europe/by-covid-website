@@ -91,6 +91,13 @@ main {
 .w-60 {width: 100%;}
 @media (min-width: 1024px) {
   .w-60 {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1300px) {
+  .w-60 {
     width: 45%;
     margin: 0 auto;
   }
@@ -109,6 +116,11 @@ main {
   bottom: 1rem;
 }
 
+.bottom-link-right {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+}
 
 /*
 * Typography
@@ -132,9 +144,14 @@ main {
   }
 }
 
+.post h2 {
+  font-size: 2rem;
+  margin: 3rem 0 1rem;
+}
+
 // Only show the arrow and forward slash from this point.
 @media (min-width: 768px) {
-  main {
+  .about main, .outcomes main, .news-events main, .outreach main  {
     h2 {
       margin-left: 1rem;
       background: url("./images/by-covid-arrow.svg") no-repeat left 75%;
@@ -157,17 +174,17 @@ main {
 
 // Tweak the arrow and slash size and spacing for larger screens.
 @media (min-width: 992px) {
-  main {
+   .about main, .outcomes main, .news-events main, .outreach main {
     h2 {
       margin-left: 0;
-      background-size: 55px auto;
-      padding-left: 75px;
+      background-size: 45px auto;
+      padding-left: 60px;
       &:after {
-        margin: 0 0 0 25px;
+        margin: 0 0 0 20px;
       }
     }
     .bg-dark h2 {
-      padding-left: 75px;
+      padding-left: 60px;
     }
   }
 }
@@ -178,8 +195,11 @@ main {
 */
 
 // For the social icons
-.social:hover {
-  background: $primary;
+.social {
+  transition: opacity .2s;
+  &:hover {
+    opacity: 0.4;
+  }
 }
 
 // Submit button
@@ -231,7 +251,8 @@ nav.navbar {
 // Adds the active colour. The nav container has a class indicating the page
 // e.g. 'home' for the home page. This is added from the frontmatter.
 .home .home, .about .about a.dropdown-toggle,
-.outcomes .outcomes  a.dropdown-toggle {
+.outcomes .outcomes  a.dropdown-toggle, .news-events .news-events
+, .outreach .outreach, .post .news-events {
     color: $primary !important;
 }
 
@@ -242,6 +263,7 @@ nav.navbar {
 
 // Main footer
 footer {
+  margin-top: 5rem;
   background: $dark;
   color: $light;
 
@@ -256,12 +278,13 @@ footer {
   a:visited {
     color: $light;
   }
-  input {
-    padding: 6px 10px;
-  }
   li {
     padding-bottom: .70rem;
   }
+}
+
+input[type="email"] {
+  padding: 6px 10px;
 }
 
 // For the key stats circles
@@ -390,32 +413,192 @@ table th {
 .home .container-fluid main {
   h1 {
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-bottom: 0;
     position: relative;
-    padding-top: 45px;
+    padding-top: 60px;
     margin-top: 8rem;
     color: white;
-    // &:before {
-    //   content: url("./images/by-covid-icon.svg");
-    //   transform: scale(0.75);
-    //   position: absolute;
-    //   top: -2.5rem;;
-    //   left: 45%;
-    //   margin: 0;
-    //   display: inline-block;
-    // }
-    background: url("./images/by-covid-icon.svg") no-repeat 50% 0;
-    background-size: 45px auto;
-
+    background: url("./images/by-covid-icon-white.svg") no-repeat 50% 0;
+    background-size: 50px auto;
   }
+  h2 {
+    font-size: 2.5rem;
+    margin-top: 6rem;
+  }
+}
+
+.bg-semi-opaque {
+  background: rgba(255, 255, 255, 0.6);
 }
 
 
 body.home {
-
   background: rgb(218,54,110);
-background: linear-gradient(90deg, rgba(218,54,110,1) 18%, rgba(86,150,208,1) 100%);
+  background: linear-gradient(90deg, rgba(218,54,110,1) 18%, rgba(86,150,208,1) 100%);
   background-size: cover;
+  color: $white;
+  .bg-semi-opaque {
+    padding: 4rem 0 3em;
+    margin-top: 15rem;
+    h2 {
+      margin-top: 0;
+      padding: 1rem;
+    }
+    p {
+      padding: 0 1rem;
+    }
+  }
+  .what-doing-boxes {
+    position: relative;
+    height: 35rem;
+    text-align: center;
 
+    .box {
+      padding: 20px 10px 10px;
+      width: 300px;
+      margin: 5rem auto;
+      box-shadow: 5px 5px 3px 0px rgba(0, 0, 0, .2);
+    }
+  }
+  footer {
+    margin-top: 0;
+  }
+}
+
+// .what-doing-boxes {
+//   position: relative;
+//   height: 50rem;
+//   .box {
+//     display: inline-block;
+//     padding: 20px 10px 0;
+//     width: 300px;
+//     position: absolute;
+//   }
+//   .box1 {
+//     top: 5rem;
+//     left: -20%;
+//   }
+//   .box2 {
+//     top: 20rem;
+//     left: 20%;
+//   }
+//   .box3 {
+//     top: 35rem;
+//     left: 70%;
+//   }
+// }
+
+.halo-container {
+  background: url("./images/halo.svg") no-repeat 55% 0rem;
+  background-size: 75%;
+  padding: 5.5rem 0 5.5rem;
+  text-align: center;
+}
+.covid-portal {
+  margin: 0 auto;
+  position: relative;
+  height: 320px;
+  width: 320px;
+  border-radius: 50%;
+  padding: 80px 20px 0;
+  background: url("./images/covid19-data-portal-logo.svg") no-repeat 50% 50px;
+  background-size: 180px auto;
+}
+
+.bg-challenge {
+  // background: url("./images/home-lines.svg") no-repeat 50% 50px;
+  // background-size: 60% auto;
+}
+
+.home-intro {
+  margin-bottom: 0;
+}
+
+// .covid-portal {
+//   margin: 0 auto;
+//   position: relative;
+//   height: 320px;
+//   width: 320px;
+//   display: table-cell;
+//     vertical-align: middle;
+//   border-radius: 50%; /* may require vendor prefixes */
+//   padding: 50px 20px 0;
+//   background: url("./images/covid19-data-portal-logo.svg") no-repeat 50% 50px;
+//   background-size: 180px auto;
+//   &::before {
+//     content: " ";
+//     background: url("./images/halo.svg");
+//     position: absolute;
+//     left: 0;
+//     top: 0;
+//     height:25rem;
+//     background-size: 500px;
+//   }
+// }
+.data-source {
+  padding: 4.75rem 1rem 1rem;
+position: relative;
+text-align: center;
+background-image: url("./images/hospital.svg");
+background-position: center top;
+background-size: auto 80px;
+background-repeat: no-repeat;
+}
+
+.medical {
+  background-image: url("./images/medical-centre.svg");
+}
+
+.public {
+  background-image: url("./images/lab.svg");
+  background-size: auto 75px;
+}
+
+.research-infrastructures {
+  background-image: url("./images/research-infrastructure.svg");
+  background-size: auto 75px;
+}
+
+.universities {
+  background-image: url("./images/university.svg");
+  background-size: auto 75px;
+}
+
+.consortia {
+  background-image: url("./images/consortia.svg");
+  background-size: auto 95px;
+}
+
+.research-centres {
+  background-image: url("./images/research-centre.svg");
+  background-size: auto 85px;
+}
+
+body.news-events {
+  .icons {
+    position: relative;
+    top: -2rem;
+  }
+  .social-media .form {
+    position: absolute;
+    right: 0;
+    top: -3.7rem;
+    width: 300px;
+    .btn {
+      background: $secondary;
+      border-color: $secondary;
+      &:hover {
+        background: $primary;
+        border-color: $primary;
+      }
+    }
+  }
+}
+
+.breadcrumb li:first-child {
+  padding-right: 20px;
+  &:after {
+    content: ' >';
+  }
 }
