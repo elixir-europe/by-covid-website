@@ -60,15 +60,19 @@ const Layout = ({ location,children, pageContext, ...props }) => (
            </Col>
           </Row>
         </Container>
-        <Container fluid>
+        <Container className="full-width">
           <Row>
             <Col>
             <div class="visually-hidden-focusable"><a href="#content">Skip to main content</a></div>
             <main>
               <article id="content">
-                <div class="w-60">
+              <Container>
+                <Row>
+                 <Col>
                   <h1>{pageContext.frontmatter.title}</h1>
-                </div>
+                  </Col>
+                 </Row>
+               </Container>
                   {children}
               </article>
             </main>

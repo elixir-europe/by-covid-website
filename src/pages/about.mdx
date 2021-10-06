@@ -11,9 +11,11 @@ import Astro from '../components/image'
 import Circles from '../components/circles'
 import Numbers from '../components/numbers'
 import BoxGrid from '../components/box-grid'
+import { Container, Row, Col} from 'react-bootstrap'
 
-<div class="w-60">
-
+<Container>
+  <Row>
+   <Col xs={12} sm={12} lg={7}>
 <h2 class="mt-1">Project summary</h2>
 
 BeYond-COVID (BY-COVID) aims to provide comprehensive open data on SARS-CoV-2 and other infectious diseases across scientific, medical, public health and policy domains. It will strongly emphasise mobilising raw viral sequences, helping to identify and monitor the spread of SARS-CoV-2 variants. The project will further accelerate access to SARS-CoV-2 and COVID-19 and linking patient and research data.
@@ -29,6 +31,10 @@ Ultimately, it will improve European readiness for future pandemics, enhance gen
 
 [Complete project summary](https://docs.google.com/document/d/1ZdYWb6HXc849RTER2p5IAzjFXSAojjab_tku9q1GX6M/edit#)  (PDF)
 
+</Col>
+</Row>
+</Container>
+
 
 <!-- BY-COVID IN NUMBERS -->
 <Circles
@@ -42,7 +48,7 @@ Ultimately, it will improve European readiness for future pandemics, enhance gen
   circle4      = "Months"
   circle4Value = "36"
 />
-</div>
+
 
 
 <!-- OBJECTIVES -->
@@ -117,10 +123,16 @@ Ultimately, it will improve European readiness for future pandemics, enhance gen
    box8Subtext      = "Objectives ?"
 />
 
-<div class="w-60">
+<Container>
+  <Row>
+   <Col>
+<span class="anchor" id="partners"></span>
 
 ## Partners
 
 
 ## Alignment with other projects and initiatives
-</div>
+
+</Col>
+</Row>
+</Container>

@@ -4,11 +4,15 @@ import { Container, Row, Col} from 'react-bootstrap'
 const Numbers = (props) => {
   return (
     <div class="bg-dark text-light py-5 big-top-space">
+
       <span class="anchor" id="objectives"></span>
-      <div class="w-60">
-        <h2 class="mt-0">{props.numbersTitle}</h2>
-        <Container fluid>
-          <Row>
+      <Container className="pt-5">
+        <Row>
+         <Col>
+          <h2 class="mt-0">{props.numbersTitle}</h2>
+         </Col>
+        </Row>
+          <Row className="number-row">
             <Col xs={12} sm={4} lg={4}>
               <div class="number mb-4">
                   <span class="fw-bold d-block">1</span>
@@ -43,7 +47,6 @@ const Numbers = (props) => {
             </Col>
           </Row>
         </Container>
-      </div>
     </div>
   )
 }

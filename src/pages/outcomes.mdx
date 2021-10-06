@@ -10,7 +10,11 @@ imageAlt: A description of the image.
 import { Table, Card, Container, Row, Col} from 'react-bootstrap'
 import Progress from '../components/progress-bar'
 
-<div class="w-60">
+<Container>
+  <Row>
+   <Col>
+
+
 
 <!-- Progress -->
 <!-- Every month is 2.77% of progress! Round this up. -->
@@ -19,9 +23,16 @@ import Progress from '../components/progress-bar'
   progress      = "20" /* Update the number (integer) */
 />
 
+
+
+
+<span class="anchor" id="publications"></span>
+
 <!-- Publications -->
 
 ## Publications
+
+
 
 <Container className="full-width">
   <Row>
@@ -58,50 +69,50 @@ import Progress from '../components/progress-bar'
   </Row>
 </Container>
 
+
+<span class="anchor" id="deliverables"></span>
+
 <!-- Deliverables and milestones -->
 
 ## Deliverables and milestones
 
+
+
+<Container>
+<Row>
+<Col>
+
 ### Deliverables
 
 <Table className="bg-white mb-5">
-  <thead>
-    <tr>
-      <th className="border-secondary">Name</th>
-      <th className="w-25 border-secondary">Due</th>
-    </tr>
-  </thead>
   <tbody>
     <tr>
       <td>1</td>
-      <td>December 2021</td>
     </tr>
     <tr>
       <td>2</td>
-      <td>March 2022</td>
     </tr>
   </tbody>
 </Table>
+</Col>
+<Col>
 
 ### Milestones
 
 <Table className="bg-white">
-  <thead>
-    <tr>
-    <th className="border-secondary">Name</th>
-    <th className="w-25 border-secondary">Due</th>
-    </tr>
-  </thead>
   <tbody>
     <tr>
       <td>1</td>
-      <td>December 2021</td>
     </tr>
     <tr>
       <td>2</td>
-      <td>March 2022</td>
     </tr>
   </tbody>
 </Table>
+</Col>
+</Row>
+</Container>
 
-</div>
+</Col>
+</Row>
+</Container>

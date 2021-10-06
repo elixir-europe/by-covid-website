@@ -1,12 +1,22 @@
 import * as React from 'react'
-import { Accordion} from 'react-bootstrap'
+import { Accordion, Container, Row, Col} from 'react-bootstrap'
+
 
 const BoxGrid = (props) => {
   return (
-      <div class="w-60">
-        <span class="anchor" id="structure"></span>
-        <h2 class="mt-5">{props.boxGridTitle}</h2>
+    <div class="mt-5">
+    <span class="anchor" id="structure"></span>
+    <Container>
+      <Row>
+       <Col>
+        <h2>{props.boxGridTitle}</h2>
         <p class="mb-4">The project work is divided into <strong>8 Work Packages (WPs)</strong>:</p>
+        </Col>
+       </Row>
+     </Container>
+     <Container>
+       <Row>
+         <Col xs={12} sm={12} lg={6}>
         <Accordion>
           <Accordion.Item eventKey="0">
             <Accordion.Header as="h3" class="bg-dark text-light">{props.box1Title}</Accordion.Header>
@@ -17,7 +27,9 @@ const BoxGrid = (props) => {
             </Accordion.Body>
           </Accordion.Item>
         </Accordion>
-        <Accordion className="mt-5">
+        </Col>
+        <Col>
+        <Accordion>
           <Accordion.Item eventKey="0">
             <Accordion.Header as="h3">{props.box2Title}</Accordion.Header>
             <Accordion.Body className="pt-4">
@@ -27,7 +39,11 @@ const BoxGrid = (props) => {
             </Accordion.Body>
           </Accordion.Item>
         </Accordion>
-        <Accordion className="mt-5">
+        </Col>
+        </Row>
+        <Row>
+          <Col>
+        <Accordion>
           <Accordion.Item eventKey="0">
             <Accordion.Header as="h3" class="bg-dark text-light">{props.box3Title}</Accordion.Header>
             <Accordion.Body className="pt-4">
@@ -37,7 +53,9 @@ const BoxGrid = (props) => {
             </Accordion.Body>
           </Accordion.Item>
         </Accordion>
-        <Accordion className="mt-5">
+        </Col>
+        <Col>
+        <Accordion>
           <Accordion.Item eventKey="0">
             <Accordion.Header as="h3">{props.box4Title}</Accordion.Header>
             <Accordion.Body className="pt-4">
@@ -47,7 +65,11 @@ const BoxGrid = (props) => {
             </Accordion.Body>
           </Accordion.Item>
         </Accordion>
-        <Accordion className="mt-5">
+        </Col>
+        </Row>
+        <Row>
+          <Col>
+        <Accordion>
           <Accordion.Item eventKey="0">
             <Accordion.Header as="h3" class="bg-dark text-light">{props.box5Title}</Accordion.Header>
             <Accordion.Body className="pt-4">
@@ -57,7 +79,9 @@ const BoxGrid = (props) => {
             </Accordion.Body>
           </Accordion.Item>
         </Accordion>
-        <Accordion className="mt-5">
+        </Col>
+        <Col>
+        <Accordion>
           <Accordion.Item eventKey="0">
             <Accordion.Header as="h3">{props.box6Title}</Accordion.Header>
             <Accordion.Body className="pt-4">
@@ -67,7 +91,11 @@ const BoxGrid = (props) => {
             </Accordion.Body>
           </Accordion.Item>
         </Accordion>
-        <Accordion className="mt-5">
+        </Col>
+        </Row>
+        <Row>
+        <Col>
+        <Accordion>
           <Accordion.Item eventKey="0">
             <Accordion.Header as="h3" class="bg-dark text-light">{props.box7Title}</Accordion.Header>
             <Accordion.Body className="pt-4">
@@ -77,7 +105,9 @@ const BoxGrid = (props) => {
             </Accordion.Body>
           </Accordion.Item>
         </Accordion>
-        <Accordion className="mt-5">
+        </Col>
+        <Col>
+        <Accordion>
           <Accordion.Item eventKey="0">
             <Accordion.Header as="h3">{props.box8Title}</Accordion.Header>
             <Accordion.Body className="pt-4">
@@ -87,7 +117,10 @@ const BoxGrid = (props) => {
             </Accordion.Body>
           </Accordion.Item>
         </Accordion>
-    </div>
+        </Col>
+        </Row>
+        </Container>
+</div>
   )
 }
 

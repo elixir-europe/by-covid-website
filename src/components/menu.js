@@ -22,8 +22,8 @@ const Menu = () => {
             </NavDropdown>
             <NavDropdown title="Outcomes" id="basic-nav-dropdown" className="outcomes">
               <NavDropdown.Item href="/outcomes">Outcomes</NavDropdown.Item>
-              <NavDropdown.Item href="/outcomes/deliverables-milestones">Deliverables & milestones</NavDropdown.Item>
-              <NavDropdown.Item href="/outcomes/publications">Publications</NavDropdown.Item>
+              <NavDropdown.Item href="/outcomes#publications">Publications</NavDropdown.Item>
+              <NavDropdown.Item href="/outcomes#deliverables">Deliverables & milestones</NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href="/news-events" className="news-events">News & events</Nav.Link>
             <Nav.Link href="/outreach-media" className="outreach">Outreach & media</Nav.Link>

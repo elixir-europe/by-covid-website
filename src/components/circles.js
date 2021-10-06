@@ -4,8 +4,13 @@ import { Container, Row, Col} from 'react-bootstrap'
 const Circles = (props) => {
   return (
     <div>
+    <Container>
+      <Row>
+       <Col>
       <h2>{props.circlesTitle}</h2>
-      <Container className="full-width">
+      </Col>
+      </Row>
+
         <Row>
           <Col xs={6} sm={3} lg={3}>
             <div class="circle mb-4">

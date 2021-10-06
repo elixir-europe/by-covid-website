@@ -27,25 +27,25 @@ const Footer = () => {
         <Col>
           <h2 class="mb-3 fs-6 fw-bold"><Link to="/about" className="text-light">About</Link></h2>
           <ul class="list-unstyled fs-7">
-            <li><Link to="/about/objectives">Objectives</Link></li>
-            <li><Link to="/about/structure">Structure</Link></li>
-            <li><Link to="/about/partners">Partners</Link></li>
+            <li><Link to="/about#objectives">Objectives</Link></li>
+            <li><Link to="/about#structure">Structure</Link></li>
+            <li><Link to="/about#partners">Partners</Link></li>
           </ul>
         </Col>
         <Col>
           <h2 class="mb-3 fs-6 fw-bold"><Link to="/outcomes" className="text-light">Outcomes</Link></h2>
           <ul class="list-unstyled fs-7">
-            <li><Link to="/outcomes/deliverables-milestones">Deliverables & milestones</Link></li>
-            <li><Link to="/outcomes/publications">Publications</Link></li>
+            <li><Link to="/outcomes#deliverables">Deliverables & milestones</Link></li>
+            <li><Link to="/outcomes#publications">Publications</Link></li>
           </ul>
           <h2 class="mb-0 fs-6 fw-bold"><Link to="/news-events" className="text-light">News & events</Link></h2>
         </Col>
         <Col>
           <h2 class="mb-3 fs-6 fw-bold"><Link to="/outreach-media" className="text-light">Outreach & media</Link></h2>
           <ul class="list-unstyled fs-7">
-            <li><Link to="/outreach-media/contact">Contact us</Link></li>
-            <li><Link to="/outreach-media/logo">Logo & acknowledgements</Link></li>
-            <li><Link to="/outreach-media/outreach">Outreach materials</Link></li>
+            <li><Link to="/outreach-media#contact">Contact us</Link></li>
+            <li><Link to="/outreach-media#logo">Logo & acknowledgements</Link></li>
+            <li><Link to="/outreach-media#outreach">Outreach materials</Link></li>
           </ul>
         </Col>
        </Row>

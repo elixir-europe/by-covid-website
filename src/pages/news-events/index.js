@@ -16,27 +16,6 @@ import youTubeIcon from "../../images/youtube-coloured.svg"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 
-// const renderCard = (card, index) => {
-//   return (
-//     <Card className="mb-4">
-//         <Card.Body className="position-relative">
-//           <Card.Subtitle className="text-black-50">{data.allMdx.edges.node.frontmatter.postType} | 22 Oct 2021</Card.Subtitle>
-//           <Card.Title as="h3" className="mt-3 fw-bold fs-4 lh-sm">A first news story</Card.Title>
-//           <Card.Text className="mb-5 mt-3">
-//            A bit of blurb about the news story.
-//           </Card.Text>
-//           <div class="bottom-link"><a href="https://mysite.com"  aria-label="Read the paper on the Zenodo website">
-//            Read more
-//           </a></div>
-//         </Card.Body>
-//       </Card>
-//   )
-// }
-
-
-
-
-
 const PostsIndex = ({ data }) => {
   const { edges: posts } = data.allMdx
 
@@ -46,6 +25,7 @@ const PostsIndex = ({ data }) => {
       title="News & events"
       description="Find out the latest news and enents from the COVID-19 project."
     />
+
     <Helmet>
       <body className="news-events" />
     </Helmet>
@@ -55,14 +35,16 @@ const PostsIndex = ({ data }) => {
         <Menu />
        </Col>
       </Row>
-    </Container>
-    <Container fluid>
+</Container>
+<Container className="ful-width">
       <Row>
-        <Col>
+        <Col className="px-0">
         <div class="visually-hidden-focusable"><a href="#content">Skip to main content</a></div>
         <main>
           <article id="content">
-            <div class="w-60">
+          <Container fluid>
+            <Row>
+              <Col>
               <h1>News & events</h1>
               <div class="position-relative social-media">
               <div>
@@ -82,9 +64,10 @@ const PostsIndex = ({ data }) => {
              </form>
              </div>
              </div>
-            </div>
-            <div class="w-60">
-            <Container className="mt-5 big-top-space full-width">
+             </Col>
+            </Row>
+          </Container>
+            <Container className="mt-5 big-top-space ">
               <Row>
               {posts.map(({ node: post }) => (
                <Col className="align-items-stretch d-flex"  xs={12} sm={12} lg={6}>
@@ -105,7 +88,6 @@ const PostsIndex = ({ data }) => {
               ))}
               </Row>
               </Container>
-            </div>
             </article>
           </main>
           </Col>

@@ -22,7 +22,7 @@ export default function PostTemplate({ data: { mdx } }) {
 
     <div>
     <Helmet>
-      <body className={mdx.frontmatter.class} />
+      <body class={mdx.frontmatter.class} />
     </Helmet>
     <Seo
       title={mdx.frontmatter.title}
@@ -44,27 +44,30 @@ export default function PostTemplate({ data: { mdx } }) {
         <div class="visually-hidden-focusable"><a href="#content">Skip to main content</a></div>
         <main>
           <article id="content">
-            <div class="w-60">
+          <Container>
+            <Row>
+             <Col xs={12} sm={12} lg={7}>
             <Breadcrumb>
               <Breadcrumb.Item href="/news-events">News & events</Breadcrumb.Item>
             </Breadcrumb>
             <h1 class="fs-1 mb-3 pb-0">{mdx.frontmatter.title}</h1>
             <p>{mdx.frontmatter.date}</p>
-            <GatsbyImage image={image} alt={mdx.frontmatter.imageAlt} />
-            </div>
-            <div class="w-60 mt-5">
+            <GatsbyImage image={image} alt={mdx.frontmatter.imageAlt} class="mb-5"/>
+
             <MDXProvider>
               <MDXRenderer frontmatter={mdx.frontmatter}>{mdx.body}</MDXRenderer>
             </MDXProvider>
             <p class="text-end mt-5"><a href="/news-events">News & events</a></p>
-            </div>
+            </Col>
+            </Row>
+            </Container>
           </article>
         </main>
         </Col>
       </Row>
     </Container>
     <Footer />
-    </div>
+   </div>
   )
 }
 export const pageQuery = graphql`
