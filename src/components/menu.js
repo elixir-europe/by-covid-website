@@ -13,20 +13,20 @@ const Menu = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link href="/" className="home">Home</Nav.Link>
+            <Nav.Link as={Link} to="/" className="home">Home</Nav.Link>
             <NavDropdown title="About" id="basic-nav-dropdown" className="about">
-              <NavDropdown.Item href="/about">About</NavDropdown.Item>
-              <NavDropdown.Item href="/about#objectives">Objectives</NavDropdown.Item>
-              <NavDropdown.Item href="/about#structure">Structure</NavDropdown.Item>
-              <NavDropdown.Item href="/about#partners">Partners</NavDropdown.Item>
+              <NavDropdown.Item  as={Link} to="/about">About</NavDropdown.Item>
+              <NavDropdown.Item  as={Link} to="/about#objectives">Objectives</NavDropdown.Item>
+              <NavDropdown.Item  as={Link} to="/about#structure">Structure</NavDropdown.Item>
+              <NavDropdown.Item  as={Link} to="/about#partners">Partners</NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="Outcomes" id="basic-nav-dropdown" className="outcomes">
-              <NavDropdown.Item href="/outcomes">Outcomes</NavDropdown.Item>
-              <NavDropdown.Item href="/outcomes#publications">Publications</NavDropdown.Item>
-              <NavDropdown.Item href="/outcomes#deliverables">Deliverables & milestones</NavDropdown.Item>
+              <NavDropdown.Item  as={Link} to="/outcomes">Outcomes</NavDropdown.Item>
+              <NavDropdown.Item  as={Link} to="/outcomes#publications">Publications</NavDropdown.Item>
+              <NavDropdown.Item  as={Link} to="/outcomes#deliverables">Deliverables & milestones</NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="/news-events" className="news-events">News & events</Nav.Link>
-            <Nav.Link href="/outreach-media" className="outreach">Outreach & media</Nav.Link>
+            <Nav.Link  as={Link} to="/news-events" className="news-events">News & events</Nav.Link>
+            <Nav.Link  as={Link} to="/outreach-media" className="outreach">Outreach & media</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

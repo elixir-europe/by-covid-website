@@ -23,7 +23,7 @@ const PostsIndex = ({ data }) => {
     <div>
     <Seo
       title="News & events"
-      description="Find out the latest news and enents from the COVID-19 project."
+      description="Find out the latest news and events from the BY-COVID project."
     />
 
     <Helmet>
@@ -67,7 +67,7 @@ const PostsIndex = ({ data }) => {
              </Col>
             </Row>
           </Container>
-            <Container className="mt-5 big-top-space ">
+            <Container className="news-cards">
               <Row>
               {posts.map(({ node: post }) => (
                <Col className="align-items-stretch d-flex"  xs={12} sm={12} lg={6}>

@@ -44,11 +44,11 @@ function Seo({ description, lang, meta, imageTwitter, imageOg, imageAlt, title }
               },
               {
                 property: 'og:image:width',
-                content: "1200",
+                content: "1024",
               },
               {
                 property: 'og:image:height',
-                content: "630",
+                content: "512",
               },
               {
                 name: 'twitter:card',
@@ -114,6 +114,7 @@ const detailsQuery = graphql`
         node {
           frontmatter {
             title
+            description
           }
         }
       }
