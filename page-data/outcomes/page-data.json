@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-pages-outcomes-mdx",
     "path": "/outcomes/",
-    "result": {"pageContext":{"frontmatter":{"title":"Outcomes","description":"Deliverables, publications  and other outputs of the BY-COVID project.","class":"outcomes","imageTwitter":"/images/twitter-image.jpg","imageOg":"/images/og-image.jpg","imageAlt":"A description of the image."}}},
-    "staticQueryHashes": ["2516051163","881388122"]}
+    "result": {"pageContext":{"frontmatter":{"title":"Outcomes","description":"Publications, deliveries and milestones and other outputs of the BY-COVID project.","class":"outcomes","imageTwitter":"/images/twitter-image.jpg","imageOg":"public/outcomes.png","imageAlt":"A description of the image."}}},
+    "staticQueryHashes": ["2134417434","2516051163"]}
