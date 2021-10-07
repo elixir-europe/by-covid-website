@@ -45,11 +45,11 @@ function Seo({ description, lang, meta, imageTwitter, imageOg, imageAlt, title }
               },
               {
                 property: 'og:image:width',
-                content: "1024",
+                content: "1200",
               },
               {
                 property: 'og:image:height',
-                content: "512",
+                content: "630",
               },
               {
                 name: 'twitter:card',

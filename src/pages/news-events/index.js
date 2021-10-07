@@ -12,7 +12,6 @@ import Menu from '../../components/menu.js'
 import { Container, Row, Col, Card} from 'react-bootstrap'
 import twitterIcon from "../../images/twitter-coloured.svg"
 import linkedinIcon from "../../images/linkedin-coloured.svg"
-import youTubeIcon from "../../images/youtube-coloured.svg"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 
@@ -53,8 +52,7 @@ const PostsIndex = ({ data }) => {
               <div>
                <div class="icons">
                   <a href="linkedin.html" class="d-inline-block"><img src={linkedinIcon} alt="LinkedIn icon" width="40" class="social" /></a>
-                  <a href="linkedin.html" class="d-inline-block ms-2"><img src={twitterIcon} alt="Twitter icon" width="40" class="social" /></a>
-                  <a href="linkedin.html" class="d-inline-block ms-3"><img src={youTubeIcon} alt="YouTube icon" width="40" class="social py-1" /></a>
+                  <a href="https://twitter.com/BYCOVID_eu" class="d-inline-block ms-2"><img src={twitterIcon} alt="Twitter icon" width="40" class="social" /></a>
                 </div>
                </div>
              <div class="form">

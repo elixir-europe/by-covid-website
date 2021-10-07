@@ -5,7 +5,6 @@ import bycovidIcon from "../images/by-covid-icon.svg"
 import euIcon from "../images/eu-icon.svg"
 import twitterIcon from "../images/twitter-icon.svg"
 import linkedinIcon from "../images/linkedin-icon.svg"
-import youTubeIcon from "../images/youtube-icon.svg"
 
 const Footer = () => {
   return (
@@ -65,8 +64,7 @@ const Footer = () => {
          <Col xs={{ order: 'first' }} lg={{ order: 'last' }}>
            <div class="text-center pe-0 pe-lg-4 mb-4 mb-lg-0">
               <a href="linkedin.html" class="d-inline-block"><img src={linkedinIcon} alt="LinkedIn icon" width="45" class="social" /></a>
-              <a href="linkedin.html" class="d-inline-block ms-3"><img src={twitterIcon} alt="Twitter icon" width="45" class="social" /></a>
-              <a href="linkedin.html" class="d-inline-block ms-4"><img src={youTubeIcon} alt="YouTube icon" width="45" class="social py-1" /></a>
+              <a href="https://twitter.com/BYCOVID_eu" class="d-inline-block ms-3"><img src={twitterIcon} alt="Twitter icon" width="45" class="social" /></a>
             </div>
          </Col>
         </Row>

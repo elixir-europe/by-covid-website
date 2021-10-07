@@ -1,7 +1,6 @@
 import * as React from 'react'
 import { Accordion, Container, Row, Col} from 'react-bootstrap'
 
-
 const BoxGrid = (props) => {
   return (
     <div class="mt-5">
@@ -13,8 +12,14 @@ const BoxGrid = (props) => {
         <p class="mb-4">The project work is divided into <strong>8 Work Packages (WPs)</strong>:</p>
         </Col>
        </Row>
+       <Row className="justify-content-md-center">
+        <Col lg={8}>
+        <img src={'/wp-diagram.svg'} alt="How the Work Packages collaborate in the project" />
+        <p class="mt-4 fs-5 text-center">The Work Packages will <strong>mobilise</strong> SARS-CoV-2 and other infectious disease data (i.e. make it easier to access and transfer), <strong>connect and expose the data</strong> (make it searchable via the <a href="https://www.covid19dataportal.org/">COVID-19 Data Portal</a>), and <strong>use and analyse the data</strong> (provide standardised data management and analysis methods and protocols).</p>
+         </Col>
+        </Row>
      </Container>
-     <Container>
+     <Container className="mt-5">
        <Row>
          <Col xs={12} sm={12} lg={6}>
         <Accordion>
@@ -101,7 +106,6 @@ const BoxGrid = (props) => {
             <Accordion.Body className="pt-4">
               <p class="pt-2">{props.box7Description}</p>
               <p><strong>WP leaders:</strong> {props.box7Names}</p>
-              <div class="text-end lh-1">{props.box7Subtext}</div>
             </Accordion.Body>
           </Accordion.Item>
         </Accordion>
@@ -113,7 +117,6 @@ const BoxGrid = (props) => {
             <Accordion.Body className="pt-4">
               <p class="pt-2">{props.box8Description}</p>
               <p><strong>WP leaders:</strong> {props.box8Names}</p>
-              <div class="text-end lh-1">{props.box8Subtext}</div>
             </Accordion.Body>
           </Accordion.Item>
         </Accordion>

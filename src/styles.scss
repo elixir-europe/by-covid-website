@@ -489,34 +489,15 @@ body.home {
       box-shadow: 5px 5px 3px 0px rgba(0, 0, 0, .2);
     }
   }
+  .bottom-link-right {
+    padding-right: 28px;
+    background: url("./images/by-covid-arrow.svg") no-repeat 100% center;
+    background-size: 20px auto ;
+  }
   footer {
     margin-top: 0;
-
   }
 }
-
-// .what-doing-boxes {
-//   position: relative;
-//   height: 50rem;
-//   .box {
-//     display: inline-block;
-//     padding: 20px 10px 0;
-//     width: 300px;
-//     position: absolute;
-//   }
-//   .box1 {
-//     top: 5rem;
-//     left: -20%;
-//   }
-//   .box2 {
-//     top: 20rem;
-//     left: 20%;
-//   }
-//   .box3 {
-//     top: 35rem;
-//     left: 70%;
-//   }
-// }
 
 .halo-container {
   background: url("./images/halo.svg") no-repeat 55% -1rem;

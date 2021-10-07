@@ -9,7 +9,7 @@ module.exports = {
     author: `Katharina Lauer, Xenia Sitja Perez, Erin Haskell, Martin Cook (ELIXIR Hub)`,
     siteUrl: `https://by-covid.eu/`,
     image: "/images/by-covid-logo.svg",
-    twitterUsername: "@by-covid",
+    twitterUsername: "@BYCOVID_eu",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
