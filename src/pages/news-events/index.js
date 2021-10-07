@@ -24,6 +24,9 @@ const PostsIndex = ({ data }) => {
     <Seo
       title="News & events"
       description="Find out the latest news and events from the BY-COVID project."
+      imageTwitter = "public/twitter-news.jpg"
+      imageOg = "public/og-news.jpg"
+      imageAlt = "Image for the BY-COVID News page."
     />
 
     <Helmet>

@@ -111,6 +111,10 @@ main {
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 // To keep a button inline with an input field
 .inline-button {
    position: relative;
