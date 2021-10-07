@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-pages-outreach-media-mdx",
     "path": "/outreach-media/",
-    "result": {"pageContext":{"frontmatter":{"title":"Outreach and media","description":"The outreach activities and media resources (logos and other visuals) of the BY-COVID project.","class":"outreach","imageTwitter":"public/twitter-outreach.jpg","imageOg":"public/og-outreach.jpg","imageAlt":"Image for the BY-COVID Outreach page."}}},
+    "result": {"pageContext":{"frontmatter":{"title":"Outreach and media","description":"The outreach activities and media resources (logos and other visuals) of the BY-COVID project.","class":"outreach","imageTwitter":"/twitter-outreach.jpg","imageOg":"/og-outreach.jpg","imageAlt":"Image for the BY-COVID Outreach page."}}},
     "staticQueryHashes": ["2134417434","2516051163"]}

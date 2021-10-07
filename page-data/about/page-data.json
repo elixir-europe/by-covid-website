@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-pages-about-mdx",
     "path": "/about/",
-    "result": {"pageContext":{"frontmatter":{"title":"About","description":"About the BY-COVID project, which aims to make data on COVID-19 (SARS-CoV-2) and other infectious diseases open and accessible to everyone.","class":"about","imageTwitter":"public/twitter-about.jpg","imageOg":"public/og-about.jpg","imageAlt":"Image for the BY-COVID About page."}}},
+    "result": {"pageContext":{"frontmatter":{"title":"About","description":"About the BY-COVID project, which aims to make data on COVID-19 (SARS-CoV-2) and other infectious diseases open and accessible to everyone.","class":"about","imageTwitter":"/twitter-about.jpg","imageOg":"/og-about.jpg","imageAlt":"Image for the BY-COVID About page."}}},
     "staticQueryHashes": ["2134417434","2516051163"]}
