@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-pages-index-mdx",
     "path": "/",
-    "result": {"pageContext":{"frontmatter":{"title":"BY-COVID","description":"The BeYond-COVID (BY-COVID) project aims to provide comprehensive open data on SARS-CoV-2, and other infectious diseases across scientific, medical and public health domains.","class":"home","imageTwitter":"public/twitter-image.jpg","imageOg":"public/og-home.png","imageAlt":"A description of the image."}}},
+    "result": {"pageContext":{"frontmatter":{"title":"BY-COVID","description":"The BeYond-COVID (BY-COVID) project aims to provide comprehensive open data on SARS-CoV-2, and other infectious diseases across scientific, medical and public health domains.","class":"home","imageTwitter":"public/twitter-home.jpg","imageOg":"/og-home.jpg","imageAlt":"Image for the BY-COVID website."}}},
     "staticQueryHashes": ["2134417434","2516051163"]}

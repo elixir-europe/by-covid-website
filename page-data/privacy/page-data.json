@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-pages-privacy-mdx",
     "path": "/privacy/",
-    "result": {"pageContext":{"frontmatter":{"title":"Privacy","description":"The privacy statement of the BY-COVID project website, including what data we collect and how you can control that.","class":"meta","imageTwitter":"/images/twitter-image.jpg","imageOg":"public/og-home.png","imageAlt":"A description of the image."}}},
+    "result": {"pageContext":{"frontmatter":{"title":"Privacy","description":"The privacy statement of the BY-COVID project website, including what data we collect and how you can control that.","class":"meta","imageTwitter":"public/twitter-home.jpg","imageOg":"public/og-home.jpg","imageAlt":"Image for the BY-COVID website."}}},
     "staticQueryHashes": ["2134417434","2516051163"]}
