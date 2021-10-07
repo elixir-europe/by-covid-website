@@ -84,7 +84,7 @@ export const pageQuery = graphql`
       imageAlt
       newsImage {
         childImageSharp {
-          gatsbyImageData(width: 800, height: 375)
+          gatsbyImageData(width: 800, height: 375, quality: 90)
         }
       }
       date
