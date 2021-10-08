@@ -20,11 +20,7 @@ const Menu = () => {
               <NavDropdown.Item  as={Link} to="/about#structure">Structure</NavDropdown.Item>
               <NavDropdown.Item  as={Link} to="/about#partners">Partners</NavDropdown.Item>
             </NavDropdown>
-            <NavDropdown title="Outcomes" id="basic-nav-dropdown" className="outcomes">
-              <NavDropdown.Item  as={Link} to="/outcomes">Outcomes</NavDropdown.Item>
-              <NavDropdown.Item  as={Link} to="/outcomes#publications">Publications</NavDropdown.Item>
-              <NavDropdown.Item  as={Link} to="/outcomes#deliverables">Deliverables & milestones</NavDropdown.Item>
-            </NavDropdown>
+            <Nav.Link  as={Link} to="/outcomes" className="outcomes">Outcomes</Nav.Link>
             <Nav.Link  as={Link} to="/news-events" className="news-events">News & events</Nav.Link>
             <Nav.Link  as={Link} to="/outreach-media" className="outreach">Outreach & media</Nav.Link>
           </Nav>

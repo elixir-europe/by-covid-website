@@ -1,0 +1,12 @@
+partners:
+  - name: Joe Bloggs
+    url: https://erd.com
+    image: ../images/fish.jpg
+
+  - name: Fred Smith
+    url: https://chhh.com
+    image: ../images/example.jpg
+
+  - name: Joe Books
+    url: https://chh3.com
+    image: ../images/example2.jpg

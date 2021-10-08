@@ -272,7 +272,7 @@ nav.navbar {
 // Adds the active colour. The nav container has a class indicating the page
 // e.g. 'home' for the home page. This is added from the frontmatter.
 .home .home, .about .about a.dropdown-toggle,
-.outcomes .outcomes  a.dropdown-toggle, .news-events .news-events
+.outcomes .outcomes, .news-events .news-events
 , .outreach .outreach, .post .news-events {
     color: $primary !important;
 }
