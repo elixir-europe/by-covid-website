@@ -511,6 +511,7 @@ body.home {
   .bg-semi-opaque {
     padding: 4rem 0 3em;
     width: 100%;
+    position: relative;
     h2 {
       margin-top: 0;
       padding: 1rem 0 0;
@@ -518,6 +519,20 @@ body.home {
     p {
       padding: 0 1rem;
     }
+    // &:before {
+    //   content: "";
+    //   position: absolute;
+    //   top: 0;
+    //   left: 0;
+    //   width: 100%;
+    //   height: 100%;
+    //   opacity: .3;
+    //   z-index: -1;
+    //   background-image: url("./images/halo-bw.svg");
+    //   background-position: center 50%;
+    //   background-size: auto 90%;
+    //   background-repeat: no-repeat;
+    // }
   }
   .what-doing-boxes {
     position: relative;
@@ -558,18 +573,23 @@ body.home {
     background: rgba(250,250,250,.8);
     color: black;
   }
-  background-image: url("./images/lines-down4.svg");
+  background-image: url("./images/lines-down.svg");
   background-position: center top;
   background-size: auto 120%;
   background-repeat: no-repeat;
 }
 
 .halo-container {
+  position: relative;
   background: url("./images/halo.svg") no-repeat 55% 50%;
-  background-size: 100%;
+  background-size: 110%;
   padding: 8rem 0 8rem;
   text-align: center;
   margin-top: 3rem;
+  .covid-portal {
+    box-shadow: 0 0 10px 5px #fff;
+    background: white;
+  }
 }
 
 @media (min-width: 567px) {
