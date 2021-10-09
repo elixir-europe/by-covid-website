@@ -9,7 +9,7 @@ const BoxGrid = (props) => {
       <Row>
        <Col>
         <h2>{props.boxGridTitle}</h2>
-        <p class="mb-4">The project work is divided into <strong>8 Work Packages (WPs)</strong>:</p>
+        <p class="mb-4 fs-5 text-center">The project work is divided into <strong>8 Work Packages (WPs)</strong>:</p>
         </Col>
        </Row>
        <Row className="justify-content-md-center">
