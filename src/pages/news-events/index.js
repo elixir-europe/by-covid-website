@@ -80,7 +80,7 @@ const PostsIndex = ({ data }) => {
                          <Card.Text className="mb-5 mt-3">
                           {post.frontmatter.description}
                          </Card.Text>
-                         <div class="bottom-link"><Link to={post.fields.slug}>
+                         <div class="bottom-link-right arrow-right"><Link to={post.fields.slug}>
                           Read more
                          </Link></div>
                        </Card.Body>

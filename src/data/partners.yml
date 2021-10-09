@@ -1,12 +1,93 @@
 partners:
-  - name: Joe Bloggs
-    url: https://erd.com
-    image: ../images/fish.jpg
 
-  - name: Fred Smith
-    url: https://chhh.com
-    image: ../images/example.jpg
+  - name: ADP Social Science Data Archives
+    url: https://www.adp.fdv.uni-lj.si/eng/
+    logo: ../images/adp.png
 
-  - name: Joe Books
-    url: https://chh3.com
-    image: ../images/example2.jpg
+  - name: CEITEC
+    url: https://www.ceitec.eu/
+    logo: ../images/ceitec.svg
+
+  - name: Centro Nacional de Biotecnología (CNB)
+    url: https://www.cnb.csic.es/index.php/en/
+    logo: ../images/cnb.svg
+
+  - name: CESSDA Consortium of European Social Science Data Archives
+    url: https://www.cessda.eu/
+    logo: ../images/cessda.svg
+
+  - name: Consejo Superior de Investigaciones Científicas (CSIC)
+    url: https://www.csic.es/en/csic
+    logo: ../images/csic.svg
+
+  - name: CRS4 Center for Advanced Studies, Research and Development in Sardinia
+    url: https://www.crs4.it/
+    logo: ../images/crs4.svg
+
+  - name: Czech Social Science Data Archive (CSDA)
+    url: https://archiv.soc.cas.cz/en
+    logo: ../images/csda.svg
+
+  - name: EMPIRICA
+    url: https://empirica.com/home/
+    logo: ../images/empirica.svg
+
+  - name: Euro-BioImaging
+    url: https://www.eurobioimaging.eu/
+    logo: ../images/eurobioimaging.svg
+
+  - name: Finnish Institute for Health and Welfare (THL)
+    url: https://thl.fi/en/web/thlfi-en
+    logo: ../images/thl.svg
+
+  - name: Instituto Aragonés de Ciencias de la Salud
+    url: https://www.iacs.es/
+    logo: ../images/iacs.svg
+
+  - name: Instruct-ERIC
+    url: https://instruct-eric.com/
+    logo: ../images/instruct-eric.svg
+
+  - name: Istituto Zooprofilattico Sperimentale delle Venezie (IZSVe)
+    url: https://www.izsvenezie.com/
+    logo: ../images/izsve.png
+
+  - name: Microbial Resource Research Infrastructure (MIRRI)
+    url: https://www.mirri.org/
+    logo: ../images/mirri.svg
+
+  - name: Ospedale Policlinico San Martino
+    url: https://www.ospedalesanmartino.it/
+    logo: ../images/smartino.png
+
+  - name: SIB Swiss Institute of Bioinformatics
+    url: https://www.sib.swiss/
+    logo: ../images/sib.svg
+
+  - name: Tampere University
+    url: https://www.tuni.fi/en
+    logo: ../images/tampere-university.svg
+
+  - name: Technical University of Denmark (DTU)
+    url: https://www.dtu.dk/English
+    logo: ../images/dtu.png
+
+  - name: Uit The Arctic University of Norway
+    url: https://en.uit.no/om
+    logo: ../images/uit.png
+
+  - name: University of Luxembourg
+    url: https://wwwen.uni.lu/
+    logo: ../images/university-of-luxembourg.svg
+
+  - name: University of Oxford
+    url: https://www.ox.ac.uk/
+    logo: ../images/university-of-oxford.svg
+
+  - name: University of Tartu
+    url: https://www.ut.ee/en
+    logo: ../images/university-tartu.png
+
+  - name: Uppsala University
+    url: https://www.uu.se/en/
+    logo: ../images/uppsala-university.svg
