@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { StaticQuery, graphql, withPrefix } from 'gatsby'
+import { StaticQuery, graphql } from 'gatsby'
 import { Container, Row, Col} from 'react-bootstrap'
 import "@fontsource/ibm-plex-sans"
 import "@fontsource/ibm-plex-sans/600.css"
@@ -46,7 +46,6 @@ const Layout = ({ location,children, pageContext, ...props }) => (
       <>
         <Helmet>
           <body className={pageContext.frontmatter.class} />
-          <script src={withPrefix('mailer-lite.js')} type="text/javascript" />
         </Helmet>
         <Seo
           title={pageContext.frontmatter.title}

@@ -16,8 +16,7 @@ const Footer = () => {
        <Row>
         <Col lg={5} xs={12}>
           <img src={bycovidIcon} alt="BY-COVID icon" width="60" />
-          <p class="mt-2 fs-7">Sign up to receive our quarterly newsletter for news, updates and outcomes.</p>
-        <NewsletterForm />
+          <NewsletterForm />
         </Col>
         <Col>
           <h2 class="mb-3 fs-6 fw-bold"><Link to="/about" className="text-light">About</Link></h2>
@@ -44,7 +43,7 @@ const Footer = () => {
           </ul>
         </Col>
        </Row>
-       <Row className="pt-4 pt-lg-5 no-gutters">
+       <Row className="pt-4 pt-lg-3 no-gutters">
          <Col lg={6}>
               <img src={euIcon} alt="EU icon" width="40" class="float-start mt-1 me-3 mb-5 mb-md-0"/>
               <p class="fs-7 mt-0 ms-5">BY-COVID receives funding from the European Union’s Horizon Europe Research and Innovation Programme under grant agreement number 101046203.</p>

@@ -14,6 +14,7 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
+    `dangerously-set-html-content`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
