@@ -467,11 +467,12 @@ input[type="email"] {
 // For partners
 .partner {
   transition: box-shadow .2s;
+  background: white;
   &:hover {
-    box-shadow: 0 0 4px rgba(0,0,0,0.20);
+    box-shadow: 0 0 4px rgba(0,0,0,0.40);
   }
   img {
-    max-width: 350px;
+    max-width: 360px;
 
   }
 }

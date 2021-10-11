@@ -18,7 +18,9 @@ const Menu = () => {
               <NavDropdown.Item  as={Link} to="/about">About</NavDropdown.Item>
               <NavDropdown.Item  as={Link} to="/about#objectives">Objectives</NavDropdown.Item>
               <NavDropdown.Item  as={Link} to="/about#structure">Structure</NavDropdown.Item>
+              <NavDropdown.Item  as={Link} to="/about#data-platform">COVID-19 Data Platform</NavDropdown.Item>
               <NavDropdown.Item  as={Link} to="/about#partners">Partners</NavDropdown.Item>
+              <NavDropdown.Item  as={Link} to="/about#external-projects">Alignment with external projects</NavDropdown.Item>
             </NavDropdown>
             <Nav.Link  as={Link} to="/outcomes" className="outcomes">Outcomes</Nav.Link>
             <Nav.Link  as={Link} to="/news-events" className="news-events">News & events</Nav.Link>

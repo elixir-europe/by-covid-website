@@ -12,6 +12,7 @@ import Numbers from '../components/numbers'
 import BoxGrid from '../components/box-grid'
 import Partners from '../components/partners'
 import { Container, Row, Col} from 'react-bootstrap'
+import { StaticImage } from 'gatsby-plugin-image'
 
 
 <Container>
@@ -43,7 +44,7 @@ Ultimately, it will improve European readiness for future pandemics, enhance gen
   circle2      = "Partners"
   circle2Value = "53"
   circle3      = "Countries"
-  circle3Value = "20"
+  circle3Value = "19"
   circle4      = "Months"
   circle4Value = "36"
 />
@@ -120,20 +121,48 @@ Ultimately, it will improve European readiness for future pandemics, enhance gen
    box8Names        = "Juan Arenas Marquez, Andrea Troncoso (ELIXIR Hub)"
 />
 
+
+
+
+
 <Container>
   <Row>
    <Col>
+   <span class="anchor" id="data-platform"></span>
+
+
+
+   <h2>The European COVID-19 Data Platform</h2>
+
+Rapid and open sharing of data greatly accelerates research and discovery, which is essential to respond to the COVID-19 pandemic. The European Commission, EMBL’s European Bioinformatics Institute (EMBL-EBI) and ELIXIR, together with EU Member States and other research partners, operate a dedicated European COVID-19 Data Platform. This Platform enables the rapid collection and comprehensive data sharing of available research data from different sources for the European and global research communities.
+
+The European COVID-19 Data Platform consists of three connected components:
+
+ 1. **[SARS-CoV-2 Data Hubs](https://www.covid19dataportal.org/data-hubs):** can be used to organise SARS-CoV-2 genomic sequence data at national, regional and institute levels. Upon release, this data can then be openly shared with the global research community via the COVID-19 Data Portal.
+
+ 2. **[Federated European Genome-phenome Archive](https://www.covid19dataportal.org/federated-ega):** provides secure, controlled access sharing of sensitive patient and COVID-19 research data.
+
+ 3. **[COVID-19 Data Portal](https://www.covid19dataportal.org/):**  brings together tools and SARS-CoV-2 viral and host datasets spanning genomics, proteins, imaging, drug compounds and publications, enabling researchers to access and analyse integrated COVID-19 data easily.
+
+The design of the BY-COVID project rests on this foundation, aiming to connect well-established data resources and deliver access to heterogeneous, yet interlinked and organised data, across domains and jurisdictions via the COVID-19 Data Platform components. Over the course of the project, emerging [national data portals](https://www.covid19dataportal.org/partners) will be linked to the COVID-19 Data Platform, thus establishing a federated digital space for infectious disease data.
+</Col>
+</Row>
+<Row>
+<Col>
 <span class="anchor" id="partners"></span>
 
 ## Partners
 
+The project has 53 partners across 19 countries.
+
 <Partners />
+
+<span class="anchor" id="external-projects"></span>
 
 ## Alignment with external projects and initiatives
 
 ### Infectious diseases projects
 
-* [GISAID](https://www.gisaid.org/)
 * [ReCoDID](https://recodid.eu/)
 * [Vaccelerate](https://vaccelerate.eu/)
 * [VEO](https://www.veo-europe.eu/)

@@ -1,20 +1,36 @@
 partners:
 
-  - name: ADP Social Science Data Archives
-    url: https://www.adp.fdv.uni-lj.si/eng/
-    logo: ../images/adp.png
+#  - name: ADP Social Science Data Archives
+#    url: https://www.adp.fdv.uni-lj.si/eng/
+#    logo: ../images/adp.png
+
+  - name: BBMRI-ERIC
+    url: https://www.bbmri-eric.eu/
+    logo: ../images/bbmri-eric.svg
+
+  - name: BSC Barcelona Supercomputing Center
+    url: https://www.bsc.es/
+    logo: ../images/bsc.svg
 
   - name: CEITEC
     url: https://www.ceitec.eu/
     logo: ../images/ceitec.svg
 
-  - name: Centro Nacional de Biotecnología (CNB)
-    url: https://www.cnb.csic.es/index.php/en/
-    logo: ../images/cnb.svg
+#  - name: Centro Nacional de Biotecnología (CNB)
+#    url: https://www.cnb.csic.es/index.php/en/
+#    logo: ../images/cnb.svg
 
   - name: CESSDA Consortium of European Social Science Data Archives
     url: https://www.cessda.eu/
     logo: ../images/cessda.svg
+
+  - name: CIRMMP
+    url: https://www.cerm.unifi.it/
+    logo: ../images/cirmmp.png
+
+  - name: CRG Center for Genomic Regulation
+    url: https://www.crg.eu/
+    logo: ../images/crg.png
 
   - name: Consejo Superior de Investigaciones Científicas (CSIC)
     url: https://www.csic.es/en/csic
@@ -28,9 +44,57 @@ partners:
     url: https://archiv.soc.cas.cz/en
     logo: ../images/csda.svg
 
+  - name: Technical University of Denmark (DTU)
+    url: https://www.dtu.dk/English
+    logo: ../images/dtu.png
+
+  - name: EATRIS
+    url: https://staging.eatris.eu/
+    logo: ../images/eatris.svg
+
+  - name: ECRIN
+    url: https://ecrin.org/
+    logo: ../images/ecrin.jpg
+
+  - name: EKKE
+    url: https://www.ekke.gr/
+    logo: ../images/ekke.png
+
+  - name: ELIXIR
+    url: https://elixir-europe.org
+    logo: ../images/elixir-logo.svg
+
+  - name: ELTE Eötvös Loránd University
+    url: https://www.elte.hu/en/
+    logo: ../images/elte.svg
+
+  - name: EMBL-EBI
+    url: https://www.ebi.ac.uk/
+    logo: ../images/embl-ebi.svg
+
+#  - name: EOSC Life Workflow Hub
+#    url: https://workflowhub.eu/programmes/6
+#    logo: ../images/eosc-life.svg
+
   - name: EMPIRICA
     url: https://empirica.com/home/
     logo: ../images/empirica.svg
+
+  - name: Erinha
+    url: https://www.erinha.eu/
+    logo: ../images/erinha.svg
+
+  - name: Erasmus MC
+    url: https://www.erasmusmc.nl/
+    logo: ../images/erasmus-mc.png
+
+  - name: EUI European University Institute
+    url: https://www.eui.eu/en/home
+    logo: ../images/eui.svg
+
+  - name: EUOS The European Observatory For ICT Standardisation
+    url: https://www.standict.eu/euos
+    logo: ../images/euos.svg
 
   - name: Euro-BioImaging
     url: https://www.eurobioimaging.eu/
@@ -39,6 +103,26 @@ partners:
   - name: Finnish Institute for Health and Welfare (THL)
     url: https://thl.fi/en/web/thlfi-en
     logo: ../images/thl.svg
+
+  - name: Fraunhofer
+    url: https://www.fraunhofer.de/en.html
+    logo: ../images/fraunhofer.svg
+
+  - name: Galaxy Europe
+    url: https://usegalaxy.eu/
+    logo: ../images/galaxy-eu.svg
+
+  - name: Gesundheit Österreich
+    url: https://goeg.at/
+    logo: ../images/gesundheit-osterreich.png
+
+  - name: Infrafrontier
+    url: https://www.infrafrontier.eu/
+    logo: ../images/infrafrontier.svg
+
+  - name: INMI
+    url: https://www.inmi.it/
+    logo: ../images/inmi.png
 
   - name: Instituto Aragonés de Ciencias de la Salud
     url: https://www.iacs.es/
@@ -52,6 +136,18 @@ partners:
     url: https://www.izsvenezie.com/
     logo: ../images/izsve.png
 
+  - name: IZSLER Istituto Zooprofilattico Sperimentale della Lombardia e Emilia Romagna
+    url: https://www.izsler.it/
+    logo: ../images/izsler.png
+
+  - name: KNAW The Royal Netherlands Academy of Arts and Sciences
+    url: https://www.knaw.nl/en
+    logo: ../images/knaw.jpg
+
+  - name: Lygature
+    url: https://www.lygature.org/
+    logo: ../images/lygature.svg
+
   - name: Microbial Resource Research Infrastructure (MIRRI)
     url: https://www.mirri.org/
     logo: ../images/mirri.svg
@@ -60,25 +156,73 @@ partners:
     url: https://www.ospedalesanmartino.it/
     logo: ../images/smartino.png
 
+  - name: Palacký University Olomouc
+    url: https://www.upol.cz/en/
+    logo: ../images/palacky-university.svg
+
+#  - name: RO Crate
+#    url: https://www.researchobject.org/ro-crate/
+#    logo: ../images/ro-crate.svg
+
+  - name: RIVM Dutch National Institute for Public Health and Environment
+    url: https://www.rivm.nl/en
+    logo: ../images/rvim.png
+
+  - name: Sciensano
+    url: https://www.sciensano.be/en
+    logo: ../images/sciensano.jpg
+
+  - name: SciLifeLab
+    url: https://www.scilifelab.se/
+    logo: ../images/sci-life-lab-uppsala.svg
+
   - name: SIB Swiss Institute of Bioinformatics
     url: https://www.sib.swiss/
     logo: ../images/sib.svg
 
-  - name: Tampere University
-    url: https://www.tuni.fi/en
-    logo: ../images/tampere-university.svg
+#  - name: Tampere University
+#    url: https://www.tuni.fi/en
+#    logo: ../images/tampere-university.svg
 
-  - name: Technical University of Denmark (DTU)
-    url: https://www.dtu.dk/English
-    logo: ../images/dtu.png
+  - name: UMCG
+    url: https://www.umcg.nl/
+    logo: ../images/umcg.webp
 
-  - name: Uit The Arctic University of Norway
-    url: https://en.uit.no/om
-    logo: ../images/uit.png
+  - name: Stichting VUMC
+    url: https://www.vumc.nl/
+    logo: ../images/umc.png
+
+  - name: Università degli Studi di Milano-Bicocca
+    url: https://en.unimib.it/
+    logo: ../images/uni-milan-bicocca.png
+
+  - name: University of Freiburg
+    url: https://uni-freiburg.de/en/
+    logo: ../images/university-freiburg.png
+
+  - name: University of Genoa
+    url: https://unige.it/en/
+    logo: ../images/university-genoa.png
+
+  - name: University of Ljubljana
+    url: https://www.uni-lj.si/slo/
+    logo: ../images/university-ljubljana.png
 
   - name: University of Luxembourg
     url: https://wwwen.uni.lu/
     logo: ../images/university-of-luxembourg.svg
+
+  - name: University of Manchester
+    url: https://www.manchester.ac.uk/
+    logo: ../images/university-of-manchester.svg
+
+  - name: University of Nottingham
+    url: https://www.nottingham.ac.uk
+    logo: ../images/university-nottingham.png
+
+  - name: University of Oslo
+    url: https://www.uio.no/
+    logo: ../images/university-oslo.svg
 
   - name: University of Oxford
     url: https://www.ox.ac.uk/
@@ -91,3 +235,7 @@ partners:
   - name: Uppsala University
     url: https://www.uu.se/en/
     logo: ../images/uppsala-university.svg
+
+  - name: VIB
+    url: https://vib.be/
+    logo: ../images/vib.svg

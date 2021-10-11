@@ -21,7 +21,7 @@ export default function Partners() {
     <Container className="full-width">
       <Row className="justify-content-md-start">
         {data.dataYaml.partners.map(node => (
-        <Col key={node.name} className="text-center d-flex align-items-stretch mb-4" >
+        <Col key={node.name} className="text-center d-flex align-items-stretch mb-4"  md="auto">
         <div class="border p-3 partner">
           <a href={node.url}><img src={node.logo.publicURL}  height="100" alt={node.name + 'logo'} title={node.name} /></a>
           {/* <p class="mt-3"><a href={node.url}>{node.name}</a></p> */}
