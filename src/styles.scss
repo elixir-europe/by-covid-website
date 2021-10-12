@@ -2,7 +2,7 @@
 // 1. Custom values for the Bootstrap SASS maps
 $theme-colors: (
   "primary":    #DA2F6B, // Red #DB316C
-  "secondary":  #277AB9, // Blue #4B9BD9
+  "secondary":  #277AB9, // Blue #277AB9
   "dark":       #1D1D1D,  // Near black (for header text)
 );
 
@@ -16,6 +16,7 @@ $grays: (
 
 // 3. Override variables
 $primary: #DA2F6B;
+$dark-primary: #CC245F; // $primary fails contrast check for normal text
 $secondary: #277AB9;
 $dark: #1D1D1D;
 
@@ -285,13 +286,13 @@ nav.navbar {
       color: $dark;
   }
   .navbar-nav .nav-link:hover {
-    color: $primary;
+    color: $dark-primary;
   }
   .dropdown-item:hover {
     transition: color 0.3s, background-color 0.3s;
   }
   .dropdown-item:focus, .dropdown-item:hover {
-    color: $primary;
+    color: $dark-primary;
     background-color: $body-bg;
   }
 }
@@ -308,7 +309,7 @@ nav.navbar {
 .home .home, .about .about a.dropdown-toggle,
 .outcomes .outcomes, .news-events .news-events
 , .outreach .outreach, .post .news-events {
-    color: $primary !important;
+    color: $dark-primary !important;
 }
 
 // Can be removed?
