@@ -13,6 +13,7 @@ import { Container, Row, Col, Card} from 'react-bootstrap'
 import twitterIcon from "../../images/twitter-coloured.svg"
 import linkedinIcon from "../../images/linkedin-coloured.svg"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import NewsletterForm from '../../components/newsletter-form'
 
 
 const PostsIndex = ({ data }) => {
@@ -51,18 +52,13 @@ const PostsIndex = ({ data }) => {
               <div class="position-relative social-media">
               <div>
                <div class="icons">
-                  <a href="linkedin.html" class="d-inline-block"><img src={linkedinIcon} alt="LinkedIn icon" width="40" class="social" /></a>
+                  <a href="https://www.linkedin.com/company/by-covid/" class="d-inline-block"><img src={linkedinIcon} alt="LinkedIn icon" width="40" class="social" /></a>
                   <a href="https://twitter.com/BYCOVID_eu" class="d-inline-block ms-2"><img src={twitterIcon} alt="Twitter icon" width="40" class="social" /></a>
                 </div>
                </div>
              <div class="form">
              <p class="mb-1 fs-7">Sign up for our quarterly newsletter.</p>
-             <form action="" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-               <label htmlFor="mce-EMAIL" class="visually-hidden-focusable">Subscribe</label>
-               <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required />
-               <div class="visually-hidden" aria-hidden="true"><input type="text" name="b_751beffce2e491f94d6f66918_358aeb763b" tabindex="-1" value="" /></div>
-               <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-secondary btn-sm rounded-0 inline-button py-2"/>
-             </form>
+             <NewsletterForm />
              </div>
              </div>
              </Col>

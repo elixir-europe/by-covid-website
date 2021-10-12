@@ -1,8 +1,8 @@
 partners:
 
-#  - name: ADP Social Science Data Archives
-#    url: https://www.adp.fdv.uni-lj.si/eng/
-#    logo: ../images/adp.png
+  - name: ADP Social Science Data Archives
+    url: https://www.adp.fdv.uni-lj.si/eng/
+    logo: ../images/adp.png
 
   - name: BBMRI-ERIC
     url: https://www.bbmri-eric.eu/
@@ -16,9 +16,9 @@ partners:
     url: https://www.ceitec.eu/
     logo: ../images/ceitec.svg
 
-#  - name: Centro Nacional de Biotecnología (CNB)
-#    url: https://www.cnb.csic.es/index.php/en/
-#    logo: ../images/cnb.svg
+  - name: Centro Nacional de Biotecnología (CNB)
+    url: https://www.cnb.csic.es/index.php/en/
+    logo: ../images/cnb.svg
 
   - name: CESSDA Consortium of European Social Science Data Archives
     url: https://www.cessda.eu/
@@ -43,6 +43,10 @@ partners:
   - name: Czech Social Science Data Archive (CSDA)
     url: https://archiv.soc.cas.cz/en
     logo: ../images/csda.svg
+
+  - name: DANS Data Archiving and Networked Services
+    url: https://dans.knaw.nl/en/front-page?set_language=en
+    logo: ../images/dans.svg
 
   - name: Technical University of Denmark (DTU)
     url: https://www.dtu.dk/English
@@ -72,9 +76,9 @@ partners:
     url: https://www.ebi.ac.uk/
     logo: ../images/embl-ebi.svg
 
-#  - name: EOSC Life Workflow Hub
-#    url: https://workflowhub.eu/programmes/6
-#    logo: ../images/eosc-life.svg
+  - name: EOSC Life Workflow Hub
+    url: https://workflowhub.eu/programmes/6
+    logo: ../images/eosc-life.svg
 
   - name: EMPIRICA
     url: https://empirica.com/home/
@@ -140,9 +144,9 @@ partners:
     url: https://www.izsler.it/
     logo: ../images/izsler.png
 
-  - name: KNAW The Royal Netherlands Academy of Arts and Sciences
-    url: https://www.knaw.nl/en
-    logo: ../images/knaw.jpg
+  # - name: KNAW The Royal Netherlands Academy of Arts and Sciences
+  #   url: https://www.knaw.nl/en
+  #   logo: ../images/knaw.jpg
 
   - name: Lygature
     url: https://www.lygature.org/
@@ -160,9 +164,9 @@ partners:
     url: https://www.upol.cz/en/
     logo: ../images/palacky-university.svg
 
-#  - name: RO Crate
-#    url: https://www.researchobject.org/ro-crate/
-#    logo: ../images/ro-crate.svg
+  - name: RO Crate
+    url: https://www.researchobject.org/ro-crate/
+    logo: ../images/ro-crate.svg
 
   - name: RIVM Dutch National Institute for Public Health and Environment
     url: https://www.rivm.nl/en
@@ -180,13 +184,13 @@ partners:
     url: https://www.sib.swiss/
     logo: ../images/sib.svg
 
-#  - name: Tampere University
-#    url: https://www.tuni.fi/en
-#    logo: ../images/tampere-university.svg
+  - name: Tampere University
+    url: https://www.tuni.fi/en
+    logo: ../images/tampere-university.svg
 
   - name: UMCG
     url: https://www.umcg.nl/
-    logo: ../images/umcg.webp
+    logo: ../images/umcg.jpg
 
   - name: Stichting VUMC
     url: https://www.vumc.nl/
