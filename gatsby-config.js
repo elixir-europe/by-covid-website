@@ -7,7 +7,7 @@ module.exports = {
     description:
       'The BY-COVID project aims to make SARS-CoV-2 and other infectious disease data easier to find and access for life scientists and researchers across Europe.',
     author: `Katharina Lauer, Xenia Sitja Perez, Erin Haskell, Martin Cook (ELIXIR Hub)`,
-    siteUrl: `https://by-covid.eu/`,
+    siteUrl: `https://by-covid.org/`,
     image: "/images/by-covid-logo.svg",
     twitterUsername: "@BYCOVID_eu",
   },

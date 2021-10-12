@@ -13,9 +13,9 @@ const BoxGrid = (props) => {
         </Col>
        </Row>
        <Row className="justify-content-md-center">
-        <Col lg={8}>
+        <Col lg={9}>
         <img src={'/wp-diagram.svg'} alt="How the Work Packages collaborate in the project" />
-        <p class="mt-4 fs-5 text-center">The Work Packages will <strong>mobilise</strong> SARS-CoV-2 and other infectious disease data (i.e. make it easier to access and transfer), <strong>connect and expose the data</strong> (make it searchable via the <a href="https://www.covid19dataportal.org/">COVID-19 Data Portal</a>), and <strong>use and analyse the data</strong> (provide standardised data management and analysis methods and protocols).</p>
+        <p class="mt-4 fs-5 text-center">The Work Packages will <strong>mobilise</strong> SARS-CoV-2 and other infectious disease data (i.e. make it easier to access and transfer), <strong>connect</strong> and <strong>standardise</strong> the data (to make it searchable via the <a href="https://www.covid19dataportal.org/">COVID-19 Data Portal</a>), and <strong>expose and analyse the data</strong> (provide standardised data management and analysis methods and protocols).</p>
          </Col>
         </Row>
      </Container>
