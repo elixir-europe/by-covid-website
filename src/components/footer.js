@@ -4,7 +4,6 @@ import { Link } from 'gatsby'
 import bycovidIcon from "../images/by-covid-icon.svg"
 import euIcon from "../images/eu-icon.svg"
 import twitterIcon from "../images/twitter-icon.svg"
-import linkedinIcon from "../images/linkedin-icon.svg"
 import NewsletterForm from '../components/newsletter-form'
 
 
@@ -44,7 +43,7 @@ const Footer = () => {
           </ul>
         </Col>
        </Row>
-       <Row className="pt-4 pt-lg-5 no-gutters">
+       <Row className="pt-3 pt-lg-5 no-gutters">
          <Col lg={6}>
               <img src={euIcon} alt="EU icon" width="40" class="float-start mt-1 me-3 mb-5 mb-md-0"/>
               <p class="fs-7 mt-0 ms-5">BY-COVID receives funding from the European Union’s Horizon Europe Research and Innovation Programme under grant agreement number 101046203.</p>
@@ -59,7 +58,6 @@ const Footer = () => {
          </Col>
          <Col xs={{ order: 'first' }} lg={{ order: 'last' }}>
            <div class="text-center pe-0 pe-lg-4 mb-4 mb-lg-0">
-              <a href="linkedin.html" class="d-inline-block"><img src={linkedinIcon} alt="LinkedIn icon" width="45" class="social" /></a>
               <a href="https://twitter.com/BYCOVID_eu" class="d-inline-block ms-3"><img src={twitterIcon} alt="Twitter icon" width="45" class="social" /></a>
             </div>
          </Col>
