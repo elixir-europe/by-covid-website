@@ -3,8 +3,8 @@ import { Container, Row, Col} from 'react-bootstrap'
 import { Link } from 'gatsby'
 import bycovidIcon from "../images/by-covid-icon.svg"
 import euIcon from "../images/eu-icon.svg"
-import twitterIcon from "../images/linkedin-icon.svg"
-import linkedinIcon from "../images/twitter-icon.svg"
+import twitterIcon from "../images/twitter-icon.svg"
+import linkedinIcon from "../images/linkedin-icon.svg"
 import NewsletterForm from '../components/newsletter-form'
 
 
@@ -59,8 +59,8 @@ const Footer = () => {
          </Col>
          <Col xs={{ order: 'first' }} lg={{ order: 'last' }}>
            <div class="text-center pe-0 pe-lg-4 mb-4 mb-lg-0">
-             <a href="https://www.linkedin.com/company/by-covid/" class="d-inline-block ms-3"><img src={linkedinIcon} alt="LinkedIn icon" width="45" class="social" /></a>
-             <a href="https://twitter.com/BYCOVID_eu" class="d-inline-block ms-3"><img src={twitterIcon} alt="Twitter icon" width="45" class="social" /></a>
+           <a href="https://twitter.com/BYCOVID_eu" class="d-inline-block ms-3"><img src={twitterIcon} alt="Twitter icon" width="45" class="social" /></a>
+           <a href="https://www.linkedin.com/company/by-covid/" class="d-inline-block ms-3"><img src={linkedinIcon} alt="LinkedIn icon" width="45" class="social" /></a>
             </div>
          </Col>
         </Row>
