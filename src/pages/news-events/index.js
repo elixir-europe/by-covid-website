@@ -1,6 +1,6 @@
 
 import React from 'react'
-import { graphql, Link } from 'gatsby'
+import { graphql } from 'gatsby'
 import "@fontsource/ibm-plex-sans"
 import "@fontsource/ibm-plex-sans/600.css"
 import '../../styles.scss'
@@ -76,9 +76,9 @@ const PostsIndex = ({ data }) => {
                          <Card.Text className="mb-5 mt-3">
                           {post.frontmatter.description}
                          </Card.Text>
-                         <div class="bottom-link-right arrow-right"><Link to={post.fields.slug}>
+                         <div class="bottom-link-right arrow-right"><a href={post.fields.slug} aria-label="Read the full news story">
                           Read more
-                         </Link></div>
+                         </a></div>
                        </Card.Body>
                      </Card>
                      </Col>

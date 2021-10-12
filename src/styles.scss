@@ -1,8 +1,8 @@
 
 // 1. Custom values for the Bootstrap SASS maps
 $theme-colors: (
-  "primary":    #DB316C, // Red
-  "secondary":  #4B9BD9, // Blue
+  "primary":    #DA2F6B, // Red #DB316C
+  "secondary":  #277AB9, // Blue #4B9BD9
   "dark":       #1D1D1D,  // Near black (for header text)
 );
 
@@ -15,8 +15,8 @@ $grays: (
 @import "../node_modules/bootstrap/scss/variables";
 
 // 3. Override variables
-$primary: #DB316C;
-$secondary: #4B9BD9;
+$primary: #DA2F6B;
+$secondary: #277AB9;
 $dark: #1D1D1D;
 
 $body-bg: #F3F3F3;
