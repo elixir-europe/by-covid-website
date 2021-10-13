@@ -61,7 +61,7 @@ const Layout = ({ location,children, pageContext, ...props }) => (
            </Col>
           </Row>
         </Container>
-        <Container className="full-width">
+        <Container>
           <Row>
             <Col>
             <div class="visually-hidden-focusable"><a href="#content">Skip to main content</a></div>

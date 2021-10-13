@@ -196,6 +196,10 @@ partners:
     url: https://www.vumc.nl/
     logo: ../images/amsterdam-umc.svg
 
+  - name: UIT Arctic University of Norway
+    url: https://en.uit.no/startsida
+    logo: ../images/uit-arctic-university.png
+
   - name: Università degli Studi di Milano-Bicocca
     url: https://en.unimib.it/
     logo: ../images/uni-milan-bicocca.png
