@@ -1,22 +1,17 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { StaticQuery, graphql } from 'gatsby'
-import { Container, Row, Col} from 'react-bootstrap'
+import React from "react"
+import PropTypes from "prop-types"
+import { StaticQuery, graphql } from "gatsby"
+import { Container, Row, Col } from "react-bootstrap"
 import "@fontsource/ibm-plex-sans"
 import "@fontsource/ibm-plex-sans/600.css"
 
-import '../styles.scss'
-import Footer from './footer'
-//import Header from './header'
-import Seo from './seo'
-import Menu from './menu'
-import Helmet from 'react-helmet'
+import "../styles.scss"
+import Footer from "./footer"
+import Seo from "./seo"
+import Menu from "./menu"
+import Helmet from "react-helmet"
 
-
-
-//import { Button } from 'react-bootstrap';
-
-const Layout = ({ location,children, pageContext, ...props }) => (
+const Layout = ({ location, children, pageContext, ...props }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -41,7 +36,6 @@ const Layout = ({ location,children, pageContext, ...props }) => (
         }
       }
     `}
-
     render={data => (
       <>
         <Helmet>
@@ -56,27 +50,29 @@ const Layout = ({ location,children, pageContext, ...props }) => (
         />
         <Container>
           <Row>
-           <Col>
-            <Menu />
-           </Col>
+            <Col>
+              <Menu />
+            </Col>
           </Row>
         </Container>
         <Container className="full-width">
           <Row>
             <Col>
-            <div class="visually-hidden-focusable"><a href="#content">Skip to main content</a></div>
-            <main>
-              <article id="content">
-              <Container>
-                <Row>
-                 <Col>
-                  <h1>{pageContext.frontmatter.title}</h1>
-                  </Col>
-                 </Row>
-               </Container>
+              <div class="visually-hidden-focusable">
+                <a href="#content">Skip to main content</a>
+              </div>
+              <main>
+                <article id="content">
+                  <Container>
+                    <Row>
+                      <Col>
+                        <h1>{pageContext.frontmatter.title}</h1>
+                      </Col>
+                    </Row>
+                  </Container>
                   {children}
-              </article>
-            </main>
+                </article>
+              </main>
             </Col>
           </Row>
         </Container>

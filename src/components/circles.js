@@ -1,22 +1,21 @@
-import * as React from 'react'
-import { Container, Row, Col} from 'react-bootstrap'
+import * as React from "react"
+import { Container, Row, Col } from "react-bootstrap"
 
-const Circles = (props) => {
+const Circles = props => {
   return (
     <div>
-    <Container>
-      <Row>
-       <Col>
-      <h2>{props.circlesTitle}</h2>
-      </Col>
-      </Row>
-
+      <Container>
+        <Row>
+          <Col>
+            <h2>{props.circlesTitle}</h2>
+          </Col>
+        </Row>
         <Row>
           <Col xs={6} sm={3} lg={3}>
             <div class="circle mb-4">
               <div class="circle-txt">
                 <span class="fw-bold d-block">{props.circle1Value}</span>
-                 {props.circle1}
+                {props.circle1}
               </div>
             </div>
           </Col>

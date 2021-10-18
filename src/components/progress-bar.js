@@ -1,7 +1,7 @@
-import * as React from 'react'
-import ProgressBar from 'react-bootstrap/ProgressBar'
+import * as React from "react"
+import ProgressBar from "react-bootstrap/ProgressBar"
 
-const Progress = (props) => {
+const Progress = props => {
   return (
     <div>
       <h2 class="mt-2">{props.progressTitle}</h2>
