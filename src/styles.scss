@@ -596,6 +596,12 @@ body.home {
 
 @media (min-width: 567px) {
   .halo-container {
+    background-size: 90%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .halo-container {
     background-size: 60%;
   }
 }
