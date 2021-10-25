@@ -30,7 +30,7 @@ const Partners = () => {
                 <img
                   src={node.logo.publicURL}
                   height="100"
-                  alt={node.name + "logo"}
+                  alt={node.name + " logo"}
                   title={node.name}
                 />
               </a>

@@ -54,7 +54,7 @@ const Footer = () => {
                 <Link to="/outcomes#publications">Publications</Link>
               </li>
             </ul>
-            <h2 class="mb-0 fs-6 fw-bold">
+            <h2 class="mb-0 fs-6 fw-bold mt-3">
               <Link to="/news-events" className="text-light">
                 News & events
               </Link>

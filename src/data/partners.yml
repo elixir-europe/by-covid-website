@@ -9,7 +9,7 @@ partners:
 
   - name: BSC Barcelona Supercomputing Center
     url: https://www.bsc.es/
-    logo: ../images/bsc.svg
+    logo: ../images/bsc.png
 
   - name: CEITEC
     url: https://www.ceitec.eu/
@@ -61,7 +61,7 @@ partners:
 
   - name: EKKE
     url: https://www.ekke.gr/
-    logo: ../images/ekke.png
+    logo: ../images/ekke-logo.png
 
   - name: ELIXIR
     url: https://elixir-europe.org
