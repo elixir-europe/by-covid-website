@@ -5,12 +5,12 @@ const Circles = props => {
   return (
     <div>
       <Container>
-        <Row>
+        <Row className="px-4">
           <Col>
             <h2>{props.circlesTitle}</h2>
           </Col>
         </Row>
-        <Row>
+        <Row className="px-4">
           <Col xs={6} sm={3} lg={3}>
             <div class="circle mb-4">
               <div class="circle-txt">

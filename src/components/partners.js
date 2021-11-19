@@ -18,7 +18,7 @@ const Partners = () => {
   `)
   return (
     <Container className="full-width">
-      <Row className="justify-content-md-start">
+      <Row className="justify-content-md-start px-3">
         {data.dataYaml.partners.map(node => (
           <Col
             key={node.name}

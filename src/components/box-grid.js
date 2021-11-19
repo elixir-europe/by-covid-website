@@ -6,7 +6,7 @@ const BoxGrid = props => {
     <div class="mt-5">
       <span class="anchor" id="structure"></span>
       <Container>
-        <Row>
+        <Row className="px-4">
           <Col>
             <h2>{props.boxGridTitle}</h2>
             <p class="mb-4 fs-5 text-center">
@@ -15,7 +15,7 @@ const BoxGrid = props => {
             </p>
           </Col>
         </Row>
-        <Row className="justify-content-md-center">
+        <Row className="justify-content-md-center px-4">
           <Col lg={9}>
             <img
               src={"/wp-diagram.svg"}
@@ -38,7 +38,7 @@ const BoxGrid = props => {
         </Row>
       </Container>
       <Container className="mt-5">
-        <Row>
+        <Row className="px-4">
           <Col xs={12} sm={12} lg={6}>
             <Accordion>
               <Accordion.Item eventKey="0">
@@ -68,7 +68,7 @@ const BoxGrid = props => {
             </Accordion>
           </Col>
         </Row>
-        <Row>
+        <Row className="px-4">
           <Col xs={12} sm={12} lg={6}>
             <Accordion>
               <Accordion.Item eventKey="0">
@@ -98,7 +98,7 @@ const BoxGrid = props => {
             </Accordion>
           </Col>
         </Row>
-        <Row>
+        <Row className="px-4">
           <Col xs={12} sm={12} lg={6}>
             <Accordion>
               <Accordion.Item eventKey="0">
@@ -128,7 +128,7 @@ const BoxGrid = props => {
             </Accordion>
           </Col>
         </Row>
-        <Row>
+        <Row className="px-4">
           <Col xs={12} sm={12} lg={6}>
             <Accordion>
               <Accordion.Item eventKey="0">

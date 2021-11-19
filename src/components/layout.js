@@ -56,14 +56,14 @@ const Layout = ({ location, children, pageContext, ...props }) => (
           </Row>
         </Container>
         <Container className="full-width">
-          <Row>
+          <Row className="mx-0">
             <Col>
               <div class="visually-hidden-focusable">
                 <a href="#content">Skip to main content</a>
               </div>
               <main>
                 <article id="content">
-                  <Container>
+                  <Container className="px-3">
                     <Row>
                       <Col>
                         <h1>{pageContext.frontmatter.title}</h1>

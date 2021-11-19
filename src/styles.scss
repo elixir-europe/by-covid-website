@@ -91,6 +91,11 @@ main {
   margin-top: 6rem;
 }
 
+// For full width containers, with no gutters.
+.row.mx-0 {
+  --bs-gutter-x: 0;
+}
+
 // Default Bootstrap spacers are too small, but want to keep them.
 // This class adds the space between the main components of the page.
 .big-top-space {
@@ -469,12 +474,21 @@ input[type="email"] {
 .partner {
   transition: box-shadow .2s;
   background: white;
+  width: 100%;
   &:hover {
     box-shadow: 0 0 4px rgba(0,0,0,0.40);
   }
   img {
-    max-width: 370px;
+    max-width: 300px;
+  }
+}
 
+@media (min-width: 567px) {
+  .partner {
+    width: auto;
+    img {
+      max-width: 360px;
+    }
   }
 }
 
