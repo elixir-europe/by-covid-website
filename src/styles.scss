@@ -91,7 +91,8 @@ main {
   margin-top: 6rem;
 }
 
-// For full width containers, with no gutters.
+// For full width containers, with no gutters. This is necessary for full-width panels.
+// It also means that you have to add 'px-3' on components, to give them side gutters.
 .row.mx-0 {
   --bs-gutter-x: 0;
 }
@@ -479,7 +480,7 @@ input[type="email"] {
     box-shadow: 0 0 4px rgba(0,0,0,0.40);
   }
   img {
-    max-width: 300px;
+    max-width: 250px;
   }
 }
 
