@@ -89,6 +89,7 @@ const PostsIndex = ({ data }) => {
                   <Row>
                     {posts.map(({ node: post }) => (
                       <Col
+                        key={post.frontmatter.date}
                         className="align-items-stretch d-flex"
                         xs={12}
                         sm={12}
