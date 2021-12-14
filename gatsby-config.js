@@ -94,6 +94,18 @@ module.exports = {
         },
       },
     },
+      {
+          resolve: `gatsby-plugin-gdpr-cookies`,
+          options: {
+              googleAnalytics: {
+                  trackingId: 'G-7XZ20R9EEH',
+                  // Setting this parameter is optional
+                  anonymize: true
+              },
+              // Defines the environments where the tracking should be available  - default is ["production"]
+              environments: ['production', 'development']
+          },
+      },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
