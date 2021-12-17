@@ -155,7 +155,7 @@ export const pageQuery = graphql`
             imageOg
             imageAlt
             postType
-            date
+            date(formatString: "D MMMM YYYY")
             newsImage {
               childImageSharp {
                 gatsbyImageData(width: 800, height: 375, quality: 90)

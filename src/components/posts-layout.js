@@ -95,7 +95,7 @@ export const pageQuery = graphql`
             gatsbyImageData(width: 800, height: 375, quality: 90)
           }
         }
-        date
+        date(formatString: "D MMMM YYYY")
       }
     }
   }
