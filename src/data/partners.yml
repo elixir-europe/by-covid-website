@@ -95,6 +95,10 @@ partners:
     url: https://www.eui.eu/en/home
     logo: ../images/eui.svg
 
+  - name: EU OPENSCREEN
+    url: https://www.eu-openscreen.eu
+    logo: ../images/EU-OPENSCREEN.png
+
   - name: EUOS The European Observatory For ICT Standardisation
     url: https://www.standict.eu/euos
     logo: ../images/euos.svg
