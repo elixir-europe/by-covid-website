@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-pages-newsletters-mdx",
+    "path": "/newsletters/",
+    "result": {"pageContext":{"frontmatter":{"title":"Newsletters","description":"Newsletter of the BY-COVID project.","class":"newsletters"}}},
+    "staticQueryHashes": ["1845226977","2134417434","2516051163"]}
