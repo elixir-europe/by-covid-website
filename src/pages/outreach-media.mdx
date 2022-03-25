@@ -8,6 +8,7 @@ imageAlt: Image for the BY-COVID Outreach page.
 ---
 
 import { Container, Row, Col, Card } from "react-bootstrap"
+import { navigate } from "gatsby"
 
 <Container>
   <Row className="px-4">
@@ -21,13 +22,15 @@ We will work with patient organisations and the broader public so that people ar
 We will also produce materials such as infographics and cartoons on what FAIR data is (i.e. data that is **F**indable, **A**ccessible, **I**nteroperable and **R**eusable). These materials will outline the work of the project, and show how making data FAIR will help us combat disease. The materials will also include a resource pack for high school teachers, to educate high school students about BY-COVID and FAIR data. We will publish a report on the effectiveness of these public engagement activities.
 
 <h3>Engagement</h3>
-We are making an effort to map Industry-related activities with the aim to build a community of specialists to discuss visionary ideas, challenges and solutions in the area of COVID and infectious diseases. This way, we will explore the usage and value of the COVID-19 data and affiliated resources to industry and demonstrate the importance of FAIR open data during and beyond the COVID-19 pandemic to develop medicines, diagnostic tests and other products.
 
-We will organise Access days and Aim days, Innovation and SME Forums, and publish use cases and reports describing the industry ecosystem in COVID and infectious diseases.
+We aim to map COVID-related activities in industry, and build a community of specialists to discuss visionary ideas, challenges and solutions in the area of COVID and infectious diseases.
 
-If you want to be part of this community or to help us map the industry community and engage in our upcoming Industry related activities, fill up the following survey.
+By doing this, we aim to demonstrate the importance of FAIR open data for the development of medicines, diagnostic tests and other products.
+We will organise access days and aim days, Innovation and SME Forums, and publish use cases and reports describing the industry ecosystem in COVID and infectious diseases.
 
-<a href="https://www.surveymonkey.co.uk/r/ZXF6SCV" target="_blank">Share your company's experience of working with COVID open access data</a>
+If you want to be part of this community or to help us map the industry community and engage in our upcoming Industry related activities, please fill in our survey.
+
+<button class="btn btn-primary" onClick={()=>{navigate("https://www.surveymonkey.co.uk/r/ZXF6SCV")}}>Take the industry survey</button>
 
 <h3 class="mt-4">Funders</h3>
 
