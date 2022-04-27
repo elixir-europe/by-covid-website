@@ -11,6 +11,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import { Container, Row, Col, Card } from "react-bootstrap"
 import { Link } from "gatsby"
 import NewsletterForm from "../components/newsletter-form"
+import { navigate } from "gatsby"
 
 <div class="w-60 text-center home-intro">
 
@@ -20,6 +21,17 @@ The BeYond-COVID project aims to make COVID-19 data accessible to scientists in 
 
 Going beyond SARS-CoV-2 data, the project will provide a framework for making data from other infectious diseases open and accessible to everyone.
 
+</div>
+
+<!-- The Survey -->
+
+<div class="text-center survey-box">
+<h2 class="mt-4">Industry Survey</h2>
+  <div class="survey-text">
+    
+    <p>Join the BY-COVID industry community and engage in our upcoming industry-related activities, please fill in our survey.</p>
+    <button class="btn btn-primary" onClick={()=>{navigate("https://www.surveymonkey.co.uk/r/ZXF6SCV")}}>Take the industry survey</button>
+  </div>
 </div>
 
 <!-- The challenge -->

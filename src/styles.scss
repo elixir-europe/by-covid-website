@@ -613,6 +613,33 @@ body.home {
       color: black;
     }
   }
+  .survey-box {
+    padding: 4rem 0 0rem;
+    .survey-text {
+      padding: 2rem;
+      background-color: rgba(255, 255, 255, 0.6);
+      color: black;
+    }
+    .btn-primary {
+      color: $light;
+      background-color: $secondary;
+      border-color: $secondary;
+      &:hover {
+        background-color: $primary;
+        border-color: $primary;
+      }
+  }
+    h2{
+      text-align: center;
+      font-size: 2.5rem;
+      position: relative;
+      padding-top: 80px;
+      margin-top: 5rem;
+      color: white;
+      background: url("./images/by-covid-survey.svg") no-repeat 50% 0;
+      background-size: 70px auto;
+    }
+  }
   footer {
     margin-top: 0;
   }
