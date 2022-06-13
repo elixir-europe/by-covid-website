@@ -76,6 +76,9 @@ main ul li {
 table th {
   color: $body-color;
 }
+.table>thead{
+  border-bottom: 2px;
+}
 
 /*
 * Space and position rules
