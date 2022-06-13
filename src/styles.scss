@@ -345,6 +345,18 @@ nav.navbar {
   }
 }
 
+.nav-tabs {
+  .nav-link.active {
+    background-color: $body-color;
+    color: #fff;
+  }
+  .nav-link{
+    background-color: #fff;
+    color: $primary;
+
+  }
+}
+
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-nav .nav-link {
       padding-right: 1.2rem;
