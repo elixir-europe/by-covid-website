@@ -30,6 +30,7 @@
     "react-cookie-consent": "^6.4.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
+    "react-twitter-embed": "^4.0.4",
     "sass": "^1.42.1"
   },
   "devDependencies": {

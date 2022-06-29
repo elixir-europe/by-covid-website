@@ -259,6 +259,31 @@ main a {
     opacity: 0.4;
   }
 }
+//Twitter
+.twitter-embed {
+  margin: 0px 30px 0 0;
+  overflow-x: auto;
+  max-height: 673px;
+  padding: 20px 0px 0 0px;
+  border-radius: 2px;
+}
+.news-twitter > *:first-child{
+  width: 75%;
+  margin: 0px auto;
+}
+.home-twitter-box > *:first-child{
+  width: 90%;
+  margin: 0px auto;
+}
+.news-twitter{
+  width: 100%;
+  .twitter-embed{
+    padding: 0;
+  }
+}
+.news-twitter.card{
+  background-color: #ddd;
+}
 
 // Submit button
 .btn-primary {
@@ -699,6 +724,9 @@ body.home {
 @media (min-width: 1400px) {
   .halo-container {
     background-size: 60%;
+  }
+  .container.twitter{
+    max-width: 1080px;
   }
 }
 

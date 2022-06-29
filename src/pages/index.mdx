@@ -12,6 +12,7 @@ import { Container, Row, Col, Card } from "react-bootstrap"
 import { Link } from "gatsby"
 import NewsletterForm from "../components/newsletter-form"
 import { navigate } from "gatsby"
+import { TwitterTimelineEmbed } from 'react-twitter-embed';
 
 <div class="w-60 text-center home-intro">
 
@@ -145,15 +146,10 @@ The project will make data about SARS-CoV-2 and other viruses easier to access, 
 
 <div class="bg-semi-opaque container full-width big-top-space text-body px-4">
 
-<Container fluid>
+<Container className="twitter">
   <Row>
-    <Col className="text-start mb-4 mb-md-0" xs={12} sm={6} lg={3}>
-      <h2 class="fs-3 lh-2 mb-2 ps-0 text-dark">Want to learn more?</h2>
-      <p class="ps-0 text-dark">Subscribe to our newsletter:</p>
-      <NewsletterForm />
-    </Col>
-    <Col className="align-items-stretch mb-4 mb-md-0" xs={12} sm={6} lg={3}>
-      <Card className="mb-4 h-100">
+    <Col className="align-items-stretch mb-4 mb-md-0" xs={12} sm={6} lg={7}>
+      <Card className="mb-4">
         <Card.Body className="position-relative">
           <Card.Title as="h3" className="mt-3 fw-bold fs-4 lh-sm">
             About
@@ -167,9 +163,7 @@ The project will make data about SARS-CoV-2 and other viruses easier to access, 
           </div>
         </Card.Body>
       </Card>
-    </Col>
-    <Col className="align-items-stretch mb-4 mb-md-0" xs={12} sm={6} lg={3}>
-      <Card className="mb-4 h-100">
+      <Card className="mb-4">
         <Card.Body className="position-relative">
           <Card.Title as="h3" className="mt-3 fw-bold fs-4 lh-sm">
             News & events
@@ -182,9 +176,7 @@ The project will make data about SARS-CoV-2 and other viruses easier to access, 
           </div>
         </Card.Body>
       </Card>
-    </Col>
-    <Col className="align-items-stretch mb-4 mb-md-0" xs={12} sm={6} lg={3}>
-      <Card className="mb-4 h-100">
+       <Card className="mb-4">
         <Card.Body className="position-relative">
           <Card.Title as="h3" className="mt-3 fw-bold fs-4 lh-sm">
             Outreach & media
@@ -196,6 +188,18 @@ The project will make data about SARS-CoV-2 and other viruses easier to access, 
             <Link to="/outreach-media">Outreach & media</Link>
           </div>
         </Card.Body>
+      </Card>
+                      <h2 class="fs-3 lh-2 mb-2 ps-0 text-dark">Want to learn more?</h2>
+      <p class="ps-0 text-dark">Subscribe to our newsletter:</p>
+      <NewsletterForm />
+    </Col>
+    <Col className="align-items-stretch mb-4 mb-md-0" xs={12} sm={6} lg={5}>
+      <Card className="mb-4 home-twitter-box">
+         <TwitterTimelineEmbed
+          sourceType="profile"
+          screenName="BYCOVID_eu"
+          options={{height: 660}}
+        />
       </Card>
     </Col>
   </Row>
