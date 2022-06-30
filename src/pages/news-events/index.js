@@ -12,8 +12,6 @@ import twitterIcon from "../../images/twitter-coloured.svg"
 import linkedinIcon from "../../images/linkedin-coloured.svg"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import NewsletterForm from "../../components/newsletter-form"
-import { TwitterTimelineEmbed } from 'react-twitter-embed';
-import LatestNewsItem from "../../components/latest-news-row"
 
 
 const PostsIndex = ({ data }) => {
@@ -90,21 +88,6 @@ const PostsIndex = ({ data }) => {
                 </Container>
                 <Container className="news-cards">
                   <Row>
-                    <LatestNewsItem />
-                    <Col
-                      className="align-items-stretch d-flex"
-                      xs={12}
-                      sm={12}
-                      lg={6}
-                      >
-                      <Card className="mb-4 news-twitter">
-                        <TwitterTimelineEmbed
-                          sourceType="profile"
-                          screenName="BYCOVID_eu"
-                          options={{height: 600}}
-                        />
-                      </Card>
-                    </Col>
                     {posts.map(({ node: post }) => (
                       <Col
                         key={post.frontmatter.date}
@@ -161,7 +144,6 @@ export const pageQuery = graphql`
     allMdx(
       filter: { frontmatter: { class: { eq: "post" } } }
       sort: { fields: frontmatter___date, order: DESC }
-      skip: 1
     ) {
       edges {
         node {
