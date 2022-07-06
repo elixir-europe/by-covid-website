@@ -90,20 +90,20 @@ const Footer = () => {
           </Col>
         </Row>
         <Row className="pt-3 pt-lg-5 no-gutters">
-          <Col lg={8}>
+          <Col lg={7}>
             <img
               src={byCovideuIcon}
               alt="EU icon"
               width="200"
               class="float-start mt-1 me-3 mb-5 mb-md-0 eu-icon"
             />
-            <p class="fs-7 mt-0">
+            <p class="fs-79 mt-0">
             Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Research Executive Agency (REA). Neither the European Union nor the granting authority can be held responsible for them.
             </p>
           </Col>
           <Col lg={2}>
             <div class="mx-auto text-center text-lg-start">
-              <ul class="list-unstyled fs-7 mx-auto w-50">
+              <ul class="list-unstyled fs-7 mx-auto w-60">
                 <li class="d-inline d-lg-block">
                   <Link to="/privacy">Privacy</Link>
                 </li>
@@ -113,8 +113,8 @@ const Footer = () => {
               </ul>
             </div>
           </Col>
-          <Col xs={{ order: "first" }} lg={{ order: "last" }}>
-            <div class="text-center pe-0 pe-lg-4 mb-4 mb-lg-0">
+          <Col xs={{ order: "first" }} lg={2,{ order: "last" }}>
+            <div class="text-center pe-0 pe-lg-5 mb-4 mb-lg-0">
               <a
                 href="https://twitter.com/BYCOVID_eu"
                 class="d-inline-block ms-3"

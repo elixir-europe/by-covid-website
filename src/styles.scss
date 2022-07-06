@@ -112,6 +112,9 @@ main {
 }
 
 .w-60 {width: 100%;}
+.list-unstyled.w-60{
+  width: 60%;
+}
 @media (min-width: 1024px) {
   .w-60 {
     width: 50%;
@@ -425,6 +428,10 @@ footer {
 }
 .eu-icon{
   background-color: #fff;
+  border: 1px solid #fff;
+}
+.fs-79{
+  font-size: 0.79rem;
 }
 
 input[type="email"] {
@@ -729,7 +736,7 @@ body.home {
     background-size: 60%;
   }
   .container.twitter{
-    max-width: 1080px;
+    max-width: 1320px;
   }
 }
 
