@@ -5,6 +5,7 @@ import bycovidIcon from "../images/by-covid-icon.svg"
 import euIcon from "../images/eu-icon.svg"
 import twitterIcon from "../images/twitter-icon.svg"
 import linkedinIcon from "../images/linkedin-icon.svg"
+import byCovideuIcon from "../images/by-covid-footer-eu.svg"
 import NewsletterForm from "../components/newsletter-form"
 
 import CookieConsent  from 'react-cookie-consent';
@@ -90,17 +91,15 @@ const Footer = () => {
           </Col>
         </Row>
         <Row className="pt-3 pt-lg-5 no-gutters">
-          <Col lg={6}>
+          <Col lg={7}>
             <img
-              src={euIcon}
+              src={byCovideuIcon}
               alt="EU icon"
-              width="40"
-              class="float-start mt-1 me-3 mb-5 mb-md-0"
+              width="150"
+              class="float-start mt-1 me-3 mb-5 mb-md-0 eu-icon"
             />
             <p class="fs-7 mt-0 ms-5">
-              BY-COVID receives funding from the European Union’s Horizon Europe
-              Research and Innovation Programme under grant agreement number
-              101046203.
+            Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Research Executive Agency (REA). Neither the European Union nor the granting authority can be held responsible for them.
             </p>
           </Col>
           <Col lg={3}>
