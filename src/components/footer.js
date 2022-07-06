@@ -90,18 +90,18 @@ const Footer = () => {
           </Col>
         </Row>
         <Row className="pt-3 pt-lg-5 no-gutters">
-          <Col lg={7}>
+          <Col lg={8}>
             <img
               src={byCovideuIcon}
               alt="EU icon"
-              width="150"
+              width="200"
               class="float-start mt-1 me-3 mb-5 mb-md-0 eu-icon"
             />
             <p class="fs-7 mt-0">
             Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Research Executive Agency (REA). Neither the European Union nor the granting authority can be held responsible for them.
             </p>
           </Col>
-          <Col lg={3}>
+          <Col lg={2}>
             <div class="mx-auto text-center text-lg-start">
               <ul class="list-unstyled fs-7 mx-auto w-50">
                 <li class="d-inline d-lg-block">
