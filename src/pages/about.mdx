@@ -11,7 +11,7 @@ import Circles from '../components/circles'
 import Numbers from '../components/numbers'
 import BoxGrid from '../components/box-grid'
 import Partners from '../components/partners'
-import { Container, Row, Col} from 'react-bootstrap'
+import { Container, Row, Col, Card} from 'react-bootstrap'
 import { StaticImage } from 'gatsby-plugin-image'
 
 
@@ -146,6 +146,137 @@ The design of the BY-COVID project rests on this foundation, aiming to connect w
 </Row>
 <Row>
 <Col>
+
+
+## Media
+<span class="anchor" id="media"></span>
+<h3>Factsheets</h3>
+<p class="pb-2">
+  Download the BY-COVID factsheet for an overview of the project. There are three different colour themes to choose from.
+</p>
+<Container className="full-width">
+  <Row>
+    <Col className="align-items-stretch" xs={12} sm={6} lg={2}>
+      <Card className="mb-4 border text-center">
+        <a href="/pdf/BY-COVID_factsheet_dark.pdf">
+          <Card.Img
+            variant="top"
+            src="/BY-COVID_factsheet_dark.jpg"
+            className="p-3"
+            style="background: #fff;"
+          />
+        </a>
+        <Card.Link href="/pdf/BY-COVID_factsheet_dark.pdf" class="pb-3">Download</Card.Link>
+      </Card>
+    </Col>
+    <Col className="align-items-stretch" xs={12} sm={6} lg={2}>
+      <Card className="mb-4 border text-center">
+        <a href="/pdf/BY-COVID_factsheet.pdf">
+          <Card.Img
+            variant="top"
+            src="/BY-COVID_factsheet_gradient.jpg"
+            className="p-3"
+            style="background: #fff;"
+          />
+        </a>
+        <Card.Link href="/pdf/BY-COVID_factsheet.pdf" class="pb-3">Download</Card.Link>
+      </Card>
+    </Col>
+    <Col className="align-items-stretch" xs={12} sm={6} lg={2}>
+      <Card className="mb-4 border text-center">
+        <a href="/pdf/BY-COVID_factsheet_white.pdf">
+          <Card.Img
+            variant="top"
+            src="/BY-COVID_factsheet_white.jpg"
+            className="p-3"
+            style="background: #fff;"
+          />
+        </a>
+        <Card.Link href="/pdf/BY-COVID_factsheet_white.pdf" class="pb-3">Download</Card.Link>
+      </Card>
+    </Col>
+  </Row>
+</Container>
+<h3 class="pt-3">Graphics</h3>
+<Container className="full-width">
+  <Row>
+    <Col className="align-items-stretch" xs={12} sm={6} lg={4}>
+      <Card className="mb-4">
+        <Card.Img
+          variant="top"
+          src="/by-covid-logo-light-bg.svg"
+          className="border p-4"
+          style="max-height: 115px;background: #ccc;"
+        />
+        <Card.Body className="position-relative">
+          <Card.Title as="h3" className="mt-0 fw-bold fs-5 lh-sm">
+            Logo (light background)
+          </Card.Title>
+          <Card.Text className="mt-3">
+            <ul className="mb-0">
+              <li>
+                <a href="/by-covid-logo-light-bg.svg">SVG format</a>
+              </li>
+              <li>
+                <a href="/by-covid-logo-light-bg.png">PNG format</a>
+              </li>
+            </ul>
+          </Card.Text>
+        </Card.Body>
+      </Card>
+    </Col>
+    <Col className="align-items-stretch" xs={12} sm={6} lg={4}>
+      <Card className="mb-4">
+        <Card.Img
+          variant="top"
+          src="/by-covid-logo-dark-bg.svg"
+          className="p-4"
+          style="max-height: 115px;background: #ccc;"
+        />
+        <Card.Body className="position-relative">
+          <Card.Title as="h3" className="mt-0 fw-bold fs-5 lh-sm">
+            Logo (dark background)
+          </Card.Title>
+          <Card.Text className="mt-3">
+            <ul className="mb-0">
+              <li>
+                <a href="/by-covid-logo-dark-bg.svg">SVG format</a>
+              </li>
+              <li>
+                <a href="/by-covid-logo-dark-bg.png">PNG format</a>
+              </li>
+            </ul>
+          </Card.Text>
+        </Card.Body>
+      </Card>
+    </Col>
+    <Col className="align-items-stretch" xs={12} sm={6} lg={4}>
+      <Card className="mb-4">
+        <Card.Img
+          variant="top"
+          src="/by-covid-icon.svg"
+          className="p-4 border"
+          style="max-height: 100px;background: #ccc;"
+        />
+        <Card.Body className="position-relative">
+          <Card.Title as="h3" className="mt-0 fw-bold fs-5 lh-sm">
+            Icon
+          </Card.Title>
+          <Card.Text className="mt-3">
+            <ul className="mb-0">
+              <li>
+                <a href="/by-covid-icon.svg">SVG format</a>
+              </li>
+              <li>
+                <a href="/by-covid-icon.png">PNG format</a>
+              </li>
+            </ul>
+          </Card.Text>
+        </Card.Body>
+      </Card>
+    </Col>
+  </Row>
+</Container>
 
 
 <!-- Partners -->

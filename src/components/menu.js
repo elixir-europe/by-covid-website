@@ -33,6 +33,9 @@ const Menu = () => {
               <NavDropdown.Item as={Link} to="/about#data-platform">
                 COVID-19 Data Platform
               </NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/about#media">
+                Media
+              </NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/about#partners">
                 Partners
               </NavDropdown.Item>
@@ -56,8 +59,8 @@ const Menu = () => {
               Newsletters
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link as={Link} to="/outreach-media" className="outreach">
-              Outreach & media
+            <Nav.Link as={Link} to="/outreach" className="outreach">
+              Outreach
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
