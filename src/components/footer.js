@@ -113,7 +113,7 @@ const Footer = () => {
               </ul>
             </div>
           </Col>
-          <Col xs={{ order: "first" }} lg={2,{ order: "last" }}>
+          <Col xs={{ order: "first" }} lg={{ order: "last" }}>
             <div class="text-center pe-0 pe-lg-5 mb-4 mb-lg-0">
               <a
                 href="https://twitter.com/BYCOVID_eu"
