@@ -250,3 +250,7 @@ partners:
   - name: VIB
     url: https://vib.be/
     logo: ../images/vib.svg
+
+  - name: VIB-TEST
+    url: https://vib.be/
+    logo: ../images/vib.svg
