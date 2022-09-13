@@ -76,7 +76,7 @@ partners:
     logo: ../images/embl-ebi.svg
 
   - name: EOSC Life Workflow Hub
-    url: https://workflowhub.eu/programmes/6
+    url: https://workflowhub.eu/programmes/12
     logo: ../images/eosc-life.svg
 
   - name: EMPIRICA
