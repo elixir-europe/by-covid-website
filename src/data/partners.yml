@@ -99,10 +99,6 @@ partners:
     url: https://www.eu-openscreen.eu
     logo: ../images/eu-openscreen_Logo.png
 
-  - name: EUOS The European Observatory For ICT Standardisation
-    url: https://www.standict.eu/euos
-    logo: ../images/euos.svg
-
   - name: Euro-BioImaging
     url: https://www.eurobioimaging.eu/
     logo: ../images/eurobioimaging.svg
