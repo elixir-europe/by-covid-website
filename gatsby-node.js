@@ -12,16 +12,31 @@
    // `File` node here
    if (node.internal.type === "Mdx") {
      const value = createFilePath({ node, getNode })
-     createNodeField({
-       // Name of the field you are adding
-       name: "slug",
-       // Individual MDX node
-       node,
-       // Generated value based on filepath with "blog" prefix. you
-       // don't need a separating "/" before the value because
-       // createFilePath returns a path with the leading "/".
-       value: `/news-events${value}`,
-     })
+     if(node.frontmatter.postType === 'News')
+     {
+      createNodeField({
+        // Name of the field you are adding
+        name: "slug",
+        // Individual MDX node
+        node,
+        // Generated value based on filepath with "blog" prefix. you
+        // don't need a separating "/" before the value because
+        // createFilePath returns a path with the leading "/".
+        value: `/news${value}`,
+      })
+     }
+     else{
+      createNodeField({
+        // Name of the field you are adding
+        name: "slug",
+        // Individual MDX node
+        node,
+        // Generated value based on filepath with "blog" prefix. you
+        // don't need a separating "/" before the value because
+        // createFilePath returns a path with the leading "/".
+        value: `/events${value}`,
+      })
+     }
    }
  }
 
