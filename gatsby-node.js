@@ -12,7 +12,63 @@
    // `File` node here
    if (node.internal.type === "Mdx") {
      const value = createFilePath({ node, getNode })
-     if(node.frontmatter.postType === 'Usecase') {
+     if(node.frontmatter.postType === 'News')
+     {
+      if(node.frontmatter.redirect === 'Yes')
+      {
+       createNodeField({
+         // Name of the field you are adding
+         name: "slug",
+         // Individual MDX node
+         node,
+         // Generated value based on filepath with "blog" prefix. you
+         // don't need a separating "/" before the value because
+         // createFilePath returns a path with the leading "/".
+         value: `/news-events${value}`,
+       })
+      }
+      else{
+        createNodeField({
+          // Name of the field you are adding
+          name: "slug",
+          // Individual MDX node
+          node,
+          // Generated value based on filepath with "blog" prefix. you
+          // don't need a separating "/" before the value because
+          // createFilePath returns a path with the leading "/".
+          value: `/news${value}`,
+        })
+      }
+     }
+     else if(node.frontmatter.postType === 'Event'){
+       if(node.frontmatter.redirect === 'Yes')
+       {
+        createNodeField({
+          // Name of the field you are adding
+          name: "slug",
+          // Individual MDX node
+          node,
+          // Generated value based on filepath with "blog" prefix. you
+          // don't need a separating "/" before the value because
+          // createFilePath returns a path with the leading "/".
+          value: `/news-events${value}`,
+        })
+       }
+       else{
+        createNodeField({
+          // Name of the field you are adding
+          name: "slug",
+          // Individual MDX node
+          node,
+          // Generated value based on filepath with "blog" prefix. you
+          // don't need a separating "/" before the value because
+          // createFilePath returns a path with the leading "/".
+          value: `/events${value}`,
+        })
+       }
+
+     }
+     else if(node.frontmatter.postType === 'Usecase') {
       createNodeField({
         // Name of the field you are adding
         name: "slug",
@@ -24,18 +80,6 @@
         value: `/usecases${value}`,
       })
      }
-     else if(node.frontmatter.postType === 'UsecaseFr') {
-      createNodeField({
-        // Name of the field you are adding
-        name: "slug",
-        // Individual MDX node
-        node,
-        // Generated value based on filepath with "blog" prefix. you
-        // don't need a separating "/" before the value because
-        // createFilePath returns a path with the leading "/".
-        value: `/usecases-fr${value}`,
-      })
-     }
      else{
       createNodeField({
         // Name of the field you are adding
@@ -45,7 +89,7 @@
         // Generated value based on filepath with "blog" prefix. you
         // don't need a separating "/" before the value because
         // createFilePath returns a path with the leading "/".
-        value: `/news-events${value}`,
+        value: `/usecases-fr${value}`,
       })
      }
    }
@@ -65,7 +109,8 @@
                slug
              }
              frontmatter {
-              postType              
+              postType 
+              redirect            
             }
            }
          }
@@ -99,6 +144,30 @@
         path: node.fields.slug,
         // This component will wrap our MDX content
         component: path.resolve(`./src/components/usecases-layout-fr.js`),
+        // You can use the values in this context in
+        // our page layout component
+        context: { id: node.id },
+      })
+     }
+     else  if(node.frontmatter.postType === 'News'){
+      createPage({
+        // This is the slug you created before
+        // (or `node.frontmatter.slug`)
+        path: node.fields.slug,
+        // This component will wrap our MDX content
+        component: path.resolve(`./src/components/news-layout.js`),
+        // You can use the values in this context in
+        // our page layout component
+        context: { id: node.id },
+      })
+     }
+     else  if(node.frontmatter.postType === 'Event'){
+      createPage({
+        // This is the slug you created before
+        // (or `node.frontmatter.slug`)
+        path: node.fields.slug,
+        // This component will wrap our MDX content
+        component: path.resolve(`./src/components/events-layout.js`),
         // You can use the values in this context in
         // our page layout component
         context: { id: node.id },

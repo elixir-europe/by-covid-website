@@ -28,7 +28,7 @@ const PostsIndex = ({ data }) => {
       />
 
       <Helmet>
-        <body className="news-events" />
+        <body className="news" />
       </Helmet>
       <Container>
         <Row>
@@ -48,7 +48,7 @@ const PostsIndex = ({ data }) => {
                 <Container fluid>
                   <Row>
                     <Col>
-                      <h1>News & events</h1>
+                      <h1>News</h1>
                       <div class="position-relative social-media">
                         <div>
                           <div class="icons">
@@ -140,9 +140,9 @@ const PostsIndex = ({ data }) => {
 }
 
 export const pageQuery = graphql`
-  query postListIndex {
+  query newsListIndex {
     allMdx(
-      filter: { frontmatter: { category: { eq: "news-event" } } }
+      filter: { frontmatter: { postType: { eq: "News" } } }
       sort: { fields: frontmatter___date, order: DESC }
     ) {
       edges {
@@ -156,8 +156,6 @@ export const pageQuery = graphql`
             imageOg
             imageAlt
             postType
-            redirect
-            category
             date(formatString: "D MMMM YYYY")
             newsImage {
               childImageSharp {

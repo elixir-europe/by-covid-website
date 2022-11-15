@@ -18,7 +18,7 @@ const PostTemplate = ({ data: { mdx } }) => {
   return (
     <div>
       <Helmet>
-        <body class={mdx.frontmatter.class} />
+        <body class="usecases" />
       </Helmet>
       <Seo
         title={mdx.frontmatter.title}

@@ -55,11 +55,19 @@ const Footer = () => {
               </li>
             </ul>
             <h2 class="mb-1 fs-6 fw-bold mt-3">
-              <Link to="/news-events" className="text-light">
                 News & events
-              </Link>
             </h2>
             <ul class="list-unstyled fs-7">
+              <li>
+                <Link to="/news">
+                  News
+                </Link>
+              </li>
+              <li>
+                <Link to="/events">
+                  Events
+                </Link>
+              </li>
               <li>
                 <Link to="/newsletters">
                   Newsletter
