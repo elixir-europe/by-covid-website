@@ -686,9 +686,13 @@ body.home {
       padding-top: 80px;
       margin-top: 5rem;
       color: white;
-      background: url("./images/by-covid-survey.svg") no-repeat 50% 0;
+      background: url("./images/industry-event.svg") no-repeat 50% 0;
       background-size: 70px auto;
+      &.small-size{
+        font-size: 2rem;
+      }
     }
+
   }
   footer {
     margin-top: 0;
