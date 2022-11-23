@@ -59,7 +59,7 @@ const PostTemplate = ({ data: { mdx } }) => {
                       />
 
                       <MDXProvider>
-                        <MDXRenderer frontmatter={mdx.frontmatter}>
+                        <MDXRenderer frontmatter={mdx.frontmatter} localImages={mdx.frontmatter.embeddedImagesLocal}>
                           {mdx.body}
                         </MDXRenderer>
                       </MDXProvider>
@@ -93,6 +93,11 @@ export const pageQuery = graphql`
         newsImage {
           childImageSharp {
             gatsbyImageData(width: 800, height: 375, quality: 90)
+          }
+        }
+        embeddedImagesLocal {
+          childImageSharp {
+            gatsbyImageData
           }
         }
         date(formatString: "D MMMM YYYY")

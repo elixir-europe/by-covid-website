@@ -1,0 +1,45 @@
+---
+title: Release of indexing system to link COVID-19 data across research disciplines
+description: The BY-COVID project has implemented a scalable indexing system to link data and metadata on SARS-CoV-2 and COVID-19, along with and other infectious diseases and pathogens, across multiple areas of research.
+class: post
+imageTwitter: /twitter-news.jpg
+imageOg: /og-news.jpg
+imageAlt: Image for the BY-COVID news pages.
+newsImage: ./news-images/by-covid-data-indexing-system.jpg
+embeddedImagesLocal:
+  - './news-images/covid-indexing.png'
+date: 2022-11-23
+postType: News
+---
+import { getImage, GatsbyImage } from 'gatsby-plugin-image';
+
+The BY-COVID project has implemented a scalable indexing system to link data and metadata on SARS-CoV-2 and COVID-19, along with and other infectious diseases and pathogens, across multiple areas of research. The areas of research include omics, clinical, and epidemiological research, and social sciences and humanities.
+
+** What is indexing? **
+
+Linking data from multiple research areas is a complex problem as the data exist in separate resources and transdisciplinary teams must come together to find solutions that are practical to implement and meet the needs of users with very different backgrounds. An important step in bringing data together is producing an index to describe how the data are connected. The index can be seen as a map of how key data in different resources are related to each other. 
+
+** Why is it useful to link data?  **
+
+If scientific, clinical and socio-economic data are connected in a meaningful way then more powerful and efficient research into BY-COVID can be carried out. For example, if the genetic sequence of viral variants is known (scientific data), and separate data on symptoms recorded from hospitalised COVID-19 patients is available (clinical data,) the two data sources can be linked to show which patient had which variant in order to study links between symptoms and variants. In a similar manner, a study on the socio-economic status of BY-COVID patients is more powerful if the findings can be combined with scientific and clinical data from patients studied under the same conditions, for example geographical area, gender or age range.
+
+** Multi-tiered indexing **
+
+Given that very different data types need to be connected, the indexing system has been designed to be multi-tiered, allowing the indexing level to fit to the data source. At the lowest level, Tier 3, users can simply find relevant resources, for example a database, through the portal. At Tier 2, they can find the individual records of the database, for example specific surveys referenced in a database. At Tier 1, comprehensive and harmonised metadata allow relevant records to be found across multiple resources, for example all studies from different resources involving a specific virus variant.  Data will migrate towards Tier 1 when further metadata harmonisation and technical indexing are possible.
+
+** How to search the connected data **
+
+The correlated metadata is discoverable through a web portal (the [COVID-19 Data Portal](https://www.covid19dataportal.org/)) and  for third party applications through web services. A global search interface has been implemented on the COVID-19 Data Portal to enable searching across all data in the Portal and giving the opportunity for serendipitous discoveries of relevant data from different domains (Figure 1).
+
+As of 1 November 2022, [524 social science records](https://www.covid19dataportal.org/search/social-sciences) from BY-COVID partner CESSDA (Consortium of European Social Science Data Archives) are included in the Portal (via Tier 2 indexing), supplementing over 20 million omics records. The infrastructure is now in place to add additional resources from other BY-COVID partners, for example the sibling project ISIDORe (Integrated Services for Infectious Diseases Outbreak Research), and third parties as they become available.
+
+<GatsbyImage alt='Sam in a destroyed mall' image={getImage(props.localImages[0])} />
+
+
+Figure 1: The landing page of the [COVID-19 Data Portal](https://www.covid19dataportal.org/) showing the global search box
+
+** Find out more **
+
+[COVID-19 Data Portal](https://www.covid19dataportal.org/)
+
+[CESSDA news release](https://www.cessda.eu/News/CESSDA-Newsitem-nid3296)
