@@ -65,6 +65,9 @@ const Menu = () => {
             <Nav.Link as={Link} to="/outreach" className="outreach">
               Outreach
             </Nav.Link>
+            <Nav.Link as={Link} to="/usecases" className="usecases">
+              For Citizens
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

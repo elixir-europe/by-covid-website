@@ -25,7 +25,7 @@
         value: `/news${value}`,
       })
      }
-     else{
+     else if(node.frontmatter.postType === 'Event'){
       createNodeField({
         // Name of the field you are adding
         name: "slug",
@@ -35,6 +35,30 @@
         // don't need a separating "/" before the value because
         // createFilePath returns a path with the leading "/".
         value: `/events${value}`,
+      })
+     }
+     else if(node.frontmatter.postType === 'Usecase') {
+      createNodeField({
+        // Name of the field you are adding
+        name: "slug",
+        // Individual MDX node
+        node,
+        // Generated value based on filepath with "blog" prefix. you
+        // don't need a separating "/" before the value because
+        // createFilePath returns a path with the leading "/".
+        value: `/usecases${value}`,
+      })
+     }
+     else{
+      createNodeField({
+        // Name of the field you are adding
+        name: "slug",
+        // Individual MDX node
+        node,
+        // Generated value based on filepath with "blog" prefix. you
+        // don't need a separating "/" before the value because
+        // createFilePath returns a path with the leading "/".
+        value: `/usecases-fr${value}`,
       })
      }
    }
@@ -53,6 +77,9 @@
              fields {
                slug
              }
+             frontmatter {
+              postType              
+            }
            }
          }
        }
@@ -65,15 +92,42 @@
    const posts = result.data.allMdx.edges
    // you'll call `createPage` for each result
    posts.forEach(({ node }, index) => {
-     createPage({
-       // This is the slug you created before
-       // (or `node.frontmatter.slug`)
-       path: node.fields.slug,
-       // This component will wrap our MDX content
-       component: path.resolve(`./src/components/posts-layout.js`),
-       // You can use the values in this context in
-       // our page layout component
-       context: { id: node.id },
-     })
+     //console.log(node.frontmatter.postType)
+     if(node.frontmatter.postType === 'Usecase'){
+      createPage({
+        // This is the slug you created before
+        // (or `node.frontmatter.slug`)
+        path: node.fields.slug,
+        // This component will wrap our MDX content
+        component: path.resolve(`./src/components/usecases-layout.js`),
+        // You can use the values in this context in
+        // our page layout component
+        context: { id: node.id },
+      })
+     }
+     else  if(node.frontmatter.postType === 'UsecaseFr'){
+      createPage({
+        // This is the slug you created before
+        // (or `node.frontmatter.slug`)
+        path: node.fields.slug,
+        // This component will wrap our MDX content
+        component: path.resolve(`./src/components/usecases-layout-fr.js`),
+        // You can use the values in this context in
+        // our page layout component
+        context: { id: node.id },
+      })
+     }
+     else{
+      createPage({
+        // This is the slug you created before
+        // (or `node.frontmatter.slug`)
+        path: node.fields.slug,
+        // This component will wrap our MDX content
+        component: path.resolve(`./src/components/posts-layout.js`),
+        // You can use the values in this context in
+        // our page layout component
+        context: { id: node.id },
+      })
+     }
    })
  }
