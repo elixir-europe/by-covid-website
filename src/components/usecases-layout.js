@@ -47,7 +47,7 @@ const PostTemplate = ({ data: { mdx } }) => {
                     <Col xs={12} sm={12} lg={7}>
                       <Breadcrumb>
                         <Breadcrumb.Item href="/usecases">
-                          Usecases
+                          For citizens
                         </Breadcrumb.Item>
                       </Breadcrumb>
                       <GatsbyImage
