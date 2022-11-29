@@ -62,7 +62,7 @@ const PostTemplate = ({ data: { mdx } }) => {
                         </MDXRenderer>
                       </MDXProvider>
                       <p class="text-end mt-5">
-                        <a href="/usecases-fr">Usecases</a>
+                        <a href="/usecases-fr">For citizens</a>
                       </p>
                     </Col>
                   </Row>
