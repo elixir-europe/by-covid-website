@@ -18,7 +18,7 @@ const UseCasesIndex = ({ data }) => {
     <div>
       <Seo
         title="For citizen usecases"
-        description="Find out the latest news and events from the BY-COVID project."
+        description="What difference will the BY-COVID project make and what does it mean for citizens?"
         imageTwitter="/twitter-news.jpg"
         imageOg="/og-news.jpg"
         imageAlt="Image for the BY-COVID usecases for citizens."
