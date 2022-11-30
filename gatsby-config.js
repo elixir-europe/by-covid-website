@@ -29,6 +29,20 @@ module.exports = {
         path: `${__dirname}/posts/news-images`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `usecases-images`,
+        path: `${__dirname}/usecases/usecases-images`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `usecases-images-fr`,
+        path: `${__dirname}/usecases-fr/usecases-images-fr`,
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -50,6 +64,20 @@ module.exports = {
       options: {
         name: "posts",
         path: `${__dirname}/posts/`,
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "usecases",
+        path: `${__dirname}/usecases/`,
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "usecases-fr",
+        path: `${__dirname}/usecases-fr/`,
       },
     },
     {

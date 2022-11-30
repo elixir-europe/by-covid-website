@@ -396,7 +396,7 @@ nav.navbar {
 // e.g. 'home' for the home page. This is added from the frontmatter.
 .home .home, .about .about a.dropdown-toggle,
 .outcomes .outcomes
-, .outreach .outreach, .post .news-events, .newsletters .news-events a.dropdown-toggle, .news-events .news-events a.dropdown-toggle {
+, .outreach .outreach, .post .news-events, .newsletters .news-events a.dropdown-toggle, .news-events .news-events a.dropdown-toggle, .usecases .usecases {
     color: $dark-primary !important;
 }
 
@@ -797,7 +797,7 @@ body.home {
   background-size: auto 85px;
 }
 
-body.news-events {
+body.news-events, body.usecases {
   .news-cards {
     margin-top: 6rem;
   }
@@ -822,7 +822,7 @@ body.news-events {
 }
 
 @media (min-width: 768px) {
-  body.news-events {
+  body.news-events, body.usecases {
   .social-media .form {
     position: absolute;
     left: auto;
@@ -877,4 +877,7 @@ body.news-events {
 
 .post .gatsby-image-wrapper{
   margin: 1rem 0 2rem 0;
+}
+.usecases .gatsby-image-wrapper >div{
+  max-width: 100% !important;
 }
