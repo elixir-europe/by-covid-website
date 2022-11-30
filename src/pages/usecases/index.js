@@ -18,7 +18,7 @@ const UseCasesIndex = ({ data }) => {
     <div>
       <Seo
         title="For citizen usecases"
-        description="Find out the latest news and events from the BY-COVID project."
+        description="Find out the latest use-cases for citizens from the BY-COVID project."
         imageTwitter="/twitter-news.jpg"
         imageOg="/og-news.jpg"
         imageAlt="Image for the BY-COVID usecases for citizens."
@@ -57,6 +57,12 @@ const UseCasesIndex = ({ data }) => {
                   </Row>
                 </Container>
                 <Container className="news-cards">
+                <Row>
+                <Col>
+                <p className="text-center">What difference will the BY-COVID project make and what does it mean for citizens? Explore the examples below to find out more.
+</p>
+                </Col>
+                </Row>
                   <Row>
                     {usecases.map(({ node: post }) => (
                       <Col
