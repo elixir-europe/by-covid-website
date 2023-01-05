@@ -6,6 +6,10 @@ imageTwitter: /twitter-news.jpg
 imageOg: /og-news.jpg
 imageAlt: BY-COVID Event
 newsImage: ./news-images/by-covid-industry-event-202301.png
+embeddedImagesLocal:
+  - './news-images/elixir.jpeg'
+  - './news-images/upp-white.png'
+  - './news-images/eatris.png'
 date: 2023-01-24
 postType: Event
 category: news-event
@@ -13,6 +17,7 @@ category: news-event
 
 import { Table, Card, Container, Row, Col } from "react-bootstrap"
 import { navigate } from "gatsby"
+import { getImage, GatsbyImage } from 'gatsby-plugin-image';
 
 **BY-COVID industry event** - Better data management for better pandemic preparedness, disease surveillance and outbreak control
 
@@ -98,6 +103,11 @@ Please find the link to register below.
 
 
 <button class="btn btn-primary mb-4" target="_blank" onClick={()=>{navigate("https://elixir-events.eventscase.com/attendance/event/index/42272/EN?step=attendee_details")}}>Register Online</button>
+<br />
+
+<GatsbyImage alt='BY-COVID data indexing system' image={getImage(props.localImages[0])} />
+<GatsbyImage alt='BY-COVID data indexing system' image={getImage(props.localImages[1])} />
+<GatsbyImage alt='BY-COVID data indexing system' image={getImage(props.localImages[2])} />
 
 
 
