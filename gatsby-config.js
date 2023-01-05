@@ -106,34 +106,6 @@ module.exports = {
         path: `./src/data/`,
       },
     },
-    {
-      resolve: `gatsby-plugin-google-gtag`,
-      options: {
-        // You can add multiple tracking ids and a pageview event will be fired for all of them.
-        trackingIds: [
-          "G-7XZ20R9EEH", // Google Analytics / GA
-        ],
-        // This object is used for configuration specific to this plugin
-        pluginConfig: {
-          // Puts tracking script in the head instead of the body
-          head: false,
-          // Setting this parameter is also optional
-          respectDNT: true,
-        },
-      },
-    },
-      {
-          resolve: `gatsby-plugin-gdpr-cookies`,
-          options: {
-              googleAnalytics: {
-                  trackingId: 'G-7XZ20R9EEH',
-                  // Setting this parameter is optional
-                  anonymize: true
-              },
-              // Defines the environments where the tracking should be available  - default is ["production"]
-              environments: ['production', 'development']
-          },
-      },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
