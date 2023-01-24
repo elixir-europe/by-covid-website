@@ -160,7 +160,7 @@ export const pageQuery = graphql`
             date(formatString: "D MMMM YYYY")
             newsImage {
               childImageSharp {
-                gatsbyImageData(width: 800, height: 375, quality: 90)
+                gatsbyImageData(width: 800, height: 400, quality: 90)
               }
             }
           }

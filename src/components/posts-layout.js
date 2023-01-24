@@ -92,7 +92,7 @@ export const pageQuery = graphql`
         imageAlt
         newsImage {
           childImageSharp {
-            gatsbyImageData(width: 800, height: 375, quality: 90)
+            gatsbyImageData(width: 800, height: 400, quality: 90)
           }
         }
         embeddedImagesLocal {
