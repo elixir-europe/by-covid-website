@@ -14,7 +14,7 @@ import Menu from "./menu"
 import Helmet from "react-helmet"
 
 const PostTemplate = ({ data: { mdx } }) => {
-  const bodyimage = getImage(mdx.frontmatter.embeddedImagesLocal)
+  const bodyimage = getImage(mdx.frontmatter.embeddedImagesLocalUc)
   return (
     <div>
       <Helmet>
@@ -94,7 +94,7 @@ export const pageQuery = graphql`
             gatsbyImageData(width: 800, height: 375, quality: 90)
           }
         }
-        embeddedImagesLocal {
+        embeddedImagesLocalUc {
           childImageSharp {
             gatsbyImageData
           }

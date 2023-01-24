@@ -142,7 +142,7 @@ const PostsIndex = ({ data }) => {
 export const pageQuery = graphql`
   query postListIndex {
     allMdx(
-      filter: { frontmatter: { class: { eq: "post" } } }
+      filter: { frontmatter: { category: { eq: "news-event" } } }
       sort: { fields: frontmatter___date, order: DESC }
     ) {
       edges {
@@ -156,10 +156,11 @@ export const pageQuery = graphql`
             imageOg
             imageAlt
             postType
+            category
             date(formatString: "D MMMM YYYY")
             newsImage {
               childImageSharp {
-                gatsbyImageData(width: 800, height: 375, quality: 90)
+                gatsbyImageData(width: 800, height: 400, quality: 90)
               }
             }
           }

@@ -686,9 +686,13 @@ body.home {
       padding-top: 80px;
       margin-top: 5rem;
       color: white;
-      background: url("./images/by-covid-survey.svg") no-repeat 50% 0;
+      background: url("./images/industry-event.svg") no-repeat 50% 0;
       background-size: 70px auto;
+      &.small-size{
+        font-size: 2rem;
+      }
     }
+
   }
   footer {
     margin-top: 0;
@@ -816,6 +820,9 @@ body.news-events, body.usecases {
     }
   }
 }
+body.usecases .social-media .form{
+  width: 350px;
+}
 
 @media (min-width: 768px) {
   body.news-events, body.usecases {
@@ -873,4 +880,13 @@ body.news-events, body.usecases {
 
 .usecases .gatsby-image-wrapper >div{
   max-width: 100% !important;
+}
+.post .gatsby-image-wrapper{
+  margin: 1rem 0 2rem 0;
+}
+.usecases .gatsby-image-wrapper >div{
+  max-width: 100% !important;
+}
+.post .gatsby-image-wrapper.accessday {
+  margin: 1rem 2rem 2rem 0 !important;
 }

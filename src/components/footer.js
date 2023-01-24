@@ -7,9 +7,6 @@ import linkedinIcon from "../images/linkedin-icon.svg"
 import byCovideuIcon from "../images/by-covid-footer-eu.svg"
 import NewsletterForm from "../components/newsletter-form"
 
-import CookieConsent  from 'react-cookie-consent';
-import { initializeAndTrack } from 'gatsby-plugin-gdpr-cookies'
-
 const Footer = () => {
   return (
     <footer class="py-7 bg-dark text-white">
@@ -141,24 +138,6 @@ const Footer = () => {
           </Col>
         </Row>
       </Container>
-      <CookieConsent
-          location="bottom"
-          buttonText="Accept Cookies"
-          declineButtonText="Reject"
-          cookieName="gatsby-gdpr-google-analytics"
-          expires={150}
-          enableDeclineButton
-          buttonClasses="accept"
-          declineButtonClasses="reject"
-          disableStyles={true}
-          contentClasses="contentwrapper"
-          buttonWrapperClasses="buttonWrapper"
-          onAccept={() => {
-            initializeAndTrack()
-          }}
-      >
-        <p> We use cookies to gather statistics on visits to the site, so that we can report to funders and improve the website. See our <a href="/privacy">privacy page</a>. </p>
-      </CookieConsent>
     </footer>
 
   )
