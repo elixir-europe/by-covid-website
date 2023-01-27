@@ -14,11 +14,11 @@ import Menu from "./menu"
 import Helmet from "react-helmet"
 
 const PostTemplate = ({ data: { mdx } }) => {
-  const bodyimage = getImage(mdx.frontmatter.embeddedImagesLocalUc)
+  const image = getImage(mdx.frontmatter.newsImage)
   return (
     <div>
       <Helmet>
-        <body class="usecases" />
+        <body class={mdx.frontmatter.class} />
       </Helmet>
       <Seo
         title={mdx.frontmatter.title}
@@ -46,23 +46,25 @@ const PostTemplate = ({ data: { mdx } }) => {
                   <Row>
                     <Col xs={12} sm={12} lg={7}>
                       <Breadcrumb>
-                        <Breadcrumb.Item href="/usecases">
-                          For citizens
+                        <Breadcrumb.Item href="/news">
+                          News
                         </Breadcrumb.Item>
                       </Breadcrumb>
+                      <h1 class="fs-1 mb-3 pb-0">{mdx.frontmatter.title}</h1>
+                      <p>{mdx.frontmatter.date}</p>
                       <GatsbyImage
-                        image={bodyimage}
+                        image={image}
                         alt={mdx.frontmatter.imageAlt}
-                        class="mb-1"
+                        class="mb-5"
                       />
-                      <h1 class="fs-4 mb-3 pb-0 text-center">{mdx.frontmatter.title}</h1>
+
                       <MDXProvider>
-                        <MDXRenderer frontmatter={mdx.frontmatter}>
+                        <MDXRenderer frontmatter={mdx.frontmatter} localImages={mdx.frontmatter.embeddedImagesLocal}>
                           {mdx.body}
                         </MDXRenderer>
                       </MDXProvider>
                       <p class="text-end mt-5">
-                        <a href="/usecases">For citizens</a>
+                        <a href="/news">News</a>
                       </p>
                     </Col>
                   </Row>
@@ -77,7 +79,7 @@ const PostTemplate = ({ data: { mdx } }) => {
   )
 }
 export const pageQuery = graphql`
-  query UseCaseQuery($id: String) {
+  query PostQueryNews($id: String) {
     mdx(id: { eq: $id }, frontmatter: { class: { eq: "post" } }) {
       id
       body
@@ -88,13 +90,12 @@ export const pageQuery = graphql`
         imageTwitter
         imageOg
         imageAlt
-        postType
         newsImage {
           childImageSharp {
-            gatsbyImageData(width: 800, height: 375, quality: 90)
+            gatsbyImageData(width: 800, height: 400, quality: 90)
           }
         }
-        embeddedImagesLocalUc {
+        embeddedImagesLocal {
           childImageSharp {
             gatsbyImageData
           }

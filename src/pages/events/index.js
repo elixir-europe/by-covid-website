@@ -28,7 +28,7 @@ const PostsIndex = ({ data }) => {
       />
 
       <Helmet>
-        <body className="news-events" />
+        <body className="events" />
       </Helmet>
       <Container>
         <Row>
@@ -48,7 +48,7 @@ const PostsIndex = ({ data }) => {
                 <Container fluid>
                   <Row>
                     <Col>
-                      <h1>News & events</h1>
+                      <h1>Events</h1>
                       <div class="position-relative social-media">
                         <div>
                           <div class="icons">

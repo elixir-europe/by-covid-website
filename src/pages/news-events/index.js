@@ -156,6 +156,7 @@ export const pageQuery = graphql`
             imageOg
             imageAlt
             postType
+            redirect
             category
             date(formatString: "D MMMM YYYY")
             newsImage {
