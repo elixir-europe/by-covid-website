@@ -32,6 +32,7 @@ $font-family-sans-serif: "IBM Plex Sans",Helvetica,Arial,sans-serif;
 
 
 // 3. Include remainder of required Bootstrap stylesheets
+@import "../node_modules/bootstrap/scss/maps";
 @import "../node_modules/bootstrap/scss/mixins";
 
 // 4. Include any optional Bootstrap components as you like
