@@ -122,8 +122,8 @@
    }
    //Redirects
    createRedirect({
-    fromPath: `/outcomes`,
-    toPath: `/outputs`,
+    fromPath: "/outcomes/",
+    toPath: "/outputs/",
   })
    // Create blog post pages.
    const posts = result.data.allMdx.edges
