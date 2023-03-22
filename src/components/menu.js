@@ -46,8 +46,8 @@ const Menu = () => {
                 Alignment with external projects
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link as={Link} to="/outcomes" className="outcomes">
-              Outcomes
+            <Nav.Link as={Link} to="/outputs" className="outcomes">
+              Outputs
             </Nav.Link>
             <NavDropdown
               title="News & events"
