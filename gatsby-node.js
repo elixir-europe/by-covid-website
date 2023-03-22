@@ -98,7 +98,7 @@
  const path = require("path")
  exports.createPages = async ({ graphql, actions, reporter }) => {
    // Destructure the createPage function from the actions object
-   const { createPage, createRedirect } = actions
+   const { createPage } = actions
    const result = await graphql(`
      query {
        allMdx(filter: {frontmatter: {class: {eq: "post"}}}) {
@@ -120,11 +120,6 @@
    if (result.errors) {
      reporter.panicOnBuild('🚨  ERROR: Loading "createPages" query')
    }
-   //Redirects
-   createRedirect({
-    fromPath: "/outcomes/",
-    toPath: "/outputs/",
-  })
    // Create blog post pages.
    const posts = result.data.allMdx.edges
    // you'll call `createPage` for each result

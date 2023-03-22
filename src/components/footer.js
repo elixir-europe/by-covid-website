@@ -40,18 +40,18 @@ const Footer = () => {
           </Col>
           <Col>
             <h2 class="mb-3 fs-6 fw-bold">
-              <Link to="/outcomes" className="text-light">
-                Outcomes
+              <Link to="/outputs" className="text-light">
+                Outputs
               </Link>
             </h2>
             <ul class="list-unstyled fs-7">
               <li>
-                <Link to="/outcomes#deliverables">
+                <Link to="/outputs#deliverables">
                   Deliverables & milestones
                 </Link>
               </li>
               <li>
-                <Link to="/outcomes#publications">Publications</Link>
+                <Link to="/outputs#publications">Publications</Link>
               </li>
             </ul>
             <h2 class="mb-1 fs-6 fw-bold mt-3">
