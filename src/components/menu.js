@@ -61,10 +61,13 @@ const Menu = () => {
               <NavDropdown.Item as={Link} to="/events" className="events">
               Events
               </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/newsletters" className="news-letters">
+              <NavDropdown.Item as={Link} to="/newsletters" className="newsletters">
               Newsletters
               </NavDropdown.Item>
             </NavDropdown>
+            <Nav.Link as={Link} to="/resources" className="resource">
+              Resources
+            </Nav.Link>
             <Nav.Link as={Link} to="/usecases" className="usecases">
               For Citizens
             </Nav.Link>
