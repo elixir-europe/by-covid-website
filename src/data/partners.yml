@@ -163,10 +163,6 @@ partners:
     url: https://www.upol.cz/en/
     logo: ../images/palacky-university.svg
 
-  - name: RO Crate
-    url: https://www.researchobject.org/ro-crate/
-    logo: ../images/ro-crate.svg
-
   - name: RIVM Dutch National Institute for Public Health and Environment
     url: https://www.rivm.nl/en
     logo: ../images/rvim.png
