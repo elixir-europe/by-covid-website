@@ -26,7 +26,21 @@ const PostsIndex = ({ data }) => {
         imageOg="/og-news.jpg"
         imageAlt="Image for the BY-COVID News page."
       />
-
+      <Helmet>
+          <script>
+            var _paq = window._paq = window._paq || [];
+            _paq.push(["disableCookies"]);
+            _paq.push(['trackPageView']);
+            _paq.push(['enableLinkTracking']);
+            (function() &#123; 
+                var u="https://webstats.elixir-europe.org/";
+                _paq.push(['setTrackerUrl', u+'matomo.php']);
+                _paq.push(['setSiteId', '5']);
+                var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+                g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+                &#125;)();
+          </script>
+      </Helmet>
       <Helmet>
         <body className="news" />
       </Helmet>

@@ -23,7 +23,21 @@ const UseCasesIndex = ({ data }) => {
         imageOg="/og-for-citizens.jpg"
         imageAlt="Image for the BY-COVID usecases for citizens."
       />
-
+      <Helmet>
+          <script>
+            var _paq = window._paq = window._paq || [];
+            _paq.push(["disableCookies"]);
+            _paq.push(['trackPageView']);
+            _paq.push(['enableLinkTracking']);
+            (function() &#123; 
+                var u="https://webstats.elixir-europe.org/";
+                _paq.push(['setTrackerUrl', u+'matomo.php']);
+                _paq.push(['setSiteId', '5']);
+                var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+                g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+                &#125;)();
+          </script>
+      </Helmet>
       <Helmet>
         <body className="usecases" />
       </Helmet>
