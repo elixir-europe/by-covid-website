@@ -102,16 +102,8 @@ export const pageQuery = graphql`
         title
         description
         class
-        imageTwitter {
-          childImageSharp {
-            gatsbyImageData(width: 1024, height: 512, quality: 90)
-          }
-        }
-        imageOg {
-          childImageSharp {
-            gatsbyImageData(width: 1200, height: 630, quality: 90)
-          }
-        }
+        imageTwitter
+        imageOg
         imageAlt
         newsImage {
           childImageSharp {
