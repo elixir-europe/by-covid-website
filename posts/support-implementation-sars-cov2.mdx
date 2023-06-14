@@ -13,6 +13,7 @@ category: news-event
 
 import React from "react"
 import { Link } from "gatsby"
+import { navigate } from "gatsby"
 
 ** Closing date: 1 September 2023 17:00 CET **
 
@@ -43,6 +44,8 @@ Applicants should not be beneficiaries from the BY-COVID project and are limited
 ## How to apply
 
 Full details are in the <Link to="/pdf/by-covid-open-calls.pdf">open call guidance document</Link>.
+
+<button class="btn btn-primary" onClick={()=>{navigate("/pdf/by-covid-open-calls-application-form.rtf")}}>Application form</button>
 
 ## Find out more
 
