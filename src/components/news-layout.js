@@ -15,8 +15,28 @@ import Helmet from "react-helmet"
 
 const PostTemplate = ({ data: { mdx } }) => {
   const image = getImage(mdx.frontmatter.newsImage)
+  let hide = ''
+  if(mdx.frontmatter.topImage)
+  {
+     hide = mdx.frontmatter.topImage
+  }
   return (
     <div>
+      <Helmet>
+          <script>
+            var _paq = window._paq = window._paq || [];
+            _paq.push(["disableCookies"]);
+            _paq.push(['trackPageView']);
+            _paq.push(['enableLinkTracking']);
+            (function() &#123; 
+                var u="https://webstats.elixir-europe.org/";
+                _paq.push(['setTrackerUrl', u+'matomo.php']);
+                _paq.push(['setSiteId', '5']);
+                var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+                g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+                &#125;)();
+          </script>
+        </Helmet>
       <Helmet>
         <body class={mdx.frontmatter.class} />
       </Helmet>
@@ -55,7 +75,8 @@ const PostTemplate = ({ data: { mdx } }) => {
                       <GatsbyImage
                         image={image}
                         alt={mdx.frontmatter.imageAlt}
-                        class="mb-5"
+                        //class="mb-5 {{ mdx.frontmatter.imageAlt }}"
+                        className={`mb-5 ${hide}`}
                       />
 
                       <MDXProvider>
@@ -90,6 +111,7 @@ export const pageQuery = graphql`
         imageTwitter
         imageOg
         imageAlt
+        topImage
         newsImage {
           childImageSharp {
             gatsbyImageData(width: 800, height: 400, quality: 90)

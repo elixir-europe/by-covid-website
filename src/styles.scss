@@ -29,7 +29,8 @@ $link-hover-color: $primary;
 $h1-font-size: 4rem;
 $h2-font-size: 2.75rem;
 $font-family-sans-serif: "IBM Plex Sans",Helvetica,Arial,sans-serif;
-
+$table-bg-accent-dark: rgba(0, 0, 0, 0.05);
+$enable-dark-mode: false;
 
 // 3. Include remainder of required Bootstrap stylesheets
 @import "../node_modules/bootstrap/scss/maps";
@@ -900,4 +901,22 @@ body.usecases .social-media .form{
 }
 .post .gatsby-image-wrapper.accessday {
   margin: 1rem 2rem 2rem 0 !important;
+}
+.gatsby-image-wrapper.hide{
+  display: none;
+}
+table.fairsharing
+{
+  td:nth-child(1) {
+    width: 25%;}
+  td:nth-child(2) {
+    width: 45%;}
+  td:nth-child(3) {
+    width: 30%;}
+  td.dark{
+    background: $table-bg-accent-dark;
+  }
+  td.light{
+    background: $white;
+  }
 }
