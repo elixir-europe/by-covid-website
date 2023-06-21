@@ -15,6 +15,11 @@ import Helmet from "react-helmet"
 
 const PostTemplate = ({ data: { mdx } }) => {
   const image = getImage(mdx.frontmatter.newsImage)
+  let hide = ''
+  if(mdx.frontmatter.topImage)
+  {
+     hide = mdx.frontmatter.topImage
+  }
   return (
     <div>
       <Helmet>
@@ -31,7 +36,7 @@ const PostTemplate = ({ data: { mdx } }) => {
                 g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
                 &#125;)();
           </script>
-      </Helmet>
+        </Helmet>
       <Helmet>
         <body class={mdx.frontmatter.class} />
       </Helmet>
@@ -70,7 +75,8 @@ const PostTemplate = ({ data: { mdx } }) => {
                       <GatsbyImage
                         image={image}
                         alt={mdx.frontmatter.imageAlt}
-                        class="mb-5"
+                        //class="mb-5 {{ mdx.frontmatter.imageAlt }}"
+                        className={`mb-5 ${hide}`}
                       />
 
                       <MDXProvider>
@@ -105,6 +111,7 @@ export const pageQuery = graphql`
         imageTwitter
         imageOg
         imageAlt
+        topImage
         newsImage {
           childImageSharp {
             gatsbyImageData(width: 800, height: 400, quality: 90)

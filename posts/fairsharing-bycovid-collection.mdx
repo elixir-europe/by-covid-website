@@ -1,0 +1,158 @@
+---
+title: The FAIRsharing BY-COVID Collection of data sources
+description:  The COVID-19 Data Portal makes it possible for researchers to access and integrate a broad range of COVID-19 and SARS-CoV-2 data.
+class: post
+imageTwitter: /twitter-news.jpg
+imageOg: /og-news.jpg
+imageAlt: BY-COVID News
+newsImage: ./news-images/BY-COVID-Resources-Grid.png
+embeddedImagesLocal:
+  - ./news-images/BY-COVID-Resources-Grid-full.png
+date: 2023-06-22
+postType: News
+category: news-event
+topImage: hide
+---
+
+import { Table, Card, Container, Row, Col } from "react-bootstrap"
+import { navigate } from "gatsby"
+import { getImage, GatsbyImage } from 'gatsby-plugin-image';
+
+The COVID-19 Data Portal makes it possible for researchers to access and integrate a broad range of COVID-19 and SARS-CoV-2 data. BY-COVID has developed tools, workflows, documentation and training to support the incorporation of additional resources from many different research disciplines. 
+
+A key initial step involves registering data sources and uploading their key characteristics to FAIRsharing. A cross-disciplinary resource that maps and interlinks databases, standards and policies, FAIRsharing enables efficient onboarding of new data sources and a means to ensure these are more discoverable in the European Open Science Cloud (EOSC) ecosystem.
+
+The BY-COVID FAIRsharing Collection is a catalogue (Figure 1) and knowledge graph (Figure 2) of data sources and their characteristics, including access terms, protocols and standards used to represent the data and metadata. The Collection currently contains 20 data sources (Table 1), developed by BY-COVID members, from social science and humanities, health and clinical data, images, genomic and phenotypic data and chemical biology.
+
+Making a range of infectious disease data sources widely discoverable, accessible and interoperable is important for research and innovation, which is increasingly multidisciplinary in nature. For example, pathogen research is accelerated by the availability of data from clinical trials, biobanks, behavioural and socioeconomic studies, particularly if the data is combined with host and pathogen omics information. Many of these data types, for example clinical records or bioactivity data, may contain high resolution images, the availability of which extends the potential research questions which can be explored.
+
+Multidisciplinary data is also critical for public health decision-making, where policy questions are complex and evidence from biomolecular research, clinical studies and social sciences must be taken into account. One lesson from the COVID-19 pandemic was that data-driven decision-making needs high quality, real-time data from many research disciplines and geographic areas in an integrated format. The BY-COVID project is building on these learnings and creating solutions for COVID-19 that can be extended to other pathogens. Resources like the COVID-19 Data Portal and FAIRsharing are pivotal to meet these goals.
+
+The launch of the FAIRsharing BY-COVID Collection, which will grow progressively, marks an important step in the maturation of the BY-COVID project. The Datasets from these data sources will now be incorporated into the COVID-19 Data Portal, providing access to heterogeneous, yet interlinked and organised data, across domains. Over the course of the project, emerging national data portals will be registered in FAIRsharing and linked to the COVID-19 Data Platform, building a federated digital space for infectious disease data.
+
+<GatsbyImage alt='BY-COVID Collection of data sources' image={getImage(props.localImages[0])} class="accessday" />
+
+<i>Figure 1: Summary information of the 20 resources within the BY-COVID Data Resources collection in FAIRsharing, highlighting the status and research area of the databases. Available at <a href="https://fairsharing.org/3773" target="_blank">https://fairsharing.org/3773</a>. </i>
+
+<br /><br />
+The graph of relationships within the BY-COVID Data Resources collection in FAIRsharing, highlighting the connectivity and types of interactions among the databases is available at - <a href="https://fairsharing.org/graph/3773" target="_blank">https://fairsharing.org/graph/3773</a>.
+<br /><br />
+
+
+Find out more:
+
+* <a href="https://fairsharing.org/3773" target="_blank">The FAIRsharing BY-COVID Collection</a>
+* <a href="https://www.covid19dataportal.org/" target="_blank">COVID-19 Data Portal</a>
+* <a href="https://zenodo.org/record/7129553#.ZAmzXHbP0uW" target="_blank">BY-COVID D3.2: Implementation of cloud-based, high performance, scalable indexing system</a>
+* <a href="https://fairsharing.org/educational" target="_blank">FAIRsharing Educational</a>
+* <a href="https://by-covid.org/usecases/metadata" target="_blank">A simple explanation about metadata</a>
+
+<br />
+
+<i>Table 1: The BY-COVID FAIRsharing resource collection (as of 15 June 2023). <a href="https://fairsharing.org/3773" target="_blank">View current status</a>.</i>
+
+<Table striped bordered table-responsive className="fairsharing">
+    <thead>
+        <tr>
+            <td class="py-3"><strong>Domain</strong></td>
+            <td class="py-3"><strong>Resource and record in FAIRsharing</strong></td>
+            <td class="py-3"><strong>Type of data</strong></td>
+        </tr>
+    </thead>
+  <tbody>
+    <tr>
+        <td colspan="1" rowspan="7" class="py-3">Clinical and health</td>
+        <td colspan="1" rowspan="1" class="py-3">Health Data Research Innovation Gateway; <a href="https://doi.org/10.25504/FAIRsharing.nh1DmP" target="_blank">https://doi.org/10.25504/FAIRsharing.nh1DmP</a></td>
+        <td colspan="1" rowspan="1">UK health datasets</td>
+    </tr>
+    <tr>
+        <td colspan="1" rowspan="1" class="py-3">European Health Information Portal (HIP); <a href="https://doi.org/10.25504/FAIRsharing.8690f1" target="_blank">https://doi.org/10.25504/FAIRsharing.8690f1</a></td>
+        <td colspan="1" rowspan="1">European health information</td>
+    </tr>
+    <tr>
+        <td colspan="1" rowspan="1" class="py-3">ECRIN Clinical Research Metadata Repository; <a href="https://fairsharing.org/3067" target="_blank">https://fairsharing.org/3067</a></td>
+        <td colspan="1" rowspan="1">European clinical studies, trial registrations, results summaries, journal articles, protocols</td>
+    </tr>
+    <tr>
+        <td colspan="1" rowspan="1" class="py-3">Dutch National Observational COVID-19 data portal; <a href="https://doi.org/10.25504/FAIRsharing.71bf06" target="_blank">https://doi.org/10.25504/FAIRsharing.71bf06</a></td>
+        <td colspan="1" rowspan="1">Observational data from Dutch health care providers</td>
+    </tr>
+    <tr>
+        <td colspan="1" rowspan="1" class="py-3">BBMRI-ERIC Directory; <a href="https://doi.org/10.25504/FAIRsharing.q9VUYM" target="_blank">https://doi.org/10.25504/FAIRsharing.q9VUYM</a></td>
+        <td colspan="1" rowspan="1">Aggregate information about biobanks across Europe</td>
+    </tr>
+    <tr>
+        <td colspan="1" rowspan="1" class="py-3">Dutch National Observational COVID-19 data portal; <a href="https://doi.org/10.25504/FAIRsharing.71bf06" target="_blank">https://doi.org/10.25504/FAIRsharing.71bf06</a></td>
+        <td colspan="1" rowspan="1">Clinical data portal for the exploration and reuse of clinical data from Dutch university medical centres</td>
+    </tr>
+    <tr>
+        <td colspan="1" rowspan="1" class="py-3">COVID-19 Data Portal; <a href="https://doi.org/10.25504/FAIRsharing.f3b7a9" target="_blank">https://doi.org/10.25504/FAIRsharing.f3b7a9</a></td>
+        <td colspan="1" rowspan="1">COVID-19 datasets and tools including SARS-CoV-2 sequence data </td>
+    </tr>
+    <tr>
+        <td colspan="1" rowspan="2" class="py-3">Genotypic and phenotypic</td>
+        <td colspan="1" rowspan="1" class="py-3">The European Genome-phenome Archive (EGA); <a href="https://doi.org/10.25504/FAIRsharing.mya1ff" target="_blank">https://doi.org/10.25504/FAIRsharing.mya1ff</a></td>
+        <td colspan="1" rowspan="1">Personally identifiable genetic, phenotypic, and clinical data</td>
+    </tr>
+    <tr>
+        <td colspan="1" rowspan="1" class="py-3">European Mouse Mutant Archive (EMMA); <a href="https://doi.org/10.25504/FAIRsharing.g2fjt2" target="_blank">https://doi.org/10.25504/FAIRsharing.g2fjt2</a></td>
+        <td colspan="1" rowspan="1">Mutant mice strains essential for basic biomedical research</td>
+    </tr>
+    <tr>
+        <td colspan="1" rowspan="5" class="py-3 dark">Social sciences and humanities</td>
+        <td colspan="1" rowspan="1" class="py-3">EUI COVID-19 social sciences and humanities (SSH) Data Portal; <a href="https://doi.org/10.25504/FAIRsharing.97367f" target="_blank">https://doi.org/10.25504/FAIRsharing.97367f</a></td>
+        <td colspan="1" rowspan="1">COVID-19-related research in the social sciences and humanities</td>
+    </tr>
+    <tr>
+        <td colspan="1" rowspan="1" class="py-3">Consortium of European Social Science Data Archives (CESSDA) Data Catalogue; <a href="https://doi.org/10.25504/FAIRsharing.a12316" target="_blank">https://doi.org/10.25504/FAIRsharing.a12316</a></td>
+        <td colspan="1" rowspan="1">European social science data</td>
+    </tr>
+    <tr>
+        <td colspan="1" rowspan="1" class="py-3">European Social Survey (ESS) Data Portal; <a href="https://fairsharing.org/4838" target="_blank">https://fairsharing.org/4838</a></td>
+        <td colspan="1" rowspan="1">European cross-national survey data measuring the attitudes, beliefs and behaviour patterns of diverse populations in more than thirty nations</td>
+    </tr>
+    <tr>
+        <td colspan="1" rowspan="1" class="py-3">Survey of Health, Ageing and Retirement in Europe (SHARE)  Research Data Center; <a href="https://fairsharing.org/4839" target="_blank">https://fairsharing.org/4839</a></td>
+        <td colspan="1" rowspan="1">European survey data on the effects of health, social, economic and environmental policies over the life-course of European citizens and beyond</td>
+    </tr>
+    <tr>
+        <td colspan="1" rowspan="1" class="py-3">Open Data Infrastructure for Social Science and Economic Innovations (ODISSEI) Portal; <a href="https://fairsharing.org/4841" target="_blank">https://fairsharing.org/4841</a></td>
+        <td colspan="1" rowspan="1">Metadata from most data collections relevant to the social science community in the Netherlands</td>
+    </tr>
+    <tr>
+        <td colspan="1" rowspan="4" class="py-3 light">Images</td>
+        <td colspan="1" rowspan="1" class="py-3">Electron Microscopy Public Image Archive (EMPIAR); <a href="https://doi.org/10.25504/FAIRsharing.dff3ef" target="_blank">https://doi.org/10.25504/FAIRsharing.dff3ef</a></td>
+        <td colspan="1" rowspan="1">Raw images underpinning 3D cryo-EM maps and tomograms</td>
+    </tr>
+    <tr>
+        <td colspan="1" rowspan="1" class="py-3">Electron Microscopy Data Bank (EMDB); <a href="https://doi.org/10.25504/FAIRsharing.651n9j" target="_blank">https://doi.org/10.25504/FAIRsharing.651n9j</a></td>
+        <td colspan="1" rowspan="1">Electron microscopy density maps of macromolecular complexes and subcellular structures</td>
+    </tr>
+    <tr>
+        <td colspan="1" rowspan="1" class="py-3">Image Data Resource (IDR); <a href="https://doi.org/10.25504/FAIRsharing.6wf1zw" target="_blank">https://doi.org/10.25504/FAIRsharing.6wf1zw</a></td>
+        <td colspan="1" rowspan="1">Image data from genetic, RNAi, chemical, localisation and geographic high content screens, super-resolution microscopy and digital pathology</td>
+    </tr>
+    <tr>
+        <td colspan="1" rowspan="1" class="py-3">BioImage Archive; <a href="https://doi.org/10.25504/FAIRsharing.x38D2k" target="_blank">https://doi.org/10.25504/FAIRsharing.x38D2k</a></td>
+        <td colspan="1" rowspan="1">Biological images that are useful to life-science researchers</td>
+    </tr>
+    <tr>
+        <td colspan="1" rowspan="3" class="py-3">Chemical Biology</td>
+        <td colspan="1" rowspan="1" class="py-3">ChEMBL; <a href="https://doi.org/10.25504/FAIRsharing.m3jtpg" target="_blank">https://doi.org/10.25504/FAIRsharing.m3jtpg</a></td>
+        <td colspan="1" rowspan="1">Chemical, bioactivity and genomic data to aid the translation of genomic information into effective new drugs</td>
+    </tr>
+    <tr>
+        <td colspan="1" rowspan="1" class="py-3">European Chemical Biology Database (ECBD); <a href="https://fairsharing.org/3717" target="_blank">https://fairsharing.org/3717</a></td>
+        <td colspan="1" rowspan="1">Experimental results from biological screening programs</td>
+    </tr>
+    <tr>
+        <td colspan="1" rowspan="1" class="py-3">COVID 19-NMR; <a href="https://fairsharing.org/4850" target="_blank">https://fairsharing.org/4850</a></td>
+        <td colspan="1" rowspan="1">RNA and protein structural data for SARS-CoV-2 as well as other viruses</td>
+    </tr>
+  </tbody>
+</Table>  
+
+
+
+
+
