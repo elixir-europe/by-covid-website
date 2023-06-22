@@ -28,8 +28,8 @@ const Layout = ({ location, children, pageContext, ...props }) => (
                 title
                 description
                 class
-                imageOg
                 imageTwitter
+                imageOg
               }
             }
           }
