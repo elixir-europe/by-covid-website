@@ -1,0 +1,107 @@
+---
+title: Resources
+description: Resources of the BY-COVID project.
+class: resource
+---
+
+import { Table, Card, Container, Row, Col } from "react-bootstrap"
+import { navigate } from "gatsby"
+
+<Container>
+  <Row className="px-4">
+   <Col>
+
+ <Table responsive striped bordered className="training">
+    <thead class="bg-white">
+      <tr>
+        <th>Host Institute</th>
+        <th>Course Title</th>
+        <th>Course Format</th>
+        <th>Course Duration</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>EMBL-EBI, Cambridgeshire, UK</td>
+        <td>European Nucleotide Archive - Quick Tour</td>
+        <td>online</td>
+        <td>30 Minutes</td>
+        <td><button class="btn btn-primary mb-2" target="_blank" onClick={()=>{navigate("https://trainingcontent.embl.org/ena-quick-tour")}}>Course Material</button></td>
+      </tr>
+      <tr>
+        <td>EMBL-EBI, Cambridgeshire, UK</td>
+        <td>ENA : SARS-CoV-2 Submission Workshop</td>
+        <td>online</td>
+        <td>2 Hours</td>
+        <td><button class="btn btn-primary mb-2" target="_blank" onClick={()=>{navigate("https://ena-covid19-docs.readthedocs.io/en/latest/submission_workshop/getting_started.html")}}>Course Material</button></td>
+      </tr>
+      <tr>
+        <td>EMBL-EBI, Tampere University, Finland</td>
+        <td>WP3 Discoverability hackathon v2 on Feb 8th</td>
+        <td>online</td>
+        <td>2 Hours</td>
+        <td><button class="btn btn-primary mb-2" target="_blank" onClick={()=>{navigate("https://docs.google.com/presentation/d/1QNwMUvFlPQea2f21KzMcF1Y_uiPPaZ_VC7gjLjmSvko/edit?usp=share_link")}}>View Slides</button> <button class="btn btn-primary mb-2" target="_blank" onClick={()=>{navigate("https://drive.google.com/file/d/1JUZEf-syrwy0PlAfQgM20XdUhvzIQQoA/view?usp=share_link")}}>View Recording</button></td>
+      </tr>
+      <tr>
+        <td>SIB Swiss Institute of Bioinformatics Sciensano</td>
+        <td>ENA : SARS-CoV-2 Submission Workshop</td>
+        <td>online</td>
+        <td>2 Hours 45 Minutes</td>
+        <td><button class="btn btn-primary mb-2" target="_blank" onClick={()=>{navigate("https://drive.google.com/drive/u/1/folders/1uMZ0jLT-m-GQ_XQIHNDRQpyJXTseBJVL")}}>Slides & Recording</button></td>
+      </tr>
+      <tr>
+        <td>FAIRsharing, University of Oxford</td>
+        <td>FAIRsharing in a nutshell</td>
+        <td>online</td>
+        <td>10 minutes</td>
+        <td><button class="btn btn-primary mb-2" target="_blank" onClick={()=>{navigate("https://fairsharing.org/educational#nutshell")}}>Course Material</button></td>
+      </tr>
+      <tr>
+        <td>FAIRsharing, University of Oxford</td>
+        <td>FAIRsharing content: standards overview</td>
+        <td>online</td>
+        <td>10 minutes</td>
+        <td><button class="btn btn-primary mb-2" target="_blank" onClick={()=>{navigate("https://fairsharing.org/educational#standards")}}>Course Material</button></td>
+      </tr>
+      <tr>
+        <td>FAIRsharing, University of Oxford</td>
+        <td>FAIRsharing content: databases overview</td>
+        <td>online</td>
+        <td>10 minutes</td>
+        <td><button class="btn btn-primary mb-2" target="_blank" onClick={()=>{navigate("https://fairsharing.org/educational#databases")}}>Course Material</button></td>
+      </tr>
+      <tr>
+        <td>FAIRsharing, University of Oxford</td>
+        <td>FAIRsharing for you: researchers</td>
+        <td>online</td>
+        <td>10 minutes</td>
+        <td><button class="btn btn-primary mb-2" target="_blank" onClick={()=>{navigate("https://fairsharing.org/educational#researchers")}}>Course Material</button></td>
+      </tr>
+      <tr>
+        <td>FAIRsharing, University of Oxford</td>
+        <td>FAIRsharing for you: journal publishers</td>
+        <td>online</td>
+        <td>10 minutes</td>
+        <td><button class="btn btn-primary mb-2" target="_blank" onClick={()=>{navigate("https://fairsharing.org/educational#publishers")}}>Course Material</button></td>
+      </tr>
+      <tr>
+        <td>FAIRsharing, University of Oxford</td>
+        <td>FAIRsharing for you: funders</td>
+        <td>online</td>
+        <td>10 minutes</td>
+        <td><button class="btn btn-primary mb-2" target="_blank" onClick={()=>{navigate("https://fairsharing.org/educational#funders")}}>Course Material</button></td>
+      </tr>
+       <tr>
+        <td>Galaxy Training Network</td>
+        <td>GTN Smörgåsbord 2: Tapas - A Very Short Introduction to Galaxy</td>
+        <td>online</td>
+        <td>10 minutes</td>
+        <td><button class="btn btn-primary mb-2" target="_blank" onClick={()=>{navigate("https://gallantries.github.io/video-library/modules/covid-analysis")}}>Course Material</button></td>
+      </tr>
+    </tbody>
+</Table>
+
+   </Col>
+ </Row>
+</Container>
