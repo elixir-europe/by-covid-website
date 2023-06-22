@@ -5,76 +5,102 @@ class: resource
 ---
 
 import { Table, Card, Container, Row, Col } from "react-bootstrap"
+import { navigate } from "gatsby"
 
 <Container>
   <Row className="px-4">
    <Col>
 
-The BY-COVID project supports three flagship resources: the European COVID-19 Data Platform, the Infectious Diseases Toolkit (IDTk) and the Pathogens Portal.
-
-<Container className="full-width">
-<Row>
-    <Col className="align-items-stretch" xs={12} sm={6} lg={4}>
-      <Card className="mb-4 border text-center">
-        <a href="https://www.covid19dataportal.org/">
-          <Card.Img
-            variant="top"
-            src="/covid-19-data-portal.png"
-            className="p-3"
-            style="background: #fff;"
-          />
-        </a>
-        <Card.Link href="https://www.covid19dataportal.org/" class="pb-25">Data and tools to accelerate coronavirus research
-</Card.Link>
-      </Card>
-    </Col>
-    <Col className="align-items-stretch" xs={12} sm={6} lg={4}>
-      <Card className="mb-4 border text-center">
-        <a href="https://www.infectious-diseases-toolkit.org/">
-          <Card.Img
-            variant="top"
-            src="/infectious-disease-toolkit.png"
-            className="p-3"
-            style="background: #fff;"
-          />
-        </a>
-        <Card.Link href="https://www.infectious-diseases-toolkit.org/" class="pb-3">Guidelines, examples and tools relating to infectious disease data
-</Card.Link>
-      </Card>
-    </Col>
-    <Col className="align-items-stretch" xs={12} sm={6} lg={4}>
-      <Card className="mb-4 border text-center">
-        <a href="https://www.ebi.ac.uk/ena/pathogens/v2/">
-          <Card.Img
-            variant="top"
-            src="/pathogens.png"
-            className="p-3"
-            style="background: #fff;"
-          />
-        </a>
-        <Card.Link href="https://www.ebi.ac.uk/ena/pathogens/v2/" class="pb-25">Data and tools to accelerate pathogen research
-</Card.Link>
-      </Card>
-    </Col>
-</Row>
-</Container>
-
-
-**OTHER RESOURCES** funded by **BY-COVID** :
-
-**Technical**
-
- - <a href="https://fairsharing.org/3773" target="_blank">FAIRsharing BY-COVID collection</a>
- - <a href="https://zenodo.org/record/6940413#.ZEaVmHbMK14" target="_blank">BY-COVID synthetic RO-Crates</a>
-
-
-**Outreach and educational**
-
-- <a href="https://by-covid.org/usecases" target="_blank">BY-COVID citizen engagement material</a>
-- <a href="https://fairsharing.org/educational" target="_blank">FAIRsharing Educational</a>
-
-
-All BY-COVID training resources will be available on the <a href="https://www.infectious-diseases-toolkit.org/training-resources-list/" target="_blank">IDTk training resources page</a>.
+ <Table responsive striped bordered className="training">
+    <thead class="bg-white">
+      <tr>
+        <th>Host Institute</th>
+        <th>Course Title</th>
+        <th>Course Format</th>
+        <th>Course Duration</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>EMBL-EBI, Cambridgeshire, UK</td>
+        <td>European Nucleotide Archive - Quick Tour</td>
+        <td>online</td>
+        <td>30 Minutes</td>
+        <td><button class="btn btn-primary mb-2" target="_blank" onClick={()=>{navigate("https://trainingcontent.embl.org/ena-quick-tour")}}>Course Material</button></td>
+      </tr>
+      <tr>
+        <td>EMBL-EBI, Cambridgeshire, UK</td>
+        <td>ENA : SARS-CoV-2 Submission Workshop</td>
+        <td>online</td>
+        <td>2 Hours</td>
+        <td><button class="btn btn-primary mb-2" target="_blank" onClick={()=>{navigate("https://ena-covid19-docs.readthedocs.io/en/latest/submission_workshop/getting_started.html")}}>Course Material</button></td>
+      </tr>
+      <tr>
+        <td>EMBL-EBI, Tampere University, Finland</td>
+        <td>WP3 Discoverability hackathon v2 on Feb 8th</td>
+        <td>online</td>
+        <td>2 Hours</td>
+        <td><button class="btn btn-primary mb-2" target="_blank" onClick={()=>{navigate("https://docs.google.com/presentation/d/1QNwMUvFlPQea2f21KzMcF1Y_uiPPaZ_VC7gjLjmSvko/edit?usp=share_link")}}>View Slides</button> <button class="btn btn-primary mb-2" target="_blank" onClick={()=>{navigate("https://drive.google.com/file/d/1JUZEf-syrwy0PlAfQgM20XdUhvzIQQoA/view?usp=share_link")}}>View Recording</button></td>
+      </tr>
+      <tr>
+        <td>SIB Swiss Institute of Bioinformatics Sciensano</td>
+        <td>ENA : SARS-CoV-2 Submission Workshop</td>
+        <td>online</td>
+        <td>2 Hours 45 Minutes</td>
+        <td><button class="btn btn-primary mb-2" target="_blank" onClick={()=>{navigate("https://drive.google.com/drive/u/1/folders/1uMZ0jLT-m-GQ_XQIHNDRQpyJXTseBJVL")}}>Slides & Recording</button></td>
+      </tr>
+      <tr>
+        <td>FAIRsharing, University of Oxford</td>
+        <td>FAIRsharing in a nutshell</td>
+        <td>online</td>
+        <td>10 minutes</td>
+        <td><button class="btn btn-primary mb-2" target="_blank" onClick={()=>{navigate("https://fairsharing.org/educational#nutshell")}}>Course Material</button></td>
+      </tr>
+      <tr>
+        <td>FAIRsharing, University of Oxford</td>
+        <td>FAIRsharing content: standards overview</td>
+        <td>online</td>
+        <td>10 minutes</td>
+        <td><button class="btn btn-primary mb-2" target="_blank" onClick={()=>{navigate("https://fairsharing.org/educational#standards")}}>Course Material</button></td>
+      </tr>
+      <tr>
+        <td>FAIRsharing, University of Oxford</td>
+        <td>FAIRsharing content: databases overview</td>
+        <td>online</td>
+        <td>10 minutes</td>
+        <td><button class="btn btn-primary mb-2" target="_blank" onClick={()=>{navigate("https://fairsharing.org/educational#databases")}}>Course Material</button></td>
+      </tr>
+      <tr>
+        <td>FAIRsharing, University of Oxford</td>
+        <td>FAIRsharing for you: researchers</td>
+        <td>online</td>
+        <td>10 minutes</td>
+        <td><button class="btn btn-primary mb-2" target="_blank" onClick={()=>{navigate("https://fairsharing.org/educational#researchers")}}>Course Material</button></td>
+      </tr>
+      <tr>
+        <td>FAIRsharing, University of Oxford</td>
+        <td>FAIRsharing for you: journal publishers</td>
+        <td>online</td>
+        <td>10 minutes</td>
+        <td><button class="btn btn-primary mb-2" target="_blank" onClick={()=>{navigate("https://fairsharing.org/educational#publishers")}}>Course Material</button></td>
+      </tr>
+      <tr>
+        <td>FAIRsharing, University of Oxford</td>
+        <td>FAIRsharing for you: funders</td>
+        <td>online</td>
+        <td>10 minutes</td>
+        <td><button class="btn btn-primary mb-2" target="_blank" onClick={()=>{navigate("https://fairsharing.org/educational#funders")}}>Course Material</button></td>
+      </tr>
+       <tr>
+        <td>Galaxy Training Network</td>
+        <td>GTN Smörgåsbord 2: Tapas - A Very Short Introduction to Galaxy</td>
+        <td>online</td>
+        <td>10 minutes</td>
+        <td><button class="btn btn-primary mb-2" target="_blank" onClick={()=>{navigate("https://gallantries.github.io/video-library/modules/covid-analysis")}}>Course Material</button></td>
+      </tr>
+    </tbody>
+</Table>
 
    </Col>
  </Row>
