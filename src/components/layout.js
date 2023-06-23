@@ -26,6 +26,7 @@ const Layout = ({ location, children, pageContext, ...props }) => (
             node {
               frontmatter {
                 title
+                customTitle
                 description
                 class
                 imageTwitter
@@ -36,7 +37,8 @@ const Layout = ({ location, children, pageContext, ...props }) => (
         }
       }
     `}
-    render={data => (
+    render={data => 
+      (
       <>
         <Helmet>
           <script>
@@ -81,7 +83,7 @@ const Layout = ({ location, children, pageContext, ...props }) => (
                   <Container className="px-3">
                     <Row>
                       <Col>
-                        <h1>{pageContext.frontmatter.title}</h1>
+                        <h1>{pageContext.frontmatter.customTitle ? pageContext.frontmatter.customTitle:pageContext.frontmatter.title}</h1>
                       </Col>
                     </Row>
                   </Container>
