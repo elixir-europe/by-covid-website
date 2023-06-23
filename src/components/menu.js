@@ -65,8 +65,8 @@ const Menu = () => {
               Newsletters
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link as={Link} to="/resources" className="resource">
-              Resources
+            <Nav.Link as={Link} to="/training-resources" className="resource">
+              Training Resources
             </Nav.Link>
             <Nav.Link as={Link} to="/usecases" className="usecases">
               For Citizens

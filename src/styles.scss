@@ -93,11 +93,12 @@ table th {
   border-bottom: 2px;
 }
 table.training{
-  th:nth-child(1){
-    width: 25%;
-  }
-  th:nth-child(2){
+  td:nth-child(1){
+    font-weight: bold;
     width: 30%;
+  }
+  td:nth-child(2){
+    width: 25%;
   }
   
 }
