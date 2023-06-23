@@ -409,7 +409,7 @@ nav.navbar {
 // e.g. 'home' for the home page. This is added from the frontmatter.
 .home .home, .about .about a.dropdown-toggle,
 .outcomes .outcomes
-, .outreach .outreach, .post .news-events, .newsletters .news-events a.dropdown-toggle, .news-events .news-events a.dropdown-toggle, .usecases .usecases, .events .events a.dropdown-toggle, .news .news a.dropdown-toggle, .news .news-events a.dropdown-toggle, .events .news-events a.dropdown-toggle, .post .news-events a.dropdown-toggle {
+, .outreach .outreach, .post .news-events, .newsletters .news-events a.dropdown-toggle, .news-events .news-events a.dropdown-toggle, .usecases .usecases, .events .events a.dropdown-toggle, .news .news a.dropdown-toggle, .news .news-events a.dropdown-toggle, .events .news-events a.dropdown-toggle, .post .news-events a.dropdown-toggle, .resource .resource {
     color: $dark-primary !important;
 }
 
