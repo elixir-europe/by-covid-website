@@ -26,7 +26,6 @@ const Layout = ({ location, children, pageContext, ...props }) => (
             node {
               frontmatter {
                 title
-                customTitle
                 description
                 class
                 imageTwitter
