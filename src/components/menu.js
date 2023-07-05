@@ -39,6 +39,9 @@ const Menu = () => {
               <NavDropdown.Item as={Link} to="/about#partners">
                 Partners
               </NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/about#governance">
+              Governance
+              </NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/about#outreach">
                 Outreach
               </NavDropdown.Item>
