@@ -6,6 +6,7 @@ class: resource
 
 import { Table, Card, Container, Row, Col } from "react-bootstrap"
 import { navigate } from "gatsby"
+import Trainingresources from '../components/trainingresources'
 
 
 <Container>
@@ -13,7 +14,8 @@ import { navigate } from "gatsby"
    <Col>
    Training materials developed as part of the BY-COVID project.
    <br /><br />
- <Table responsive striped bordered className="training">
+   <Trainingresources />
+ {/*<Table responsive striped bordered className="training">
     <thead class="bg-white">
       <tr>
         <th>Course Title</th>
@@ -242,7 +244,7 @@ import { navigate } from "gatsby"
         <td><button class="btn btn-primary mb-2" target="_blank" onClick={()=>{navigate("https://gallantries.github.io/video-library/modules/covid-analysis")}}>Course Material</button></td>
       </tr>
     </tbody>
-</Table>
+</Table>*/}
 
    </Col>
  </Row>

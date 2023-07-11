@@ -242,3 +242,194 @@ partners:
   - name: VIB
     url: https://vib.be/
     logo: ../images/vib.svg
+
+trainingresources:
+  - title: European Nucleotide Archive - Quick Tour
+    host: EMBL-EBI, Cambridgeshire, UK
+    format: online
+    duration: 30 minutes
+    url: https://trainingcontent.embl.org/ena-quick-tour
+
+  - title: 'ENA : SARS-CoV-2 Submission Workshop'
+    host: EMBL-EBI, Cambridgeshire, UK
+    format: online
+    duration: 2 hours
+    url: https://ena-covid19-docs.readthedocs.io/en/latest/submission_workshop/getting_started.html
+
+  - title: WP3 Discoverability hackathon v2 on Feb 8th
+    host: EMBL-EBI, Tampere University, Finland
+    format: online
+    duration: 2 hours
+    url: ''
+    slidesUrl: https://docs.google.com/presentation/d/1QNwMUvFlPQea2f21KzMcF1Y_uiPPaZ_VC7gjLjmSvko/edit?usp=share_link
+    recordingUrl: https://drive.google.com/file/d/1JUZEf-syrwy0PlAfQgM20XdUhvzIQQoA/view?usp=share_link
+
+  - title: Unlocking the Power of Metadata
+    host: SIB Swiss Institute of Bioinformatics Sciensano
+    format: online
+    duration: 2 hours 45 minutes
+    url: ''
+    slidesrecordingUrl: https://drive.google.com/drive/u/1/folders/1uMZ0jLT-m-GQ_XQIHNDRQpyJXTseBJVL
+
+  - title: FAIRsharing in a nutshell
+    host: FAIRsharing, University of Oxford
+    format: online
+    duration: 10 minutes
+    url: 'https://fairsharing.org/educational#nutshell' 
+
+  - title: 'FAIRsharing content: standards overview'
+    host: FAIRsharing, University of Oxford
+    format: online
+    duration: 10 minutes
+    url: 'https://fairsharing.org/educational#standards'
+
+  - title: 'FAIRsharing content: databases overview'
+    host: FAIRsharing, University of Oxford
+    format: online
+    duration: 10 minutes
+    url: 'https://fairsharing.org/educational#databases'
+
+  - title: 'FAIRsharing for you: researchers'
+    host: FAIRsharing, University of Oxford
+    format: online
+    duration: 10 minutes
+    url: 'https://fairsharing.org/educational#researchers'
+
+  - title: 'FAIRsharing for you: journal publishers'
+    host: FAIRsharing, University of Oxford
+    format: online
+    duration: 10 minutes
+    url: 'https://fairsharing.org/educational#publishers'
+
+  - title: 'FAIRsharing for you: funders'
+    host: FAIRsharing, University of Oxford
+    format: online
+    duration: 10 minutes
+    url: 'https://fairsharing.org/educational#funders'
+
+  - title: 'GTN Smörgåsbord 2: Tapas - A Very Short Introduction to Galaxy'
+    host: Galaxy Training Network
+    format: online
+    duration: 10 minutes
+    url: 'https://gallantries.github.io/video-library/modules/covid-analysis'
+
+  - title: 'GTN Smörgåsbord 2: Tapas - Galaxy 101'
+    host: Galaxy Training Network
+    format: online
+    duration: 13 minutes
+    url: 'https://gallantries.github.io/video-library/modules/covid-analysis'
+
+  - title: 'GTN Smörgåsbord 2: Tapas - NGS data logistics	'
+    host: Galaxy Training Network
+    format: online
+    duration: 15 minutes
+    url: 'https://gallantries.github.io/video-library/modules/covid-analysis'
+
+  - title: 'GTN Smörgåsbord 2: Tapas - Quality control'
+    host: Galaxy Training Network
+    format: online
+    duration: 40 minutes
+    url: 'https://gallantries.github.io/video-library/modules/covid-analysis'
+
+  - title: 'GTN Smörgåsbord 2: Tapas - Mapping'
+    host: Galaxy Training Network
+    format: online
+    duration: 10 minutes
+    url: 'https://gallantries.github.io/video-library/modules/covid-analysis'
+
+  - title: 'GTN Smörgåsbord 2: Tapas - Using data collections'
+    host: Galaxy Training Network
+    format: online
+    duration: 13 minutes
+    url: 'https://gallantries.github.io/video-library/modules/covid-analysis'
+
+  - title: 'GTN Smörgåsbord 2: Tapas - Removal of human reads from SARS-CoV-2 sequencing data'
+    host: Galaxy Training Network
+    format: online
+    duration: 60 minutes
+    url: 'https://gallantries.github.io/video-library/modules/covid-analysis'
+
+  - title: 'GTN Smörgåsbord 2: Tapas - SARS-CoV-2 Monitoring and Analysis with Galaxy'
+    host: Galaxy Training Network
+    format: online
+    duration: 13 minutes
+    url: 'https://gallantries.github.io/video-library/modules/covid-analysis'
+
+  - title: 'GTN Smörgåsbord 2: Tapas - Mutation calling, viral genome reconstruction and lineage/clade assignment from SARS-CoV-2 sequencing data'
+    host: Galaxy Training Network
+    format: online
+    duration: 1 hour 30 minutes
+    url: 'https://gallantries.github.io/video-library/modules/covid-analysis'
+
+  - title: 'GTN Smörgåsbord 2: Tapas - Automating Galaxy workflows using the command line'
+    host: Galaxy Training Network
+    format: online
+    duration: 30 minutes
+    url: 'https://gallantries.github.io/video-library/modules/covid-analysis'
+
+  - title: 'GTN Smörgåsbord 2: Tapas - The usegalaxy.* SARS-CoV-2 Bot in Action'
+    host: Galaxy Training Network
+    format: online
+    duration: 40 minutes
+    url: 'https://gallantries.github.io/video-library/modules/covid-analysis'
+
+  - title: 'GTN Smörgåsbord 2: Tapas - Accelerating Research through data sharing'
+    host: Galaxy Training Network
+    format: online
+    duration: 13 minutes
+    url: 'https://gallantries.github.io/video-library/modules/covid-analysis'
+
+  - title: 'GTN Smörgåsbord 2: Tapas - Upload to ENA'
+    host: Galaxy Training Network
+    format: online
+    duration: 10 minutes
+    url: 'https://gallantries.github.io/video-library/modules/covid-analysis'
+
+  - title: 'GTN Smörgåsbord 2: Tapas - Uploading data to ENA'
+    host: Galaxy Training Network
+    format: online
+    duration: 10 minutes
+    url: 'https://gallantries.github.io/video-library/modules/covid-analysis'
+
+  - title: 'GTN Smörgåsbord 2: Tapas - Introduction to viral Beacon'
+    host: Galaxy Training Network
+    format: online
+    duration: 24 minutes
+    url: 'https://gallantries.github.io/video-library/modules/covid-analysis'
+
+  - title: 'GTN Smörgåsbord 2: Tapas - Using and Customising ObservableHQ'
+    host: Galaxy Training Network
+    format: online
+    duration: 15 minutes
+    url: 'https://gallantries.github.io/video-library/modules/covid-analysis'
+
+  - title: 'GTN Smörgåsbord 2: Tapas - SRA Aligned read format in Galaxy'
+    host: Galaxy Training Network
+    format: online
+    duration: 15 minutes
+    url: 'https://gallantries.github.io/video-library/modules/covid-analysis'
+
+  - title: 'GTN Smörgåsbord 2: Tapas - Unicycler assembly of SARS-CoV-2 genome with preprocessing to remove human genome reads'
+    host: Galaxy Training Network
+    format: online
+    duration: 25 minutes
+    url: 'https://gallantries.github.io/video-library/modules/covid-analysis'
+
+  - title: 'GTN Smörgåsbord 2: Tapas - Pandemics Research using Mass Spectrometry'
+    host: Galaxy Training Network
+    format: online
+    duration: 35 minutes
+    url: 'https://gallantries.github.io/video-library/modules/covid-analysis'
+
+  - title: 'GTN Smörgåsbord 2: Tapas - Scripting Galaxy using the API and BioBlend'
+    host: Galaxy Training Network
+    format: online
+    duration: 
+    url: 'https://gallantries.github.io/video-library/modules/covid-analysis'
+
+  - title: 'GTN Smörgåsbord 2: Tapas - Case Studies: What you can do with SARS-COV-2 data'
+    host: Galaxy Training Network
+    format: online
+    duration: 32 minutes
+    url: 'https://gallantries.github.io/video-library/modules/covid-analysis'
+  
