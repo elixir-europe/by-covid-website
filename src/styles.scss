@@ -52,6 +52,9 @@ $enable-dark-mode: false;
 .mt-10 {
   margin-top: 15rem !important;
 }
+.mr-05{
+  margin-right: 5px !important
+}
 
 .py-6 {
   padding-top: 4rem;
@@ -930,4 +933,8 @@ table.fairsharing
   td.light{
     background: $white;
   }
+}
+
+.col-center{
+  margin: 0px auto !important;
 }
