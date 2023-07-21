@@ -190,6 +190,13 @@ html {
   background: url("./images/by-covid-arrow.svg") no-repeat 100% 55%;
   background-size: 20px auto ;
 }
+.arrow-left {
+  padding-right: 30px;
+  background: url("./images/by-covid-arrow.svg") no-repeat 100% 55%;
+  background-size: 20px auto ;
+  position: absolute;
+  bottom: 16px;
+}
 
 .breadcrumb li:first-child {
   padding-right: 20px;
