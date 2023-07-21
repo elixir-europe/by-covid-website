@@ -95,6 +95,14 @@ const UseCasesIndex = ({ data }) => {
                             <Card.Text className="mb-5 mt-3">
                               {post.frontmatter.description}
                             </Card.Text>
+                            <div class="bottom-link-left arrow-left">
+                              <a
+                                href={"https://docs.google.com/forms/d/e/1FAIpQLSdknfycEDMrIJBD2_eLHYFeWMIqXwt2s1b_hDgTL6uAT5HAqw/viewform?entry.1166974658="+post.frontmatter.title}
+                                aria-label="Share your view on this use case" target="_blank"
+                              >
+                                Share your views
+                              </a>
+                            </div>
                             <div class="bottom-link-right arrow-right">
                               <a
                                 href={post.fields.slug}

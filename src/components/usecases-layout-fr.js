@@ -79,8 +79,8 @@ const PostTemplate = ({ data: { mdx } }) => {
                       </MDXProvider>
                       <hr />
                       <p><strong> YOUR THOUGHTS</strong></p>
-                      <p>We'd love your feedback. Please feel free to send us your review or if you have any questions regarding this use case. </p>
-                      <button class="btn btn-primary mb-4" target="_blank" onClick={()=>{navigate("https://docs.google.com/forms/d/e/1FAIpQLSdknfycEDMrIJBD2_eLHYFeWMIqXwt2s1b_hDgTL6uAT5HAqw/viewform?entry.1166974658="+postTitle)}}>Share your feedback</button>
+                      <p>We'd love to hear what you think about these issues.</p>
+                      <button class="btn btn-primary mb-4" onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSdknfycEDMrIJBD2_eLHYFeWMIqXwt2s1b_hDgTL6uAT5HAqw/viewform?entry.1166974658="+postTitle, '_blank')}>Share your feedback</button>
                       <p class="text-end mt-5">
                         <a href="/usecases-fr">For citizens</a>
                       </p>
