@@ -98,7 +98,7 @@ const UseCasesIndex = ({ data }) => {
                             <div class="bottom-link-left arrow-left">
                               <a
                                 href={"https://docs.google.com/forms/d/e/1FAIpQLSdknfycEDMrIJBD2_eLHYFeWMIqXwt2s1b_hDgTL6uAT5HAqw/viewform?entry.1166974658="+post.frontmatter.title}
-                                aria-label="Share your view on this use case" target="_blank"
+                                aria-label="Share your view on this use case" target="_blank" rel="noreferrer"
                               >
                                 Share your views
                               </a>
