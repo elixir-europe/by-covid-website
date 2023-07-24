@@ -97,7 +97,7 @@ const UseCasesIndex = ({ data }) => {
                             </Card.Text>
                             <div class="bottom-link-left arrow-left">
                               <a
-                                href={"https://docs.google.com/forms/d/e/1FAIpQLSdknfycEDMrIJBD2_eLHYFeWMIqXwt2s1b_hDgTL6uAT5HAqw/viewform?entry.1166974658="+post.frontmatter.title}
+                                href={"https://docs-google-com.translate.goog/forms/d/e/1FAIpQLSdknfycEDMrIJBD2_eLHYFeWMIqXwt2s1b_hDgTL6uAT5HAqw/viewform?_x_tr_sl=auto&_x_tr_tl=fr&_x_tr_hl=en&_x_tr_pto=wapp&entry.1166974658="+post.frontmatter.title}
                                 aria-label="Share your view on this use case" target="_blank" rel="noreferrer"
                               >
                                 Donnez votre avis

@@ -80,7 +80,7 @@ const PostTemplate = ({ data: { mdx } }) => {
                       <hr />
                       <p><strong> YOUR THOUGHTS</strong></p>
                       <p>We'd love to hear what you think about these issues.</p>
-                      <button class="btn btn-primary mb-4" onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSdknfycEDMrIJBD2_eLHYFeWMIqXwt2s1b_hDgTL6uAT5HAqw/viewform?entry.1166974658="+postTitle, '_blank')}>Share your views</button>
+                      <button class="btn btn-primary mb-4" onClick={() => window.open("https://docs-google-com.translate.goog/forms/d/e/1FAIpQLSdknfycEDMrIJBD2_eLHYFeWMIqXwt2s1b_hDgTL6uAT5HAqw/viewform?_x_tr_sl=auto&_x_tr_tl=fr&_x_tr_hl=en&_x_tr_pto=wapp&entry.1166974658="+postTitle, '_blank')}>Share your views</button>
                       <p class="text-end mt-5">
                         <a href="/usecases-fr">For citizens</a>
                       </p>
