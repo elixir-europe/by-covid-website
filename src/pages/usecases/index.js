@@ -73,7 +73,11 @@ const UseCasesIndex = ({ data }) => {
                 <Container className="news-cards">
                 <Row>
                 <Col>
-                <p className="text-center">What difference will the BY-COVID project make and what does it mean for citizens? Explore the examples below to find out more.
+                <p className="text-center">
+                Educational toolkits: <a href="/pdf/By-COVID_Educational_Toolkit_EN-PDF.pdf" target="_blank">English</a> | <a href="/pdf/By-COVID_Educational_Toolkit_FR-PDF.pdf" target="_blank">French</a> | <a href="/pdf/By-COVID_Educational_Toolkit_NL-PDF.pdf" target="_blank">Dutch</a> | <a href="/pdf/By-COVID_Educational_Toolkit_CZ-PDF.pdf" target="_blank">Czech</a> | <a href="/pdf/By-COVID_Educational_Toolkit_ES-PDF.pdf" target="_blank">Spanish</a>
+</p>
+                <p className="text-center">
+                  What difference will the BY-COVID project make and what does it mean for citizens? Explore the examples below to find out more.
 </p>
                 </Col>
                 </Row>
