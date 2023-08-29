@@ -73,9 +73,9 @@ const UseCasesIndex = ({ data }) => {
                 <Container className="news-cards">
                 <Row>
                 <Col>
-                
+
                 <p className="text-center">
-                Educational toolkits: <a href="/pdf/By-COVID_Toolkit_EN.pdf" target="_blank">English</a> | <a href="/pdf/By-COVID_Toolkit_FR.pdf" target="_blank">French</a> | <a href="/pdf/By-COVID_Toolkit_NL.pdf" target="_blank">Dutch</a> | <a href="/pdf/By-COVID_Toolkit_CZ.pdf" target="_blank">Czech</a> | <a href="/pdf/By-COVID_Toolkit_ES.pdf" target="_blank">Spanish</a>
+                Educational toolkits: <a href="/pdf/By-COVID_toolkit_EN.pdf" target="_blank">English</a> | <a href="/pdf/By-COVID_toolkit_FR.pdf" target="_blank">French</a> | <a href="/pdf/By-COVID_toolkit_NL.pdf" target="_blank">Dutch</a> | <a href="/pdf/By-COVID_toolkit_CZ.pdf" target="_blank">Czech</a> | <a href="/pdf/By-COVID_toolkit_ES.pdf" target="_blank">Spanish</a>
 </p>
                 <p className="text-center">Quelle différence fera le projet BY-COVID ? Qu’est-ce que cela signifie pour les citoyens ? Découvrez les exemples ci-dessous pour en savoir plus.
 </p>
