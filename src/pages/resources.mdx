@@ -1,0 +1,153 @@
+---
+title: Resources
+description: Resources and training materials of the BY-COVID project.
+class: resource
+---
+
+import { Table, Card, Container, Row, Col } from "react-bootstrap"
+import { navigate } from "gatsby"
+import Trainingresources from '../components/trainingresources'
+
+<Container>
+  <Row className="px-4">
+    <Col>
+      BY-COVID sustains many open science resources which contribute to the goal of making infectious disease data open and available for everyone. The resources listed below receive funding directly from the BY-COVID project.
+      <Container className="full-width mt-4">
+        <Row>
+            <Col className="align-items-stretch" xs={12} sm={6} lg={6}>
+              <Card className="mb-4 border text-center">
+                <a href="https://www.covid19dataportal.org/">
+                  <Card.Img
+                    variant="top"
+                    src="/CV19DP_logo_oneliner2.svg"
+                    className="p-3 embed-responsive-item"
+                    style="background: #fff;"
+                  />
+                </a>
+                <Card.Body>
+                  <Card.Title>SARS-CoV-2 DataHubs</Card.Title>
+                  <Card.Link href="https://www.covid19dataportal.org/">Data and tools to accelerate coronavirus research</Card.Link>
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col className="d-flex align-items-stretch" xs={12} sm={6} lg={6}>
+              <Card className="mb-4 border text-center">
+                <a href="https://www.infectious-diseases-toolkit.org/">
+                  <Card.Img
+                    variant="top"
+                    src="/idt_main_logo.svg"
+                    className="p-3 embed-responsive-item"
+                    style="background: #fff;"
+                  />
+                </a>
+                <Card.Link href="https://www.infectious-diseases-toolkit.org/" class="pt-3">Guidelines, examples and tools relating to infectious disease data</Card.Link>
+              </Card>
+            </Col>
+        </Row>
+        <Row>
+            <Col className="align-items-stretch" xs={12} sm={6} lg={6}>
+              <Card className="mb-4 border text-center">
+                <a href="https://www.ebi.ac.uk/ena/pathogens/v2/">
+                  <Card.Img
+                    variant="top"
+                    src="/pathogens.png"
+                    className="p-3 embed-responsive-item"
+                    style="background: #fff;"
+                  />
+                </a>
+                <Card.Body>
+                  <Card.Title>Pathogen DataHubs</Card.Title>
+                  <Card.Link href="https://www.ebi.ac.uk/ena/pathogens/v2/">Data and tools to accelerate pathogen research</Card.Link>
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col className="d-flex align-items-stretch" xs={12} sm={6} lg={6}>
+              <Card className="mb-4 border text-center">
+                <a href="https://fairsharing.org/">
+                  <Card.Img
+                    variant="top"
+                    src="/fairsharing-logo.svg"
+                    className="p-3 embed-responsive-item"
+                    style="background: #fff;"
+                  />
+                </a>
+                <Card.Body>
+                  <Card.Link href="https://fairsharing.org/">Mapping and interlinking databases, standards and policies</Card.Link>
+                </Card.Body>
+              </Card>
+            </Col>
+        </Row>
+        <Row>
+            <Col className="d-flex align-items-stretch" xs={12} sm={6} lg={6}>
+              <Card className="mb-4 border text-center">
+                <a href="https://www.researchobject.org/ro-crate/">
+                  <Card.Img
+                    variant="top"
+                    src="/ro-crate-wide.svg"
+                    className="p-3 embed-responsive-item"
+                    style="background: #fff;"
+                  />
+                </a>
+                <Card.Link href="https://www.researchobject.org/ro-crate/" class="pt-3">Packaging research data with their metadata</Card.Link>
+              </Card>
+            </Col>
+            <Col className="align-items-stretch" xs={12} sm={6} lg={6}>
+              <Card className="mb-4 border text-center">
+                <a href="https://workflowhub.eu/">
+                  <Card.Img
+                    variant="top"
+                    src="/workflowhub.svg"
+                    className="p-3 embed-responsive-item"
+                    style="background: #fff;"
+                  />
+                </a>
+                <Card.Body>
+                  <Card.Link href="https://workflowhub.eu/">Describing, sharing and publishing scientific computational workflows</Card.Link>
+                </Card.Body>
+              </Card>
+            </Col>
+        </Row>
+        <Row>
+            <Col className="align-items-stretch" xs={12} sm={6} lg={6}>
+              <Card className="mb-4 border text-center">
+                <a href="https://covid.pages.uni.lu/index">
+                  <Card.Img
+                    variant="top"
+                    src="/COVID19-dmap-project.svg"
+                    className="p-3 embed-responsive-item"
+                    style="background: #fff;"
+                  />
+                </a>
+                <Card.Body>
+                  <Card.Title>COVID-19 Disease Map</Card.Title>
+                  <Card.Link href="https://covid.pages.uni.lu/index">A repository of SARS-CoV-2 virus-host interaction mechanisms</Card.Link>
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col className="align-items-stretch" xs={12} sm={6} lg={6}>
+              <Card className="mb-4 border text-center">
+                <a href="https://by-covid.org/usecases">
+                  <Card.Img
+                    variant="top"
+                    src="/by-covid-citizen-engagement.png"
+                    className="p-3 embed-responsive-item"
+                    style="background: #fff;"
+                  />
+                </a>
+                <Card.Body>
+                  <Card.Title>BY-COVID citizen engagement</Card.Title>
+                  <Card.Link href="https://by-covid.org/usecases">An educational toolkit on data sharing for pandemic preparedness</Card.Link>
+                </Card.Body>
+              </Card>
+            </Col>
+        </Row>
+      </Container>  
+    </Col>
+  </Row>
+  <Row className="px-4">
+   <Col>
+      <h3 className="pt-5 pb-3">BY-COVID training materials</h3>
+    <Trainingresources />
+   </Col>
+ </Row>
+</Container>
