@@ -939,4 +939,16 @@ table.fairsharing
 }
 .card{
   width: 100%;
+  display: table;
+}
+.card-image{
+  display: table-caption;
+}
+.card-body{
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.fs-55{
+  font-size: 1.2rem;
 }
