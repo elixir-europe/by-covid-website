@@ -932,3 +932,23 @@ table.fairsharing
 .col-center{
   margin: 0px auto !important;
 }
+.card-img-top {
+  width: 100%;
+  height: 10vw;
+  object-fit: contain;
+}
+.card{
+  width: 100%;
+  display: table;
+}
+.card-image{
+  display: table-caption;
+}
+.card-body{
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.fs-55{
+  font-size: 1.2rem;
+}
