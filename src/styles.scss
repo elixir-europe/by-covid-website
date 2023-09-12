@@ -952,3 +952,9 @@ table.fairsharing
 .fs-55{
   font-size: 1.2rem;
 }
+
+@media (max-width: 768px) {
+  .card-img-top{
+    height: 100%;
+  }
+}
