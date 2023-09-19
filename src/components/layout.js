@@ -64,7 +64,11 @@ const Layout = ({ location, children, pageContext, ...props }) => (
           imageAlt={pageContext.frontmatter.imageAlt}
         />
         <Container>
+          <Row>
+            <Col>
               <Menu />
+            </Col>
+          </Row>
         </Container>
         <Container className="full-width">
           <Row className="mx-0">
