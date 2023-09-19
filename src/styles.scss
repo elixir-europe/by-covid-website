@@ -950,18 +950,27 @@ table.fairsharing
   height: 10vw;
   object-fit: contain;
 }
-.card{
+.resource .card{
   width: 100%;
   display: table;
 }
-.card-image{
+.resource .card-image{
   display: table-caption;
 }
-.card-body{
+.resource .card-body{
   display: table-cell;
   vertical-align: middle;
   text-align: center;
 }
+.resource .card-image{
+  background: $white;
+}
 .fs-55{
   font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .card-img-top{
+    height: 100%;
+  }
 }
