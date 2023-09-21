@@ -144,8 +144,6 @@ export const pageQuery = graphql`
             title
             description
             class
-            imageTwitter
-            imageOg
             imageAlt
             postType
             date(formatString: "D MMMM YYYY")
