@@ -105,8 +105,16 @@ export const pageQuery = graphql`
         title
         description
         class
-        imageTwitter
-        imageOg
+        imageTwitter {
+          childImageSharp {
+            gatsbyImageData
+          }
+        }
+        imageOg {
+          childImageSharp {
+            gatsbyImageData
+          }
+        }
         imageAlt
         postType
         newsImage {
