@@ -12,7 +12,7 @@ category: news-event
 ---
 
 import { Table, Card, Container, Row, Col } from "react-bootstrap"
-import { navigate } from "gatsby"
+import { navigate, Link } from "gatsby"
 
 **When:** Tuesday 6 December 2023, 10.00am - 17.00
  
@@ -37,7 +37,9 @@ Confirmed speakers and panellists include:
 * Niklas Blomberg, ELIXIR Director and BY-COVID Coordinator
 
 
-Please find the link to register below.
+Please find the agenda and a link to register below.
+
+<button class="btn btn-primary mb-4 me-4" target="_blank" onClick={()=>{navigate("/pdf/open-science-for-pandemic-preparedness.pdf")}}>Agenda</button>
 
 <button class="btn btn-primary mb-4" target="_blank" onClick={()=>{navigate("https://elixir-events.eventscase.com/attendance/event/index/43294/EN")}}>Register Online</button>
 
