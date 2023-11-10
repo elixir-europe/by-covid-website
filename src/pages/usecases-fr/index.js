@@ -63,7 +63,7 @@ const UseCasesIndex = ({ data }) => {
                       <div class="position-relative social-media">
                         <div class="form">
                           <p class="mb-1 fs-6">
-                            Select the language: <Link to="/usecases">English</Link> | <Link to="/usecases-fr"><strong>Français</strong></Link>
+                            Select the language: <Link to="/usecases">English</Link> | <Link to="/usecases-fr"><strong>Français</strong></Link>| <Link to="/usecases-cz">Czech</Link>
                           </p>
                         </div>
                       </div>
@@ -144,16 +144,8 @@ export const pageQuery = graphql`
             title
             description
             class
-            imageTwitter {
-              childImageSharp {
-                gatsbyImageData(width: 1024, height: 512, quality: 90)
-              }
-            }
-            imageOg {
-              childImageSharp {
-                gatsbyImageData(width: 1200, height: 630, quality: 90)
-              }
-            }
+            imageTwitter
+            imageOg
             imageAlt
             postType
             date(formatString: "D MMMM YYYY")
