@@ -132,7 +132,7 @@ const UseCasesIndex = ({ data }) => {
 }
 
 export const pageQuery = graphql`
-  query useCaseListIndex {
+  query useCaseListIndexCz {
     allMdx(
       filter: { frontmatter: { postType: { eq: "UsecaseCz" } } }
       sort: { fields: frontmatter___date, order: DESC }
@@ -145,8 +145,16 @@ export const pageQuery = graphql`
             description
             class
             imageTwitter
-            imageOg
-            imageAlt
+            imageTwitter {
+              childImageSharp {
+                gatsbyImageData(width: 1024, height: 512, quality: 90)
+              }
+            }
+            imageOg {
+              childImageSharp {
+                gatsbyImageData(width: 1200, height: 630, quality: 90)
+              }
+            }
             postType
             date(formatString: "D MMMM YYYY")
             newsImage {
