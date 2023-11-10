@@ -144,7 +144,6 @@ export const pageQuery = graphql`
             title
             description
             class
-            imageTwitter
             imageTwitter {
               childImageSharp {
                 gatsbyImageData(width: 1024, height: 512, quality: 90)
@@ -155,6 +154,7 @@ export const pageQuery = graphql`
                 gatsbyImageData(width: 1200, height: 630, quality: 90)
               }
             }
+            imageAlt
             postType
             date(formatString: "D MMMM YYYY")
             newsImage {
