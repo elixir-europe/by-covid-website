@@ -32,7 +32,7 @@ const PostTemplate = ({ data: { mdx } }) => {
                 g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
                 &#125;)();
           </script>
-      </Helmet>
+        </Helmet>
       <Helmet>
         <body class="usecases" />
       </Helmet>
@@ -62,8 +62,8 @@ const PostTemplate = ({ data: { mdx } }) => {
                   <Row>
                     <Col xs={12} sm={12} lg={7}>
                       <Breadcrumb>
-                        <Breadcrumb.Item href="/usecases-cz">
-                        For citizens
+                        <Breadcrumb.Item href="/usecases-nl">
+                          For citizens
                         </Breadcrumb.Item>
                       </Breadcrumb>
                       <GatsbyImage
@@ -80,9 +80,9 @@ const PostTemplate = ({ data: { mdx } }) => {
                       <hr />
                       <p><strong> YOUR THOUGHTS</strong></p>
                       <p>We'd love to hear what you think about these issues.</p>
-                      <button class="btn btn-primary mb-4" onClick={() => window.open("https://docs-google-com.translate.goog/forms/d/e/1FAIpQLSdknfycEDMrIJBD2_eLHYFeWMIqXwt2s1b_hDgTL6uAT5HAqw/viewform?_x_tr_sl=auto&_x_tr_tl=fr&_x_tr_hl=en&_x_tr_pto=wapp&entry.1166974658="+postTitle, '_blank')}>Share your views</button>
+                      <button class="btn btn-primary mb-4" onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSdknfycEDMrIJBD2_eLHYFeWMIqXwt2s1b_hDgTL6uAT5HAqw/viewform?entry.1166974658="+postTitle, '_blank')}>Share your views</button>
                       <p class="text-end mt-5">
-                        <a href="/usecases-cz">For citizens</a>
+                        <a href="/usecases-nl">For citizens</a>
                       </p>
                     </Col>
                   </Row>
@@ -97,7 +97,7 @@ const PostTemplate = ({ data: { mdx } }) => {
   )
 }
 export const pageQuery = graphql`
-  query UseCaseQueryCz($id: String) {
+  query UseCaseQuerynl($id: String) {
     mdx(id: { eq: $id }, frontmatter: { class: { eq: "post" } }) {
       id
       body

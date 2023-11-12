@@ -63,7 +63,7 @@ const UseCasesIndex = ({ data }) => {
                       <div class="position-relative social-media">
                         <div class="form">
                           <p class="mb-1 fs-6">
-                            Select the language: <Link to="/usecases">English</Link> | <Link to="/usecases-fr"><strong>Français</strong></Link>| <Link to="/usecases-cz">Czech</Link>
+                            Select the language: <Link to="/usecases">English</Link> | <Link to="/usecases-fr"><strong>Français</strong></Link>| <Link to="/usecases-cz">Czech</Link> | <Link to="/usecases-nl">Dutch</Link>
                           </p>
                         </div>
                       </div>
