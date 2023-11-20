@@ -116,6 +116,18 @@
         value: `/usecases-de${value}`,
       })
      }
+     else if(node.frontmatter.postType === 'UsecaseEs') {
+      createNodeField({
+        // Name of the field you are adding
+        name: "slug",
+        // Individual MDX node
+        node,
+        // Generated value based on filepath with "blog" prefix. you
+        // don't need a separating "/" before the value because
+        // createFilePath returns a path with the leading "/".
+        value: `/usecases-es${value}`,
+      })
+     }
      else{
       createNodeField({
         // Name of the field you are adding
@@ -216,6 +228,18 @@
         path: node.fields.slug,
         // This component will wrap our MDX content
         component: path.resolve(`./src/components/usecases-layout-de.js`),
+        // You can use the values in this context in
+        // our page layout component
+        context: { id: node.id },
+      })
+     }
+     else  if(node.frontmatter.postType === 'UsecaseEs'){
+      createPage({
+        // This is the slug you created before
+        // (or `node.frontmatter.slug`)
+        path: node.fields.slug,
+        // This component will wrap our MDX content
+        component: path.resolve(`./src/components/usecases-layout-es.js`),
         // You can use the values in this context in
         // our page layout component
         context: { id: node.id },
