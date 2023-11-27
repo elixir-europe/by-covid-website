@@ -73,7 +73,7 @@ const UseCasesIndex = ({ data }) => {
                 <Container className="news-cards">
                 <Row>
                 <Col>
-
+                <p className="text-center">Download our <a href="/pdf/public-engagement-flyer.pdf" target="_blank">citizen engagement flyer</a></p>
                 <p className="text-center">
                 Educational toolkits: <a href="/pdf/BY-COVID_toolkit_EN.pdf" target="_blank">English</a> | <a href="/pdf/BY-COVID_toolkit_FR.pdf" target="_blank">French</a> | <a href="/pdf/BY-COVID_toolkit_NL.pdf" target="_blank">Dutch</a> | <a href="/pdf/BY-COVID_toolkit_CZ.pdf" target="_blank">Czech</a> | <a href="/pdf/BY-COVID_toolkit_ES.pdf" target="_blank">Spanish</a>
 </p>
