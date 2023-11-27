@@ -95,6 +95,19 @@ table.training{
   }
   
 }
+table.fest{
+  td:first-child { background-color: rgb(97 47 47 / 5%) };
+  td.cvm
+  {
+    text-align: center;
+    vertical-align: middle;
+  }
+  td span{
+    padding-left: 1rem;
+    display: block;
+  }
+  
+}
 
 /*
 * Space and position rules
