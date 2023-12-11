@@ -63,7 +63,7 @@ const UseCasesIndex = ({ data }) => {
                       <div class="position-relative social-media">
                         <div class="form">
                           <p class="mb-1 fs-6">
-                            Select the language: <Link to="/usecases"><strong>English</strong></Link> | <Link to="/usecases-fr">Français</Link> | <Link to="/usecases-cz">Czech</Link> | <Link to="/usecases-nl">Dutch</Link> | <Link to="/usecases-de">German</Link> | <Link to="/usecases-es">Spanish</Link> | <Link to="/usecases-it">Italian</Link>
+                            Select the language: <Link to="/usecases">English</Link> | <Link to="/usecases-fr">Français</Link> | <Link to="/usecases-cz">Czech</Link> | <Link to="/usecases-nl">Dutch</Link> | <Link to="/usecases-de">German</Link> | <Link to="/usecases-es">Spanish</Link> | <Link to="/usecases-it"><strong>Italian</strong></Link>
                           </p>
                         </div>
                       </div>
@@ -78,7 +78,7 @@ const UseCasesIndex = ({ data }) => {
                 Educational toolkits: <a href="/pdf/BY-COVID_toolkit_EN.pdf" target="_blank">English</a> | <a href="/pdf/BY-COVID_toolkit_FR.pdf" target="_blank">French</a> | <a href="/pdf/BY-COVID_toolkit_NL.pdf" target="_blank">Dutch</a> | <a href="/pdf/BY-COVID_toolkit_CZ.pdf" target="_blank">Czech</a> | <a href="/pdf/BY-COVID_toolkit_ES.pdf" target="_blank">Spanish</a>
 </p>
                 <p className="text-center">
-                  What difference will the BY-COVID project make and what does it mean for citizens? Explore the examples below to find out more.
+                Che differenza farà il progetto BY-COVID e cosa significherà per i cittadini? Esplora gli esempi seguenti per saperne di più.
 </p>
                 </Col>
                 </Row>
@@ -105,7 +105,7 @@ const UseCasesIndex = ({ data }) => {
                                 href={"https://docs.google.com/forms/d/e/1FAIpQLSdknfycEDMrIJBD2_eLHYFeWMIqXwt2s1b_hDgTL6uAT5HAqw/viewform?entry.1166974658="+post.frontmatter.title}
                                 aria-label="Share your view on this use case" target="_blank" rel="noreferrer"
                               >
-                                Share your views
+                                Condividi le tue opinioni
                               </a>
                             </div>
                             <div class="bottom-link-right arrow-right">
@@ -113,7 +113,7 @@ const UseCasesIndex = ({ data }) => {
                                 href={post.fields.slug}
                                 aria-label="Read the full news story"
                               >
-                                Read more
+                                Per saperne di più
                               </a>
                             </div>
                           </Card.Body>
@@ -133,9 +133,9 @@ const UseCasesIndex = ({ data }) => {
 }
 
 export const pageQuery = graphql`
-  query useCaseListIndex {
+  query useCaseListIndexIt {
     allMdx(
-      filter: { frontmatter: { postType: { eq: "Usecase" } } }
+      filter: { frontmatter: { postType: { eq: "UsecaseIt" } } }
       sort: { fields: frontmatter___date, order: DESC }
     ) {
       edges {
