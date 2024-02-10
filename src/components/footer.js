@@ -2,7 +2,7 @@ import * as React from "react"
 import { Container, Row, Col } from "react-bootstrap"
 import { Link } from "gatsby"
 import bycovidIcon from "../images/by-covid-icon.svg"
-import twitterIcon from "../images/twitter-icon.svg"
+import twitterIcon from "../images/twitter-x.svg"
 import linkedinIcon from "../images/linkedin-icon.svg"
 import byCovideuIcon from "../images/by-covid-footer-eu.svg"
 import NewsletterForm from "../components/newsletter-form"
@@ -127,8 +127,8 @@ const Footer = () => {
                 <img
                   src={twitterIcon}
                   alt="Twitter icon"
-                  width="45"
-                  class="social"
+                  width="20"
+                  class="social twitter"
                 />
               </a>
               <a
