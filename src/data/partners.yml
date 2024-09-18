@@ -269,7 +269,7 @@ trainingresources:
     format: online
     duration: 2 hours 45 minutes
     url: ''
-    slidesrecordingUrl: https://drive.google.com/drive/u/1/folders/1uMZ0jLT-m-GQ_XQIHNDRQpyJXTseBJVL
+    slidesrecordingUrl: https://drive.google.com/file/d/1S-tuAkEIHzfcMZIrdSkFRcCWDJEjkGeS/view?usp=share_link
 
   - title: FAIRsharing in a nutshell
     host: FAIRsharing, University of Oxford
@@ -592,20 +592,20 @@ trainingresources:
   - title: 'Data management in social sciences and humanities with DMEG'
     host: CESSDA, ADP
     format: online
-    duration: 
+    duration: 60 minutes
     url: 'https://drive.google.com/file/d/1zD-6eico8ugfr3HyRAwngu8OfyNrtOOC/view?usp=share_link'
 
   - title: 'Data management in life sciences with RDMkit'
     host: BSC, ELIXIR-ES
     format: online
-    duration: 
+    duration: 60 minutes
     url: 'https://drive.google.com/file/d/17Xxme5noOkfhVCv7RH8EkfUfqFGKNbzU/view?usp=share_link'
 
   - title: 'Challenges and issues in data management'
     host: DANS, CESSDA, ADP, EKKE, EMPIRICA, SIB Swiss Institute of Bioinformatics, Euro-BioImaging
     format: online
-    duration: 
-    url: 'https://drive.google.com/file/d/1tvKC8HtkNmXZ85T80N31nSDxFskkv9FD/view?usp=share_link'
+    duration: 40 minutes
+    url: 'https://drive.google.com/file/d/1tvKC8HtkNmXZ85T80N31nSDxFskkv9FD/view'
 
   - title: "Euro-BioImaging's Guide to FAIR BioImage Data 2023"
     host: Euro-BioImaging
