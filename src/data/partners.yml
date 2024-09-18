@@ -432,4 +432,245 @@ trainingresources:
     format: online
     duration: 32 minutes
     url: 'https://gallantries.github.io/video-library/modules/covid-analysis'
+
+  - title: 'FAIR Cookbook: hands-on recipes to make and keep data FAIR'
+    host: 'ELIXIR Nodes: UK, Spain, LU, CH'
+    format: online
+    duration: 
+    url: 'https://faircookbook.elixir-europe.org/content/home.html'
+
+  - title: 'FAIRsharing for you: societies and alliances'
+    host: 'FAIRsharing | University of Oxford'
+    format: online
+    duration: factsheet (10 minutes)
+    url: 'https://fairsharing.org/educational#societies'
+
+  - title: 'FAIRsharing for you: libraries and trainers'
+    host: 'FAIRsharing | University of Oxford'
+    format: online
+    duration: factsheet (10 minutes)
+    url: 'https://fairsharing.org/educational#trainers'
+
+  - title: 'FAIRsharing for you: developers and curators'
+    host: 'FAIRsharing | University of Oxford'
+    format: online
+    duration: factsheet (10 minutes)
+    url: 'https://fairsharing.org/educational#developers'
+
+  - title: 'GTN Smörgåsbord 3: OneHealth - Viral Pathogen Analysis- Sequencing data analysis for a spectrum of viral genomes'
+    host: Galaxy Training Network
+    format: online
+    duration: 12 minutes
+    url: 'https://gallantries.github.io/video-library/modules/one-health'
+
+  - title: "GTN Smörgåsbord 3: OneHealth - Viral Pathogen Analysis - From NCBI's Sequence Read Archive (SRA) to Galaxy: SARS-CoV-2 variant analysis"
+    host: Galaxy Training Network
+    format: online
+    duration: 15 minutes
+    url: 'https://gallantries.github.io/video-library/modules/one-health'
+
+  - title: 'GTN Smörgåsbord 3: OneHealth - Viral Pathogen Analysis - Avian influenza viral strain analysis from gene segment sequencing data'
+    host: Galaxy Training Network
+    format: online
+    duration: 
+    url: 'https://gallantries.github.io/video-library/modules/one-health'
+
+  - title: 'GTN Smörgåsbord 3: OneHealth - Viral Pathogen Analysis - Pox virus genome analysis from tiled-amplicon sequencing data'
+    host: Galaxy Training Network
+    format: online
+    duration: 
+    url: 'https://gallantries.github.io/video-library/modules/one-health'
+
+  - title: 'GTN Smörgåsbord 3: OneHealth - Tuberculosis Sequence Analysis - Webinar: Implementation of NGS for TB- WHO documents and other considerations'
+    host: Galaxy Training Network
+    format: online
+    duration: 60 minutes
+    url: 'https://gallantries.github.io/video-library/modules/one-health'
+
+  - title: 'GTN Smörgåsbord 3: OneHealth - Tuberculosis Sequence Analysis - Tuberculosis Variant Analysis'
+    host: Galaxy Training Network
+    format: online
+    duration: 20 minutes
+    url: 'https://gallantries.github.io/video-library/modules/one-health'
+
+  - title: 'GTN Smörgåsbord 3: OneHealth - Tuberculosis Sequence Analysis - Webinar series: Concepts of drug-resistance prediction and mutation-based clustering'
+    host: Galaxy Training Network
+    format: online
+    duration: 20 minutes
+    url: 'https://gallantries.github.io/video-library/modules/one-health'
+
+  - title: 'GTN Smörgåsbord 3: OneHealth - Tuberculosis Sequence Analysis - Hands-on: Identifying tuberculosis transmission links: from SNPs to transmission clusters'
+    host: Galaxy Training Network
+    format: online
+    duration: 
+    url: 'https://gallantries.github.io/video-library/modules/one-health'
+
+  - title: 'GTN Smörgåsbord 3: OneHealth - Tuberculosis Sequence Analysis - Introduction to phylogenetics'
+    host: Galaxy Training Network
+    format: online
+    duration: 60 minutes
+    url: 'https://gallantries.github.io/video-library/modules/one-health'
+
+  - title: 'GTN Smörgåsbord 3: OneHealth - Building a pathogen surveillance system with Galaxy - An automated SARS-CoV-2 genome surveillance system built around Galaxy'
+    host: Galaxy Training Network
+    format: online
+    duration: 10 minutes
+    url: 'https://gallantries.github.io/video-library/modules/one-health'
+
+  - title: 'GTN Smörgåsbord 3: OneHealth - Building a pathogen surveillance system with Galaxy - Mutation calling, viral genome reconstruction and lineage/clade assignment from SARS-CoV-2 sequencing data'
+    host: Galaxy Training Network
+    format: online
+    duration: 55 minutes
+    url: 'https://gallantries.github.io/video-library/modules/one-health'
+
+  - title: 'GTN Smörgåsbord 3: OneHealth - Building a pathogen surveillance system with Galaxy - Automating Galaxy workflows using the command line'
+    host: Galaxy Training Network
+    format: online
+    duration: 30 minutes
+    url: 'https://gallantries.github.io/video-library/modules/one-health'
+
+  - title: 'GTN Smörgåsbord 3: OneHealth - Building a pathogen surveillance system with Galaxy - The usegalaxy.* SARS-CoV-2 Bot in Action'
+    host: Galaxy Training Network
+    format: online
+    duration: 40 minutes
+    url: 'https://gallantries.github.io/video-library/modules/one-health'
+
+  - title: 'GTN Smörgåsbord 3: OneHealth - Building a pathogen surveillance system with Galaxy - Removal of human reads from SARS-CoV-2 sequencing data'
+    host: Galaxy Training Network
+    format: online
+    duration: 
+    url: 'https://gallantries.github.io/video-library/modules/one-health'
+
+  - title: 'GTN Smörgåsbord 3: OneHealth - Building a pathogen surveillance system with Galaxy - Upload to ENA'
+    host: Galaxy Training Network
+    format: online
+    duration: 10 minutes
+    url: 'https://gallantries.github.io/video-library/modules/one-health'
+
+  - title: 'GTN Smörgåsbord 3: FAIR data and provenance with RO-Crate and Galaxy - Building RO-Crates - An overview of the RO-Crate concept and its implementations'
+    host: Galaxy Training Network
+    format: online
+    duration: 17 minutes
+    url: 'https://gallantries.github.io/video-library/modules/ro-crate'
+
+  - title: 'GTN Smörgåsbord 3: FAIR data and provenance with RO-Crate and Galaxy - Building RO-Crates - Publishing My First™ RO-Crate'
+    host: Galaxy Training Network
+    format: online
+    duration: 17 minutes
+    url: 'https://gallantries.github.io/video-library/modules/ro-crate'
+
+  - title: 'GTN Smörgåsbord 3: FAIR data and provenance with RO-Crate and Galaxy - Building RO-Crates - RO-Crate in Python'
+    host: Galaxy Training Network
+    format: online
+    duration: 
+    url: 'https://gallantries.github.io/video-library/modules/ro-crate'
+
+  - title: 'GTN Smörgåsbord 3: FAIR data and provenance with RO-Crate and Galaxy - Building RO-Crates - Workflow Run RO-Crate Introduction'
+    host: Galaxy Training Network
+    format: online
+    duration: 
+    url: 'https://gallantries.github.io/video-library/modules/ro-crate'
+
+  - title: 'GTN Smörgåsbord 3: FAIR data and provenance with RO-Crate and Galaxy - Publishing Workflow RO-Crates with Galaxy - Registering Galaxy workflows in WorkflowHub'
+    host: Galaxy Training Network
+    format: online
+    duration: 37 minutes
+    url: 'https://gallantries.github.io/video-library/modules/ro-crate'
+
+  - title: 'GTN Smörgåsbord 3: FAIR data and provenance with RO-Crate and Galaxy - Publishing Workflow RO-Crates with Galaxy - Best practices for workflows in GitHub repositories'
+    host: Galaxy Training Network
+    format: online
+    duration: 
+    url: 'https://gallantries.github.io/video-library/modules/ro-crate'
+
+  - title: 'GTN Smörgåsbord 3: FAIR data and provenance with RO-Crate and Galaxy - Publishing Workflow RO-Crates with Galaxy - Submitting workflows to LifeMonitor'
+    host: Galaxy Training Network
+    format: online
+    duration: 
+    url: 'https://gallantries.github.io/video-library/modules/ro-crate'
+
+  - title: 'Data management in social sciences and humanities with DMEG'
+    host: CESSDA, ADP
+    format: online
+    duration: 
+    url: 'https://drive.google.com/file/d/1zD-6eico8ugfr3HyRAwngu8OfyNrtOOC/view?usp=share_link'
+
+  - title: 'Data management in life sciences with RDMkit'
+    host: BSC, ELIXIR-ES
+    format: online
+    duration: 
+    url: 'https://drive.google.com/file/d/17Xxme5noOkfhVCv7RH8EkfUfqFGKNbzU/view?usp=share_link'
+
+  - title: 'Challenges and issues in data management'
+    host: DANS, CESSDA, ADP, EKKE, EMPIRICA, SIB Swiss Institute of Bioinformatics, Euro-BioImaging
+    format: online
+    duration: 
+    url: 'https://drive.google.com/file/d/1tvKC8HtkNmXZ85T80N31nSDxFskkv9FD/view?usp=share_link'
+
+  - title: "Euro-BioImaging's Guide to FAIR BioImage Data 2023"
+    host: Euro-BioImaging
+    format: online
+    duration: 3 hours
+    url: 'https://www.youtube.com/playlist?list=PLW-oxncaXRqU4XqduJzwFHvWLF06PvdVm'
+
+  - title: "Euro-BioImaging's Guide to FAIR BioImage Data 2024"
+    host: Euro-BioImaging
+    format: online
+    duration: 3 hours
+    url: 'https://www.eurobioimaging.eu/news/great-success-of-euro-bioimagings-guide-to-fair-bioimage-data-2024/'
+
+  - title: 'BY-COVID Spring 24 Baseline Use Case Workshop'
+    host: Sciensano, DANS, IACS
+    format: online
+    duration: 1 hour
+    url: 'https://doi.org/10.5281/zenodo.12168495'
+
+  - title: 'Data sharing and reuse under GDPR - BY-COVID Fest workshop report'
+    host: DANS, CESSDA, ADP, EKKE, EMPIRICA, SIB Swiss Institute of Bioinformatics
+    format: online
+    duration: 
+    url: 'https://zenodo.org/records/11220597'
+
+  - title: 'Mutation calling, viral genome reconstruction and lineage/clade assignment from SARS-CoV-2 sequencing data'
+    host: Galaxy Training Network
+    format: online
+    duration: 3 hours
+    url: 'https://training.galaxyproject.org/training-material/topics/variant-analysis/tutorials/sars-cov-2-variant-discovery/tutorial.html'
+
+  - title: 'Removal of human reads from SARS-CoV-2 sequencing data'
+    host: Galaxy Training Network
+    format: online
+    duration: 1 hour
+    url: 'https://training.galaxyproject.org/training-material/topics/sequence-analysis/tutorials/human-reads-removal/tutorial.html'
+
+  - title: 'Pox virus genome analysis from tiled-amplicon sequencing data'
+    host: Galaxy Training Network
+    format: online
+    duration: 4 hours
+    url: 'https://training.galaxyproject.org/training-material/topics/variant-analysis/tutorials/pox-tiled-amplicon/tutorial.html'
+
+  - title: 'Avian influenza viral strain analysis from gene segment sequencing data'
+    host: Galaxy Training Network
+    format: online
+    duration: 3 hours
+    url: 'https://training.galaxyproject.org/training-material/topics/variant-analysis/tutorials/aiv-analysis/tutorial.html'
+
+  - title: 'Pathway analysis with the MINERVA Platform'
+    host: Galaxy Training Network
+    format: online
+    duration: 1 hour
+    url: 'https://training.galaxyproject.org/training-material/topics/transcriptomics/tutorials/minerva-pathways/tutorial.html'
+
+  - title: 'Submitting sequence data to ENA'
+    host: Galaxy Training Network
+    format: online
+    duration: 1 hour
+    url: 'https://training.galaxyproject.org/training-material/topics/galaxy-interface/tutorials/upload-data-to-ena/tutorial.html'
+
+  - title: 'Maturity Model for Pathogen Data Platforms'
+    host: SIB Swiss Institute of Bioinformatics
+    format: online
+    duration: 1 hour
+    url: 'https://drive.google.com/file/d/1sViY_DaXjVRHsiNSw8k32pq3U_ukM7kn/view?usp=share_link'
+    
   

@@ -1,5 +1,5 @@
 import React from "react"
-import { useStaticQuery, graphql, navigate } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 import { Table, Col } from "react-bootstrap"
 
 const Trainingresources = () => {
@@ -9,7 +9,6 @@ const Trainingresources = () => {
         trainingresources {
           title
           host
-          format
           duration
           url
           slidesUrl
@@ -24,9 +23,8 @@ const Trainingresources = () => {
         <Table responsive striped bordered className="training">
           <thead class="bg-white">
             <tr>
-              <th>Course Title</th>
+              <th style={{width: 40 + '%'}} >Course Title</th>
               <th>Host</th>
-              <th>Course Format</th>
               <th>Course Duration</th>
               <th>&nbsp;</th>
             </tr>
@@ -36,13 +34,12 @@ const Trainingresources = () => {
             <tr>
               <td>{node.title}</td>
               <td>{node.host}</td>
-              <td>{node.format}</td>
               <td>{node.duration}</td>
               <td>
-                {node.url && <button class="btn btn-primary mb-2" target="_blank" onClick={()=>{navigate(`${node.url}`)}}>Course Material</button>} 
-                {node.slidesUrl && <button class="btn btn-primary mb-2 mr-05" target="_blank" onClick={()=>{navigate(`${node.slidesUrl}`)}}>View Slides</button>} 
-                {node.recordingUrl && <button class="btn btn-primary mb-2" target="_blank" onClick={()=>{navigate(`${node.recordingUrl}`)}}>View Recording</button>} 
-                {node.slidesrecordingUrl && <button class="btn btn-primary mb-2" target="_blank" onClick={()=>{navigate(`${node.slidesrecordingUrl}`)}}>Slides & Recording</button>} 
+                {node.url && <a href={node.url} rel="noreferrer" class="btn btn-primary mb-2" target="_blank">Course Material</a>} 
+                {node.slidesUrl && <a href={node.slidesUrl} rel="noreferrer" class="btn btn-primary mb-2 mr-05" target="_blank">View Slides</a>} 
+                {node.recordingUrl && <a href={node.recordingUrl} rel="noreferrer" class="btn btn-primary mb-2" target="_blank">View Recording</a>} 
+                {node.slidesrecordingUrl && <a href={node.slidesrecordingUrl} rel="noreferrer"  class="btn btn-primary mb-2" target="_blank">Slides & Recording</a>} 
               </td>
             </tr>
           ))}
