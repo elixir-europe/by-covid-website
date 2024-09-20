@@ -53,6 +53,22 @@ const Layout = ({ location, children, pageContext, ...props }) => (
                 &#125;)();
           </script>
         </Helmet>
+          <script type="application/ld+json" >
+            {`
+              {
+                "@context": "https://schema.org",
+                "@type": "TrainingMaterial",
+                "@id": "https://trainingcontent.embl.org/ena-quick-tour",
+                "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
+                "description": "These materials were developed in the context of the BY-COVID project, EU Grant Agreement 101046203, for the course module European Nucleotide Archive - Quick Tour",
+                "keywords": "sequencing data, ena, archive"
+                "name": "European Nucleotide Archive - Quick Tour"
+              }
+             `}
+          </script >
+        <Helmet>
+
+        </Helmet>
         <Helmet>
           <body className={pageContext.frontmatter.class} />
         </Helmet>
