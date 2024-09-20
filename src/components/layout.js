@@ -53,7 +53,8 @@ const Layout = ({ location, children, pageContext, ...props }) => (
                 &#125;)();
           </script>
         </Helmet>
-          <script type="application/ld+json" >
+        <Helmet>
+        <script type="application/ld+json" >
             {`
               {
                 "@context": "https://schema.org",
@@ -64,10 +65,8 @@ const Layout = ({ location, children, pageContext, ...props }) => (
                 "keywords": "sequencing data, ena, archive"
                 "name": "European Nucleotide Archive - Quick Tour"
               }
-             `}
+            `}
           </script >
-        <Helmet>
-
         </Helmet>
         <Helmet>
           <body className={pageContext.frontmatter.class} />
