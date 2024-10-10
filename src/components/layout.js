@@ -58,7 +58,7 @@ const Layout = ({ location, children, pageContext, ...props }) => (
             {`
               {
                 "@context": "https://schema.org",
-                "@type": "TrainingMaterial",
+                "@type": "LearningResource",
                 "@id": "https://trainingcontent.embl.org/ena-quick-tour",
                 "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
                 "description": "These materials were developed in the context of the BY-COVID project, EU Grant Agreement 101046203, for the course module European Nucleotide Archive - Quick Tour",
@@ -71,7 +71,7 @@ const Layout = ({ location, children, pageContext, ...props }) => (
             {`
               {
                 "@context": "https://schema.org",
-                "@type": "TrainingMaterial",
+                "@type": "LearningResource",
                 "@id": "https://ena-covid19-docs.readthedocs.io/en/latest/submission_workshop/getting_started.html",
                 "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
                 "description": "These materials were developed in the context of the BY-COVID project, EU Grant Agreement 101046203, for the course module ENA : SARS-CoV-2 Submission Workshop",
@@ -84,7 +84,7 @@ const Layout = ({ location, children, pageContext, ...props }) => (
             {`
               {
                 "@context": "https://schema.org",
-                "@type": "TrainingMaterial",
+                "@type": "LearningResource",
                 "@id": "https://drive.google.com/file/d/1JUZEf-syrwy0PlAfQgM20XdUhvzIQQoA/view?usp=share_link",
                 "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
                 "description": "These materials were developed in the context of the BY-COVID project, EU Grant Agreement 101046203, for the course module WP3 Discoverability hackathon v2 on Feb 8th",
@@ -97,7 +97,7 @@ const Layout = ({ location, children, pageContext, ...props }) => (
             {`
               {
                 "@context": "https://schema.org",
-                "@type": "TrainingMaterial",
+                "@type": "LearningResource",
                 "@id": "https://drive.google.com/file/d/1S-tuAkEIHzfcMZIrdSkFRcCWDJEjkGeS/view?usp=share_link",
                 "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
                 "description": "These materials were developed in the context of the BY-COVID project, EU Grant Agreement 101046203, for the course module Unlocking the Power of Metadata",
@@ -110,7 +110,7 @@ const Layout = ({ location, children, pageContext, ...props }) => (
             {`
               {
                 "@context": "https://schema.org",
-                "@type": "TrainingMaterial",
+                "@type": "LearningResource",
                 "@id": "https://fairsharing.org/educational#nutshell",
                 "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
                 "description": "These materials were developed in the context of the BY-COVID project, EU Grant Agreement 101046203, for the course module FAIRsharing in a nutshell",
@@ -123,7 +123,7 @@ const Layout = ({ location, children, pageContext, ...props }) => (
             {`
               {
                 "@context": "https://schema.org",
-                "@type": "TrainingMaterial",
+                "@type": "LearningResource",
                 "@id": "https://fairsharing.org/educational#standards",
                 "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
                 "description": "These materials were developed in the context of the BY-COVID project, EU Grant Agreement 101046203, for the course module FAIRsharing content: standards overview",
@@ -136,7 +136,7 @@ const Layout = ({ location, children, pageContext, ...props }) => (
             {`
               {
                 "@context": "https://schema.org",
-                "@type": "TrainingMaterial",
+                "@type": "LearningResource",
                 "@id": "https://fairsharing.org/educational#databases",
                 "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
                 "description": "These materials were developed in the context of the BY-COVID project, EU Grant Agreement 101046203, for the course module FAIRsharing content: databases overview",
@@ -149,11 +149,11 @@ const Layout = ({ location, children, pageContext, ...props }) => (
             {`
               {
                 "@context": "https://schema.org",
-                "@type": "TrainingMaterial",
+                "@type": "LearningResource",
                 "@id": "https://fairsharing.org/educational#researchers",
                 "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
                 "description": "These materials were developed in the context of the BY-COVID project, EU Grant Agreement 101046203, for the course module FAIRsharing for you: researchers",
-                "keywords": "FAIRsharing, standards, databases, policies, FAIR"
+                "keywords": "FAIRsharing, standards, databases, policies, FAIR",
                 "name": "FAIRsharing for you: researchers"
               }
             `}
@@ -162,7 +162,7 @@ const Layout = ({ location, children, pageContext, ...props }) => (
             {`
               {
                 "@context": "https://schema.org",
-                "@type": "TrainingMaterial",
+                "@type": "LearningResource",
                 "@id": "https://fairsharing.org/educational#publishers",
                 "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
                 "description": "These materials were developed in the context of the BY-COVID project, EU Grant Agreement 101046203, for the course module FAIRsharing for you: journal publishers",
@@ -175,7 +175,7 @@ const Layout = ({ location, children, pageContext, ...props }) => (
             {`
               {
                 "@context": "https://schema.org",
-                "@type": "TrainingMaterial",
+                "@type": "LearningResource",
                 "@id": "https://fairsharing.org/educational#funders",
                 "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
                 "description": "These materials were developed in the context of the BY-COVID project, EU Grant Agreement 101046203, for the course module FAIRsharing for you: funders",
@@ -188,7 +188,7 @@ const Layout = ({ location, children, pageContext, ...props }) => (
             {`
               {
                 "@context": "https://schema.org",
-                "@type": "TrainingMaterial",
+                "@type": "LearningResource",
                 "@id": "https://gallantries.github.io/video-library/modules/covid-analysis",
                 "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
                 "description": "These materials were developed in the context of the BY-COVID project, EU Grant Agreement 101046203, for the course module GTN Smörgåsbord 2: Tapas - A Very Short Introduction to Galaxy",
@@ -201,7 +201,7 @@ const Layout = ({ location, children, pageContext, ...props }) => (
             {`
               {
                 "@context": "https://schema.org",
-                "@type": "TrainingMaterial",
+                "@type": "LearningResource",
                 "@id": "https://gallantries.github.io/video-library/modules/covid-analysis",
                 "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
                 "description": "These materials were developed in the context of the BY-COVID project, EU Grant Agreement 101046203, for the course module GTN Smörgåsbord 2: Tapas - Galaxy 101",
@@ -214,7 +214,7 @@ const Layout = ({ location, children, pageContext, ...props }) => (
             {`
               {
                 "@context": "https://schema.org",
-                "@type": "TrainingMaterial",
+                "@type": "LearningResource",
                 "@id": "https://gallantries.github.io/video-library/modules/covid-analysis",
                 "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
                 "description": "These materials were developed in the context of the BY-COVID project, EU Grant Agreement 101046203, for the course module GTN Smörgåsbord 2: Tapas - NGS data logistics",
@@ -227,7 +227,7 @@ const Layout = ({ location, children, pageContext, ...props }) => (
             {`
               {
                 "@context": "https://schema.org",
-                "@type": "TrainingMaterial",
+                "@type": "LearningResource",
                 "@id": "https://gallantries.github.io/video-library/modules/covid-analysis",
                 "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
                 "description": "These materials were developed in the context of the BY-COVID project, EU Grant Agreement 101046203, for the course module GTN Smörgåsbord 2: Tapas - Quality control",
@@ -240,7 +240,7 @@ const Layout = ({ location, children, pageContext, ...props }) => (
             {`
               {
                 "@context": "https://schema.org",
-                "@type": "TrainingMaterial",
+                "@type": "LearningResource",
                 "@id": "https://gallantries.github.io/video-library/modules/covid-analysis",
                 "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
                 "description": "These materials were developed in the context of the BY-COVID project, EU Grant Agreement 101046203, for the course module GTN Smörgåsbord 2: Tapas - Mapping",
@@ -253,7 +253,7 @@ const Layout = ({ location, children, pageContext, ...props }) => (
             {`
               {
                 "@context": "https://schema.org",
-                "@type": "TrainingMaterial",
+                "@type": "LearningResource",
                 "@id": "https://gallantries.github.io/video-library/modules/covid-analysis",
                 "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
                 "description": "These materials were developed in the context of the BY-COVID project, EU Grant Agreement 101046203, for the course module GTN Smörgåsbord 2: Tapas - Using data collections",
@@ -266,7 +266,7 @@ const Layout = ({ location, children, pageContext, ...props }) => (
             {`
               {
                 "@context": "https://schema.org",
-                "@type": "TrainingMaterial",
+                "@type": "LearningResource",
                 "@id": "https://gallantries.github.io/video-library/modules/covid-analysis",
                 "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
                 "description": "These materials were developed in the context of the BY-COVID project, EU Grant Agreement 101046203, for the course module GTN Smörgåsbord 2: Tapas - Removal of human reads from SARS-CoV-2 sequencing data",
@@ -279,7 +279,7 @@ const Layout = ({ location, children, pageContext, ...props }) => (
             {`
               {
                 "@context": "https://schema.org",
-                "@type": "TrainingMaterial",
+                "@type": "LearningResource",
                 "@id": "https://gallantries.github.io/video-library/modules/covid-analysis",
                 "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
                 "description": "These materials were developed in the context of the BY-COVID project, EU Grant Agreement 101046203, for the course module GTN Smörgåsbord 2: Tapas - SARS-CoV-2 Monitoring and Analysis with Galaxy",
@@ -292,7 +292,7 @@ const Layout = ({ location, children, pageContext, ...props }) => (
             {`
               {
                 "@context": "https://schema.org",
-                "@type": "TrainingMaterial",
+                "@type": "LearningResource",
                 "@id": "https://gallantries.github.io/video-library/modules/covid-analysis",
                 "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
                 "description": "These materials were developed in the context of the BY-COVID project, EU Grant Agreement 101046203, for the course module GTN Smörgåsbord 2: Tapas - Mutation calling, viral genome reconstruction and lineage/clade assignment from SARS-CoV-2 sequencing data",
@@ -305,7 +305,7 @@ const Layout = ({ location, children, pageContext, ...props }) => (
             {`
               {
                 "@context": "https://schema.org",
-                "@type": "TrainingMaterial",
+                "@type": "LearningResource",
                 "@id": "https://gallantries.github.io/video-library/modules/covid-analysis",
                 "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
                 "description": "These materials were developed in the context of the BY-COVID project, EU Grant Agreement 101046203, for the course module GTN Smörgåsbord 2: Tapas - Automating Galaxy workflows using the command line",
@@ -318,7 +318,7 @@ const Layout = ({ location, children, pageContext, ...props }) => (
             {`
               {
                 "@context": "https://schema.org",
-                "@type": "TrainingMaterial",
+                "@type": "LearningResource",
                 "@id": "https://gallantries.github.io/video-library/modules/covid-analysis",
                 "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
                 "description": "These materials were developed in the context of the BY-COVID project, EU Grant Agreement 101046203, for the course module GTN Smörgåsbord 2: Tapas - The usegalaxy.* SARS-CoV-2 Bot in Action",
@@ -331,7 +331,7 @@ const Layout = ({ location, children, pageContext, ...props }) => (
             {`
               {
                 "@context": "https://schema.org",
-                "@type": "TrainingMaterial",
+                "@type": "LearningResource",
                 "@id": "https://gallantries.github.io/video-library/modules/covid-analysis",
                 "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
                 "description": "These materials were developed in the context of the BY-COVID project, EU Grant Agreement 101046203, for the course module GTN Smörgåsbord 2: Tapas - Accelerating Research through data sharing",
@@ -344,7 +344,7 @@ const Layout = ({ location, children, pageContext, ...props }) => (
             {`
               {
                 "@context": "https://schema.org",
-                "@type": "TrainingMaterial",
+                "@type": "LearningResource",
                 "@id": "https://gallantries.github.io/video-library/modules/covid-analysis",
                 "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
                 "description": "These materials were developed in the context of the BY-COVID project, EU Grant Agreement 101046203, for the course module GTN Smörgåsbord 2: Tapas - Upload to ENA",
@@ -357,7 +357,7 @@ const Layout = ({ location, children, pageContext, ...props }) => (
             {`
               {
                 "@context": "https://schema.org",
-                "@type": "TrainingMaterial",
+                "@type": "LearningResource",
                 "@id": "https://gallantries.github.io/video-library/modules/covid-analysis",
                 "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
                 "description": "These materials were developed in the context of the BY-COVID project, EU Grant Agreement 101046203, for the course module GTN Smörgåsbord 2: Tapas - Uploading data to ENA",
@@ -370,7 +370,7 @@ const Layout = ({ location, children, pageContext, ...props }) => (
             {`
               {
                 "@context": "https://schema.org",
-                "@type": "TrainingMaterial",
+                "@type": "LearningResource",
                 "@id": "https://gallantries.github.io/video-library/modules/covid-analysis",
                 "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
                 "description": "These materials were developed in the context of the BY-COVID project, EU Grant Agreement 101046203, for the course module GTN Smörgåsbord 2: Tapas - Introduction to viral Beacon",
@@ -383,7 +383,7 @@ const Layout = ({ location, children, pageContext, ...props }) => (
             {`
               {
                 "@context": "https://schema.org",
-                "@type": "TrainingMaterial",
+                "@type": "LearningResource",
                 "@id": "https://gallantries.github.io/video-library/modules/covid-analysis",
                 "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
                 "description": "These materials were developed in the context of the BY-COVID project, EU Grant Agreement 101046203, for the course module GTN Smörgåsbord 2: Tapas - Using and Customising ObservableHQ",
@@ -396,7 +396,7 @@ const Layout = ({ location, children, pageContext, ...props }) => (
             {`
               {
                 "@context": "https://schema.org",
-                "@type": "TrainingMaterial",
+                "@type": "LearningResource",
                 "@id": "https://gallantries.github.io/video-library/modules/covid-analysis",
                 "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
                 "description": "These materials were developed in the context of the BY-COVID project, EU Grant Agreement 101046203, for the course module GTN Smörgåsbord 2: Tapas - SRA Aligned read format in Galaxy",
@@ -409,7 +409,7 @@ const Layout = ({ location, children, pageContext, ...props }) => (
             {`
               {
                 "@context": "https://schema.org",
-                "@type": "TrainingMaterial",
+                "@type": "LearningResource",
                 "@id": "https://gallantries.github.io/video-library/modules/covid-analysis",
                 "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
                 "description": "These materials were developed in the context of the BY-COVID project, EU Grant Agreement 101046203, for the course module GTN Smörgåsbord 2: Tapas - Unicycler assembly of SARS-CoV-2 genome with preprocessing to remove human genome reads",
@@ -422,7 +422,7 @@ const Layout = ({ location, children, pageContext, ...props }) => (
             {`
               {
                 "@context": "https://schema.org",
-                "@type": "TrainingMaterial",
+                "@type": "LearningResource",
                 "@id": "https://gallantries.github.io/video-library/modules/covid-analysis",
                 "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
                 "description": "These materials were developed in the context of the BY-COVID project, EU Grant Agreement 101046203, for the course module GTN Smörgåsbord 2: Tapas - Pandemics Research using Mass Spectrometry",
@@ -435,7 +435,7 @@ const Layout = ({ location, children, pageContext, ...props }) => (
             {`
               {
                 "@context": "https://schema.org",
-                "@type": "TrainingMaterial",
+                "@type": "LearningResource",
                 "@id": "https://gallantries.github.io/video-library/modules/covid-analysis",
                 "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
                 "description": "These materials were developed in the context of the BY-COVID project, EU Grant Agreement 101046203, for the course module GTN Smörgåsbord 2: Tapas - Scripting Galaxy using the API and BioBlend",
@@ -448,7 +448,7 @@ const Layout = ({ location, children, pageContext, ...props }) => (
             {`
               {
                 "@context": "https://schema.org",
-                "@type": "TrainingMaterial",
+                "@type": "LearningResource",
                 "@id": "https://gallantries.github.io/video-library/modules/covid-analysis",
                 "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
                 "description": "These materials were developed in the context of the BY-COVID project, EU Grant Agreement 101046203, for the course module GTN Smörgåsbord 2: Tapas - Case Studies: What you can do with SARS-COV-2 data",
@@ -461,7 +461,7 @@ const Layout = ({ location, children, pageContext, ...props }) => (
             {`
               {
                 "@context": "https://schema.org",
-                "@type": "TrainingMaterial",
+                "@type": "LearningResource",
                 "@id": "https://faircookbook.elixir-europe.org/content/home.html",
                 "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
                 "description": "These materials were developed in the context of the BY-COVID project, EU Grant Agreement 101046203, for the course module FAIR Cookbook: hands-on recipes to make and keep data FAIR",
@@ -474,7 +474,7 @@ const Layout = ({ location, children, pageContext, ...props }) => (
             {`
               {
                 "@context": "https://schema.org",
-                "@type": "TrainingMaterial",
+                "@type": "LearningResource",
                 "@id": "https://fairsharing.org/educational#societies",
                 "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
                 "description": "These materials were developed in the context of the BY-COVID project, EU Grant Agreement 101046203, for the course module FAIRsharing for you: societies and alliances",
@@ -487,7 +487,7 @@ const Layout = ({ location, children, pageContext, ...props }) => (
             {`
               {
                 "@context": "https://schema.org",
-                "@type": "TrainingMaterial",
+                "@type": "LearningResource",
                 "@id": "https://fairsharing.org/educational#trainers",
                 "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
                 "description": "These materials were developed in the context of the BY-COVID project, EU Grant Agreement 101046203, for the course module FAIRsharing for you: libraries and trainers",
@@ -500,7 +500,7 @@ const Layout = ({ location, children, pageContext, ...props }) => (
             {`
               {
                 "@context": "https://schema.org",
-                "@type": "TrainingMaterial",
+                "@type": "LearningResource",
                 "@id": "https://fairsharing.org/educational#developers",
                 "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
                 "description": "These materials were developed in the context of the BY-COVID project, EU Grant Agreement 101046203, for the course module FAIRsharing for you: developers and curators",
@@ -513,7 +513,7 @@ const Layout = ({ location, children, pageContext, ...props }) => (
             {`
               {
                 "@context": "https://schema.org",
-                "@type": "TrainingMaterial",
+                "@type": "LearningResource",
                 "@id": "https://gallantries.github.io/video-library/modules/one-health",
                 "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
                 "description": "These materials were developed in the context of the BY-COVID project, EU Grant Agreement 101046203, for the course module GTN Smörgåsbord 3: OneHealth - Viral Pathogen Analysis- Sequencing data analysis for a spectrum of viral genomes",
@@ -526,7 +526,7 @@ const Layout = ({ location, children, pageContext, ...props }) => (
             {`
               {
                 "@context": "https://schema.org",
-                "@type": "TrainingMaterial",
+                "@type": "LearningResource",
                 "@id": "https://gallantries.github.io/video-library/modules/one-health",
                 "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
                 "description": "These materials were developed in the context of the BY-COVID project, EU Grant Agreement 101046203, for the course module GTN Smörgåsbord 3: OneHealth - Viral Pathogen Analysis - From NCBI's Sequence Read Archive (SRA) to Galaxy: SARS-CoV-2 variant analysis",
@@ -539,7 +539,7 @@ const Layout = ({ location, children, pageContext, ...props }) => (
             {`
               {
                 "@context": "https://schema.org",
-                "@type": "TrainingMaterial",
+                "@type": "LearningResource",
                 "@id": "https://gallantries.github.io/video-library/modules/one-health",
                 "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
                 "description": "These materials were developed in the context of the BY-COVID project, EU Grant Agreement 101046203, for the course module GTN Smörgåsbord 3: OneHealth - Viral Pathogen Analysis - Avian influenza viral strain analysis from gene segment sequencing data",
@@ -552,7 +552,7 @@ const Layout = ({ location, children, pageContext, ...props }) => (
             {`
               {
                 "@context": "https://schema.org",
-                "@type": "TrainingMaterial",
+                "@type": "LearningResource",
                 "@id": "https://gallantries.github.io/video-library/modules/one-health",
                 "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
                 "description": "These materials were developed in the context of the BY-COVID project, EU Grant Agreement 101046203, for the course module GTN Smörgåsbord 3: OneHealth - Viral Pathogen Analysis - Pox virus genome analysis from tiled-amplicon sequencing data",
@@ -565,7 +565,7 @@ const Layout = ({ location, children, pageContext, ...props }) => (
             {`
               {
                 "@context": "https://schema.org",
-                "@type": "TrainingMaterial",
+                "@type": "LearningResource",
                 "@id": "https://gallantries.github.io/video-library/modules/one-health",
                 "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
                 "description": "These materials were developed in the context of the BY-COVID project, EU Grant Agreement 101046203, for the course module GTN Smörgåsbord 3: OneHealth - Tuberculosis Sequence Analysis - Webinar: Implementation of NGS for TB- WHO documents and other considerations",
@@ -578,7 +578,7 @@ const Layout = ({ location, children, pageContext, ...props }) => (
             {`
               {
                 "@context": "https://schema.org",
-                "@type": "TrainingMaterial",
+                "@type": "LearningResource",
                 "@id": "https://gallantries.github.io/video-library/modules/one-health",
                 "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
                 "description": "These materials were developed in the context of the BY-COVID project, EU Grant Agreement 101046203, for the course module GTN Smörgåsbord 3: OneHealth - Tuberculosis Sequence Analysis - Tuberculosis Variant Analysis",
@@ -591,7 +591,7 @@ const Layout = ({ location, children, pageContext, ...props }) => (
             {`
               {
                 "@context": "https://schema.org",
-                "@type": "TrainingMaterial",
+                "@type": "LearningResource",
                 "@id": "https://gallantries.github.io/video-library/modules/one-health",
                 "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
                 "description": "These materials were developed in the context of the BY-COVID project, EU Grant Agreement 101046203, for the course module GTN Smörgåsbord 3: OneHealth - Tuberculosis Sequence Analysis - Webinar series: Concepts of drug-resistance prediction and mutation-based clustering",
@@ -604,7 +604,7 @@ const Layout = ({ location, children, pageContext, ...props }) => (
             {`
               {
                 "@context": "https://schema.org",
-                "@type": "TrainingMaterial",
+                "@type": "LearningResource",
                 "@id": "https://gallantries.github.io/video-library/modules/one-health",
                 "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
                 "description": "These materials were developed in the context of the BY-COVID project, EU Grant Agreement 101046203, for the course module GTN Smörgåsbord 3: OneHealth - Tuberculosis Sequence Analysis - Hands-on: Identifying tuberculosis transmission links: from SNPs to transmission clusters",
@@ -617,7 +617,7 @@ const Layout = ({ location, children, pageContext, ...props }) => (
             {`
               {
                 "@context": "https://schema.org",
-                "@type": "TrainingMaterial",
+                "@type": "LearningResource",
                 "@id": "https://gallantries.github.io/video-library/modules/one-health",
                 "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
                 "description": "These materials were developed in the context of the BY-COVID project, EU Grant Agreement 101046203, for the course module GTN Smörgåsbord 3: OneHealth - Tuberculosis Sequence Analysis - Introduction to phylogenetics",
@@ -630,7 +630,7 @@ const Layout = ({ location, children, pageContext, ...props }) => (
             {`
               {
                 "@context": "https://schema.org",
-                "@type": "TrainingMaterial",
+                "@type": "LearningResource",
                 "@id": "https://gallantries.github.io/video-library/modules/one-health",
                 "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
                 "description": "These materials were developed in the context of the BY-COVID project, EU Grant Agreement 101046203, for the course module GTN Smörgåsbord 3: OneHealth - Building a pathogen surveillance system with Galaxy - An automated SARS-CoV-2 genome surveillance system built around Galaxy",
@@ -643,7 +643,7 @@ const Layout = ({ location, children, pageContext, ...props }) => (
             {`
               {
                 "@context": "https://schema.org",
-                "@type": "TrainingMaterial",
+                "@type": "LearningResource",
                 "@id": "https://gallantries.github.io/video-library/modules/one-health",
                 "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
                 "description": "These materials were developed in the context of the BY-COVID project, EU Grant Agreement 101046203, for the course module GTN Smörgåsbord 3: OneHealth - Building a pathogen surveillance system with Galaxy - Mutation calling, viral genome reconstruction and lineage/clade assignment from SARS-CoV-2 sequencing data",
@@ -656,7 +656,7 @@ const Layout = ({ location, children, pageContext, ...props }) => (
             {`
               {
                 "@context": "https://schema.org",
-                "@type": "TrainingMaterial",
+                "@type": "LearningResource",
                 "@id": "https://gallantries.github.io/video-library/modules/one-health",
                 "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
                 "description": "These materials were developed in the context of the BY-COVID project, EU Grant Agreement 101046203, for the course module GTN Smörgåsbord 3: OneHealth - Building a pathogen surveillance system with Galaxy - Automating Galaxy workflows using the command line",
@@ -669,7 +669,7 @@ const Layout = ({ location, children, pageContext, ...props }) => (
             {`
               {
                 "@context": "https://schema.org",
-                "@type": "TrainingMaterial",
+                "@type": "LearningResource",
                 "@id": "https://gallantries.github.io/video-library/modules/one-health",
                 "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
                 "description": "These materials were developed in the context of the BY-COVID project, EU Grant Agreement 101046203, for the course module GTN Smörgåsbord 3: OneHealth - Building a pathogen surveillance system with Galaxy - The usegalaxy.* SARS-CoV-2 Bot in Action",
@@ -682,7 +682,7 @@ const Layout = ({ location, children, pageContext, ...props }) => (
             {`
               {
                 "@context": "https://schema.org",
-                "@type": "TrainingMaterial",
+                "@type": "LearningResource",
                 "@id": "https://gallantries.github.io/video-library/modules/one-health",
                 "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
                 "description": "These materials were developed in the context of the BY-COVID project, EU Grant Agreement 101046203, for the course module GTN Smörgåsbord 3: OneHealth - Building a pathogen surveillance system with Galaxy - Removal of human reads from SARS-CoV-2 sequencing data",
@@ -695,7 +695,7 @@ const Layout = ({ location, children, pageContext, ...props }) => (
             {`
               {
                 "@context": "https://schema.org",
-                "@type": "TrainingMaterial",
+                "@type": "LearningResource",
                 "@id": "https://gallantries.github.io/video-library/modules/one-health",
                 "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
                 "description": "These materials were developed in the context of the BY-COVID project, EU Grant Agreement 101046203, for the course module GTN Smörgåsbord 3: OneHealth - Building a pathogen surveillance system with Galaxy - Upload to ENA",
@@ -708,7 +708,7 @@ const Layout = ({ location, children, pageContext, ...props }) => (
             {`
               {
                 "@context": "https://schema.org",
-                "@type": "TrainingMaterial",
+                "@type": "LearningResource",
                 "@id": "https://gallantries.github.io/video-library/modules/ro-crate",
                 "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
                 "description": "These materials were developed in the context of the BY-COVID project, EU Grant Agreement 101046203, for the course module GTN Smörgåsbord 3: FAIR data and provenance with RO-Crate and Galaxy - Building RO-Crates - An overview of the RO-Crate concept and its implementations",
@@ -721,7 +721,7 @@ const Layout = ({ location, children, pageContext, ...props }) => (
             {`
               {
                 "@context": "https://schema.org",
-                "@type": "TrainingMaterial",
+                "@type": "LearningResource",
                 "@id": "https://gallantries.github.io/video-library/modules/ro-crate",
                 "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
                 "description": "These materials were developed in the context of the BY-COVID project, EU Grant Agreement 101046203, for the course module GTN Smörgåsbord 3: FAIR data and provenance with RO-Crate and Galaxy - Building RO-Crates - Publishing My First™ RO-Crate",
@@ -734,7 +734,7 @@ const Layout = ({ location, children, pageContext, ...props }) => (
             {`
               {
                 "@context": "https://schema.org",
-                "@type": "TrainingMaterial",
+                "@type": "LearningResource",
                 "@id": "https://gallantries.github.io/video-library/modules/ro-crate",
                 "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
                 "description": "These materials were developed in the context of the BY-COVID project, EU Grant Agreement 101046203, for the course module GTN Smörgåsbord 3: FAIR data and provenance with RO-Crate and Galaxy - Building RO-Crates - RO-Crate in Python",
@@ -747,7 +747,7 @@ const Layout = ({ location, children, pageContext, ...props }) => (
             {`
               {
                 "@context": "https://schema.org",
-                "@type": "TrainingMaterial",
+                "@type": "LearningResource",
                 "@id": "https://gallantries.github.io/video-library/modules/ro-crate",
                 "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
                 "description": "These materials were developed in the context of the BY-COVID project, EU Grant Agreement 101046203, for the course module GTN Smörgåsbord 3: FAIR data and provenance with RO-Crate and Galaxy - Building RO-Crates - Workflow Run RO-Crate Introduction",
@@ -760,7 +760,7 @@ const Layout = ({ location, children, pageContext, ...props }) => (
             {`
               {
                 "@context": "https://schema.org",
-                "@type": "TrainingMaterial",
+                "@type": "LearningResource",
                 "@id": "https://gallantries.github.io/video-library/modules/ro-crate",
                 "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
                 "description": "These materials were developed in the context of the BY-COVID project, EU Grant Agreement 101046203, for the course module GTN Smörgåsbord 3: FAIR data and provenance with RO-Crate and Galaxy - Publishing Workflow RO-Crates with Galaxy - Registering Galaxy workflows in WorkflowHub",
@@ -773,7 +773,7 @@ const Layout = ({ location, children, pageContext, ...props }) => (
             {`
               {
                 "@context": "https://schema.org",
-                "@type": "TrainingMaterial",
+                "@type": "LearningResource",
                 "@id": "https://gallantries.github.io/video-library/modules/ro-crate",
                 "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
                 "description": "These materials were developed in the context of the BY-COVID project, EU Grant Agreement 101046203, for the course module GTN Smörgåsbord 3: FAIR data and provenance with RO-Crate and Galaxy - Publishing Workflow RO-Crates with Galaxy - Best practices for workflows in GitHub repositories",
@@ -786,7 +786,7 @@ const Layout = ({ location, children, pageContext, ...props }) => (
             {`
               {
                 "@context": "https://schema.org",
-                "@type": "TrainingMaterial",
+                "@type": "LearningResource",
                 "@id": "https://gallantries.github.io/video-library/modules/ro-crate",
                 "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
                 "description": "These materials were developed in the context of the BY-COVID project, EU Grant Agreement 101046203, for the course module GTN Smörgåsbord 3: FAIR data and provenance with RO-Crate and Galaxy - Publishing Workflow RO-Crates with Galaxy - Submitting workflows to LifeMonitor",
@@ -799,7 +799,7 @@ const Layout = ({ location, children, pageContext, ...props }) => (
             {`
               {
                 "@context": "https://schema.org",
-                "@type": "TrainingMaterial",
+                "@type": "LearningResource",
                 "@id": "https://drive.google.com/file/d/1zD-6eico8ugfr3HyRAwngu8OfyNrtOOC/view?usp=share_link",
                 "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
                 "description": "These materials were developed in the context of the BY-COVID project, EU Grant Agreement 101046203, for the course module Data management in social sciences and humanities with DMEG",
@@ -812,7 +812,7 @@ const Layout = ({ location, children, pageContext, ...props }) => (
             {`
               {
                 "@context": "https://schema.org",
-                "@type": "TrainingMaterial",
+                "@type": "LearningResource",
                 "@id": "https://drive.google.com/file/d/17Xxme5noOkfhVCv7RH8EkfUfqFGKNbzU/view?usp=share_link",
                 "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
                 "description": "These materials were developed in the context of the BY-COVID project, EU Grant Agreement 101046203, for the course module Data management in life sciences with RDMkit",
@@ -825,7 +825,7 @@ const Layout = ({ location, children, pageContext, ...props }) => (
             {`
               {
                 "@context": "https://schema.org",
-                "@type": "TrainingMaterial",
+                "@type": "LearningResource",
                 "@id": "https://drive.google.com/file/d/1tvKC8HtkNmXZ85T80N31nSDxFskkv9FD/view",
                 "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
                 "description": "These materials were developed in the context of the BY-COVID project, EU Grant Agreement 101046203, for the course module Challenges and issues in data management",
@@ -838,7 +838,7 @@ const Layout = ({ location, children, pageContext, ...props }) => (
             {`
               {
                 "@context": "https://schema.org",
-                "@type": "TrainingMaterial",
+                "@type": "LearningResource",
                 "@id": "https://www.youtube.com/playlist?list=PLW-oxncaXRqU4XqduJzwFHvWLF06PvdVm",
                 "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
                 "description": "These materials were developed in the context of the BY-COVID project, EU Grant Agreement 101046203, for the course module Euro-BioImaging's Guide to FAIR BioImage Data 2023",
@@ -851,7 +851,7 @@ const Layout = ({ location, children, pageContext, ...props }) => (
             {`
               {
                 "@context": "https://schema.org",
-                "@type": "TrainingMaterial",
+                "@type": "LearningResource",
                 "@id": "https://www.eurobioimaging.eu/news/great-success-of-euro-bioimagings-guide-to-fair-bioimage-data-2024/",
                 "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
                 "description": "These materials were developed in the context of the BY-COVID project, EU Grant Agreement 101046203, for the course module Euro-BioImaging's Guide to FAIR BioImage Data 2024",
@@ -864,7 +864,7 @@ const Layout = ({ location, children, pageContext, ...props }) => (
             {`
               {
                 "@context": "https://schema.org",
-                "@type": "TrainingMaterial",
+                "@type": "LearningResource",
                 "@id": "https://doi.org/10.5281/zenodo.12168495",
                 "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
                 "description": "These materials were developed in the context of the BY-COVID project, EU Grant Agreement 101046203, for the course module BY-COVID Spring 24 Baseline Use Case Workshop",
@@ -877,7 +877,7 @@ const Layout = ({ location, children, pageContext, ...props }) => (
             {`
               {
                 "@context": "https://schema.org",
-                "@type": "TrainingMaterial",
+                "@type": "LearningResource",
                 "@id": "https://zenodo.org/records/11220597",
                 "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
                 "description": "These materials were developed in the context of the BY-COVID project, EU Grant Agreement 101046203, for the course module Data sharing and reuse under GDPR - BY-COVID Fest workshop report",
@@ -890,7 +890,7 @@ const Layout = ({ location, children, pageContext, ...props }) => (
             {`
               {
                 "@context": "https://schema.org",
-                "@type": "TrainingMaterial",
+                "@type": "LearningResource",
                 "@id": "https://training.galaxyproject.org/training-material/topics/variant-analysis/tutorials/sars-cov-2-variant-discovery/tutorial.html",
                 "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
                 "description": "These materials were developed in the context of the BY-COVID project, EU Grant Agreement 101046203, for the course module Mutation calling, viral genome reconstruction and lineage/clade assignment from SARS-CoV-2 sequencing data",
@@ -904,7 +904,7 @@ const Layout = ({ location, children, pageContext, ...props }) => (
             {`
               {
                 "@context": "https://schema.org",
-                "@type": "TrainingMaterial",
+                "@type": "LearningResource",
                 "@id": "https://training.galaxyproject.org/training-material/topics/sequence-analysis/tutorials/human-reads-removal/tutorial.html",
                 "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
                 "description": "These materials were developed in the context of the BY-COVID project, EU Grant Agreement 101046203, for the course module Removal of human reads from SARS-CoV-2 sequencing data",
@@ -918,7 +918,7 @@ const Layout = ({ location, children, pageContext, ...props }) => (
             {`
               {
                 "@context": "https://schema.org",
-                "@type": "TrainingMaterial",
+                "@type": "LearningResource",
                 "@id": "https://training.galaxyproject.org/training-material/topics/variant-analysis/tutorials/pox-tiled-amplicon/tutorial.html",
                 "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
                 "description": "These materials were developed in the context of the BY-COVID project, EU Grant Agreement 101046203, for the course module Pox virus genome analysis from tiled-amplicon sequencing data",
@@ -932,7 +932,7 @@ const Layout = ({ location, children, pageContext, ...props }) => (
             {`
               {
                 "@context": "https://schema.org",
-                "@type": "TrainingMaterial",
+                "@type": "LearningResource",
                 "@id": "https://training.galaxyproject.org/training-material/topics/variant-analysis/tutorials/aiv-analysis/tutorial.html",
                 "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
                 "description": "These materials were developed in the context of the BY-COVID project, EU Grant Agreement 101046203, for the course module Avian influenza viral strain analysis from gene segment sequencing data",
@@ -946,7 +946,7 @@ const Layout = ({ location, children, pageContext, ...props }) => (
             {`
               {
                 "@context": "https://schema.org",
-                "@type": "TrainingMaterial",
+                "@type": "LearningResource",
                 "@id": "https://training.galaxyproject.org/training-material/topics/transcriptomics/tutorials/minerva-pathways/tutorial.html",
                 "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
                 "description": "These materials were developed in the context of the BY-COVID project, EU Grant Agreement 101046203, for the course module Pathway analysis with the MINERVA Platform",
@@ -960,7 +960,7 @@ const Layout = ({ location, children, pageContext, ...props }) => (
             {`
               {
                 "@context": "https://schema.org",
-                "@type": "TrainingMaterial",
+                "@type": "LearningResource",
                 "@id": "https://training.galaxyproject.org/training-material/topics/galaxy-interface/tutorials/upload-data-to-ena/tutorial.html",
                 "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
                 "description": "These materials were developed in the context of the BY-COVID project, EU Grant Agreement 101046203, for the course module Submitting sequence data to ENA",
@@ -973,7 +973,7 @@ const Layout = ({ location, children, pageContext, ...props }) => (
             {`
               {
                 "@context": "https://schema.org",
-                "@type": "TrainingMaterial",
+                "@type": "LearningResource",
                 "@id": "https://drive.google.com/file/d/1sViY_DaXjVRHsiNSw8k32pq3U_ukM7kn/view?usp=share_link",
                 "dct:conformsTo": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE",
                 "description": "These materials were developed in the context of the BY-COVID project, EU Grant Agreement 101046203, for the course module Maturity Model for Pathogen Data Platforms",
