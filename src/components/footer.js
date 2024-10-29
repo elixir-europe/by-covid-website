@@ -5,20 +5,14 @@ import bycovidIcon from "../images/by-covid-icon.svg"
 import twitterIcon from "../images/twitter-x.svg"
 import linkedinIcon from "../images/linkedin-icon.svg"
 import byCovideuIcon from "../images/by-covid-footer-eu.svg"
-import NewsletterForm from "../components/newsletter-form"
 
 const Footer = () => {
   return (
     <footer class="py-7 bg-dark text-white">
       <Container>
         <Row>
-          <Col lg={5} xs={12}>
+          <Col lg={2} xs={12}>
             <img src={bycovidIcon} alt="BY-COVID icon" width="60" />
-            <p class="mt-2 fs-7">
-              Sign up to receive our quarterly newsletter for news, updates and
-              outcomes.
-            </p>
-            <NewsletterForm />
           </Col>
           <Col>
             <h2 class="mb-3 fs-6 fw-bold">
