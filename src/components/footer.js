@@ -97,7 +97,7 @@ const Footer = () => {
               class="float-start mt-1 me-3 mb-5 mb-md-0 eu-icon"
             />
             <p class="fs-79 mt-0">
-            Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Research Executive Agency (REA). Neither the European Union nor the granting authority can be held responsible for them.
+            BY-COVID received funding from the European Union’s Horizon Europe research and innovation programme under grant agreement number 101046203.
             </p>
           </Col>
           <Col lg={2}>
