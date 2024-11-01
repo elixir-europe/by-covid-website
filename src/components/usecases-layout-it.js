@@ -78,9 +78,6 @@ const PostTemplate = ({ data: { mdx } }) => {
                         </MDXRenderer>
                       </MDXProvider>
                       <hr />
-                      <p><strong> YOUR THOUGHTS</strong></p>
-                      <p>We'd love to hear what you think about these issues.</p>
-                      <button class="btn btn-primary mb-4" onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSdknfycEDMrIJBD2_eLHYFeWMIqXwt2s1b_hDgTL6uAT5HAqw/viewform?entry.1166974658="+postTitle, '_blank')}>Share your views</button>
                       <p class="text-end mt-5">
                         <a href="/usecases-it">For citizens</a>
                       </p>
